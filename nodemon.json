@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "_archive",
+    "_sessions",
+    "temp"
+  ]
+}

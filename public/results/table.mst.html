@@ -1,0 +1,28 @@
+<table id="results-table" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <thead>
+    <tr>
+      <th colspan=6></th>
+      <th class=prefetch colspan=3>Prefetch</th>
+      <th class=normal colspan=3>Normal</th>
+    </tr>
+    <tr>
+      <th>i</th>
+      <th>test</th>
+      <th>pass</th>
+      <th>xd</th>
+      <th>cors</th>
+      <th>src</th>
+      <th class=prefetch>info</th>
+      <th class=prefetch>requested</th>
+      <th class=prefetch>status</th>
+      <th class=normal>info</th>
+      <th class=normal>requested</th>
+      <th class=normal>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#rows}}
+      {{> result_row}}
+    {{/rows}}
+  </tbody>
+</table>

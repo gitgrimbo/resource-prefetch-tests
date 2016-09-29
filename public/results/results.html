@@ -1,0 +1,19 @@
+<!doctype html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="content"></div>
+
+<script src="../vendor/bluebird.js"></script>
+<script>
+require = {
+  paths: {
+    jquery: "../vendor/jquery",
+    mustache: "../vendor/mustache"
+  },
+  deps: ["./results"]
+};
+</script>
+<script src="../vendor/require.js"></script>

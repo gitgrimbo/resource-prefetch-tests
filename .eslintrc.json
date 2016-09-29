@@ -1,0 +1,20 @@
+{
+  "extends": "google",
+  "env": {
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "generator-star-spacing": 0,
+    "yield-star-spacing": 0
+  }
+}
