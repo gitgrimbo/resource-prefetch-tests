@@ -17,6 +17,7 @@ const resultsPage = require("../results-page");
 
 const sessionManager = new SessionManager();
 const sessionSaveDir = path.join("./", "_sessions");
+const resultsSaveDir = path.join("./", "results");
 const downloadPathRegExp = /\/download-files/;
 
 const app = koa();
@@ -98,27 +99,56 @@ app.use(route.get("/config", function* (next) {
   this.body = testConfig;
 }));
 
+
+// Output a single result from disk
+app.use(route.get("/result.html", function* (next) {
+  const { name } = this.query;
+
+  if (!name) {
+    return (this.body = "No result 'name' parameter provided");
+  }
+
+  try {
+    const data = yield fs.readFile(path.join(resultsSaveDir, name + ".json"));
+    const sessionFromDisk = JSON.parse(String(data));
+    return (this.body = resultsPage(sessionFromDisk, "results/style.css"));
+  } catch (err) {
+    if (err.code !== "ENOENT") {
+      throw err;
+    }
+  }
+
+  this.status = 404;
+  this.body = "results with name=" + name + " not found";
+}));
+
+
+// Output list of results from disk
 app.use(route.get("/results.html", function* (next) {
+  const link = f => `<a href="result.html?name=${path.parse(f).name}">${f}</a>`;
+  const files = yield fs.readdir(resultsSaveDir);
+  this.body = files.map(f => `<li>${link(f)}</li>`).join("\n");
+}));
+
+
+// Output a single session from memory
+app.use(route.get("/session.html", function* (next) {
   const { sessionId } = this.query;
+
+  if (!sessionId) {
+    return (this.body = "No sessionId parameter provided");
+  }
 
   const session = sessionManager.getSession(sessionId);
 
   // Try session from memory first
   if (session) {
-    this.body = resultsPage(session, "results/style.css");
-    return;
-  }
-
-  // Then from disk
-  try {
-    const data = yield fs.readFile(path.join(sessionSaveDir, sessionId + ".json"));
-    const sessionFromDisk = JSON.parse(String(data));
-    this.body = resultsPage(sessionFromDisk, "results/style.css");
-  } catch (err) {
-    yield next;
+    return (this.body = resultsPage(session, "results/style.css"));
   }
 }));
 
+
+// Start the server
 app.listen(3002, function() {
   console.log(`Listening on port ${this.address().port}`);
 });

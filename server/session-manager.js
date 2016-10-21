@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const mkdirp = require("mkdirp");
+const uaParser = require("ua-parser-js");
 
 module.exports = class SessionManager {
   constructor() {
@@ -11,6 +12,7 @@ module.exports = class SessionManager {
   startSession(attrs) {
     const id = ++this.sessionId;
     const session = Object.assign({}, attrs, {
+      timestamp: Date.now(),
       sessionId: id,
       tests: {},
       active: true
@@ -37,9 +39,14 @@ module.exports = class SessionManager {
     return session;
   }
 
+  makeSessionFilename(session) {
+    const ua = uaParser(session.userAgent);
+    return session.timestamp + "-" + session.sessionId + "-" + ua.browser.name + "-" + ua.browser.version;
+  }
+
   saveSession(sessionId, sessionSaveDir, cb) {
     const session = this.sessions[sessionId];
-    const filepath = path.join(sessionSaveDir, session.sessionId + ".json");
+    const filepath = path.join(sessionSaveDir, this.makeSessionFilename(session) + ".json");
     mkdirp(sessionSaveDir, function(err) {
       if (err) return cb(err);
       fs.writeFile(filepath, JSON.stringify(session, null, 1), cb);
@@ -49,6 +56,7 @@ module.exports = class SessionManager {
   startTest(sessionId, testId, attrs) {
     const session = this.getSession(sessionId, true);
     const test = Object.assign({}, attrs, {
+      timestamp: Date.now(),
       testId,
       state: "prefetch",
       resource: null
