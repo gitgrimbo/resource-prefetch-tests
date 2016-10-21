@@ -1,0 +1,51 @@
+html,
+body {
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+table {
+    border-collapse: collapsed;
+}
+
+table.results > thead > tr > th {
+    background: red;
+    color: white;
+    padding: 2px;
+    vertical-align: top;
+}
+
+table.results > thead > tr > th.prefetch {
+    background: rgba(0, 128, 0, 0.9);
+}
+
+table.results > thead > tr > th.normal {
+    background: rgba(0, 0, 128, 0.9);
+}
+
+table.results > tbody > tr > td {
+    border: solid 1px lightgray;
+    padding: 2px;
+    vertical-align: top;
+}
+
+table.results > tbody > tr > td.pass {
+    background: rgba(0, 255, 0, 0.08);
+}
+
+table.results > tbody > tr > td.fail {
+    background: rgba(255, 0, 0, 0.08);
+}
+
+code {
+    background: lightgray;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+pre.headers {
+    font-family: inherit;
+}
