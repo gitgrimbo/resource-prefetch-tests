@@ -119,4 +119,6 @@ app.use(route.get("/results.html", function* (next) {
   }
 }));
 
-app.listen(3002);
+app.listen(3002, function() {
+  console.log(`Listening on port ${this.address().port}`);
+});
