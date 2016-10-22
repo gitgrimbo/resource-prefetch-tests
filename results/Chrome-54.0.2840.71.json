@@ -1,14 +1,16 @@
 {
  "userAgent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36",
- "sessionId": 1,
+ "timestamp": 1477128879494,
+ "sessionId": 2,
  "tests": {
   "0": {
    "name": "<link rel=prefetch>",
    "resourceId": 5,
    "resource": {
-    "path": "http://localhost:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -20,13 +22,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/6.9kB.js?sessionId=1&testId=0&resourceId=5&timestamp=1477045909918&useCors=false]"
+      "data": "loadResourceByLink[/download-files/6.9kB.js?sessionId=2&testId=0&resourceId=5&timestamp=1477128879502&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=1&testId=0&resourceId=5&timestamp=1477045909918&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=0&resourceId=5&timestamp=1477128879502&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128879506,
    "testId": "0",
    "state": "ended"
   },
@@ -34,9 +39,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -48,7 +54,7 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=1&resourceId=9&timestamp=1477045910096&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=1&resourceId=9&timestamp=1477128879540&useCors=false]"
      },
      "normal": {
       "err": {
@@ -59,10 +65,13 @@
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128879544,
    "testId": "1",
    "state": "ended"
   },
@@ -70,9 +79,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -84,18 +94,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=2&resourceId=7&timestamp=1477045913176&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=2&resourceId=7&timestamp=1477128884586&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=2&resourceId=7&timestamp=1477045913176&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=2&resourceId=7&timestamp=1477128884586&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128884589,
    "testId": "2",
    "state": "ended"
   },
@@ -103,9 +116,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -117,18 +131,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=3&resourceId=6&timestamp=1477045913930&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=3&resourceId=6&timestamp=1477128885047&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=3&resourceId=6&timestamp=1477045913930&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=3&resourceId=6&timestamp=1477128885047&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885053,
    "testId": "3",
    "state": "ended"
   },
@@ -136,9 +153,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -150,18 +168,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=4&resourceId=5&timestamp=1477045914021&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=4&resourceId=5&timestamp=1477128885107&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=4&resourceId=5&timestamp=1477045914021&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=4&resourceId=5&timestamp=1477128885107&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885112,
    "testId": "4",
    "state": "ended"
   },
@@ -169,9 +190,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -183,18 +205,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=5&resourceId=4&timestamp=1477045914078&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=5&resourceId=4&timestamp=1477128885146&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=5&resourceId=4&timestamp=1477045914078&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=5&resourceId=4&timestamp=1477128885146&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885150,
    "testId": "5",
    "state": "ended"
   },
@@ -202,9 +227,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -216,18 +242,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=6&resourceId=3&timestamp=1477045914168&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=6&resourceId=3&timestamp=1477128885192&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=6&resourceId=3&timestamp=1477045914168&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=6&resourceId=3&timestamp=1477128885192&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885195,
    "testId": "6",
    "state": "ended"
   },
@@ -235,9 +264,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -249,18 +279,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=7&resourceId=2&timestamp=1477045914287&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=7&resourceId=2&timestamp=1477128885280&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=7&resourceId=2&timestamp=1477045914287&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=7&resourceId=2&timestamp=1477128885280&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885283,
    "testId": "7",
    "state": "ended"
   },
@@ -268,9 +301,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -282,18 +316,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=8&resourceId=1&timestamp=1477045914734&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=8&resourceId=1&timestamp=1477128885646&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=8&resourceId=1&timestamp=1477045914734&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=8&resourceId=1&timestamp=1477128885646&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885650,
    "testId": "8",
    "state": "ended"
   },
@@ -301,9 +338,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -315,18 +353,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=9&resourceId=0&timestamp=1477045914980&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=9&resourceId=0&timestamp=1477128885761&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=9&resourceId=0&timestamp=1477045914980&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=9&resourceId=0&timestamp=1477128885761&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885765,
    "testId": "9",
    "state": "ended"
   },
@@ -334,9 +375,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 0,
    "resource": {
-    "path": "http://localhost:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -348,13 +390,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=1&testId=10&resourceId=0&timestamp=1477045915035&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=10&resourceId=0&timestamp=1477128885794&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=1&testId=10&resourceId=0&timestamp=1477045915035&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=10&resourceId=0&timestamp=1477128885794&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885798,
    "testId": "10",
    "state": "ended"
   },
@@ -362,9 +407,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 1,
    "resource": {
-    "path": "http://localhost:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -376,13 +422,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=1&testId=11&resourceId=1&timestamp=1477045915094&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=11&resourceId=1&timestamp=1477128885829&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=1&testId=11&resourceId=1&timestamp=1477045915094&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=11&resourceId=1&timestamp=1477128885829&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885832,
    "testId": "11",
    "state": "ended"
   },
@@ -390,9 +439,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 2,
    "resource": {
-    "path": "http://localhost:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -404,13 +454,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/1516kB.jpg?sessionId=1&testId=12&resourceId=2&timestamp=1477045915210&useCors=false]"
+      "data": "loadResourceByLink[/download-files/1516kB.jpg?sessionId=2&testId=12&resourceId=2&timestamp=1477128885908&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=1&testId=12&resourceId=2&timestamp=1477045915210&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=12&resourceId=2&timestamp=1477128885908&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128885912,
    "testId": "12",
    "state": "ended"
   },
@@ -418,9 +471,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 3,
    "resource": {
-    "path": "http://localhost:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -432,13 +486,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/256kB.jpg?sessionId=1&testId=13&resourceId=3&timestamp=1477045915584&useCors=false]"
+      "data": "loadResourceByLink[/download-files/256kB.jpg?sessionId=2&testId=13&resourceId=3&timestamp=1477128886267&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=1&testId=13&resourceId=3&timestamp=1477045915584&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=13&resourceId=3&timestamp=1477128886267&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886271,
    "testId": "13",
    "state": "ended"
   },
@@ -446,9 +503,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 4,
    "resource": {
-    "path": "http://localhost:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -460,13 +518,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/30.8kB.js?sessionId=1&testId=14&resourceId=4&timestamp=1477045915788&useCors=false]"
+      "data": "loadResourceByLink[/download-files/30.8kB.js?sessionId=2&testId=14&resourceId=4&timestamp=1477128886367&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=1&testId=14&resourceId=4&timestamp=1477045915788&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=14&resourceId=4&timestamp=1477128886367&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886372,
    "testId": "14",
    "state": "ended"
   },
@@ -474,9 +535,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -488,18 +550,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=15&resourceId=8&timestamp=1477045915852&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=15&resourceId=8&timestamp=1477128886414&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=15&resourceId=8&timestamp=1477045915852&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=15&resourceId=8&timestamp=1477128886414&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886417,
    "testId": "15",
    "state": "ended"
   },
@@ -507,9 +572,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 6,
    "resource": {
-    "path": "http://localhost:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -521,13 +587,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/64kB.jpg?sessionId=1&testId=16&resourceId=6&timestamp=1477045915904&useCors=false]"
+      "data": "loadResourceByLink[/download-files/64kB.jpg?sessionId=2&testId=16&resourceId=6&timestamp=1477128886444&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=1&testId=16&resourceId=6&timestamp=1477045915904&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=16&resourceId=6&timestamp=1477128886444&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886448,
    "testId": "16",
    "state": "ended"
   },
@@ -535,9 +604,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 7,
    "resource": {
-    "path": "http://localhost:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -549,13 +619,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/779kB.js?sessionId=1&testId=17&resourceId=7&timestamp=1477045915982&useCors=false]"
+      "data": "loadResourceByLink[/download-files/779kB.js?sessionId=2&testId=17&resourceId=7&timestamp=1477128886494&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=1&testId=17&resourceId=7&timestamp=1477045915982&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=17&resourceId=7&timestamp=1477128886494&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886498,
    "testId": "17",
    "state": "ended"
   },
@@ -563,9 +636,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 8,
    "resource": {
-    "path": "http://localhost:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -577,13 +651,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/8B.js?sessionId=1&testId=18&resourceId=8&timestamp=1477045916472&useCors=false]"
+      "data": "loadResourceByLink[/download-files/8B.js?sessionId=2&testId=18&resourceId=8&timestamp=1477128886954&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=1&testId=18&resourceId=8&timestamp=1477045916472&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=18&resourceId=8&timestamp=1477128886954&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886957,
    "testId": "18",
    "state": "ended"
   },
@@ -591,9 +668,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 9,
    "resource": {
-    "path": "http://localhost:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -605,13 +683,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[/download-files/pacifico.woff?sessionId=1&testId=19&resourceId=9&timestamp=1477045916527&useCors=false]"
+      "data": "loadResourceByLink[/download-files/pacifico.woff?sessionId=2&testId=19&resourceId=9&timestamp=1477128886986&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=1&testId=19&resourceId=9&timestamp=1477045916527&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=19&resourceId=9&timestamp=1477128886986&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128886989,
    "testId": "19",
    "state": "ended"
   },
@@ -619,9 +700,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -633,7 +715,7 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=20&resourceId=9&timestamp=1477045916690&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=20&resourceId=9&timestamp=1477128887136&useCors=true]"
      },
      "normal": {
       "err": {
@@ -644,10 +726,13 @@
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128887139,
    "testId": "20",
    "state": "ended"
   },
@@ -655,9 +740,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -669,18 +755,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=21&resourceId=8&timestamp=1477045919777&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=21&resourceId=8&timestamp=1477128892182&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=21&resourceId=8&timestamp=1477045919777&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=21&resourceId=8&timestamp=1477128892182&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892186,
    "testId": "21",
    "state": "ended"
   },
@@ -688,9 +777,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -702,18 +792,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=22&resourceId=7&timestamp=1477045919839&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=22&resourceId=7&timestamp=1477128892224&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=22&resourceId=7&timestamp=1477045919839&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=22&resourceId=7&timestamp=1477128892224&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892228,
    "testId": "22",
    "state": "ended"
   },
@@ -721,9 +814,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -735,18 +829,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=23&resourceId=6&timestamp=1477045920310&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=23&resourceId=6&timestamp=1477128892670&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=23&resourceId=6&timestamp=1477045920310&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=23&resourceId=6&timestamp=1477128892670&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892673,
    "testId": "23",
    "state": "ended"
   },
@@ -754,9 +851,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -768,18 +866,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=24&resourceId=5&timestamp=1477045920385&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=24&resourceId=5&timestamp=1477128892720&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=24&resourceId=5&timestamp=1477045920385&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=24&resourceId=5&timestamp=1477128892720&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892725,
    "testId": "24",
    "state": "ended"
   },
@@ -787,9 +888,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -801,18 +903,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=25&resourceId=4&timestamp=1477045920437&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=25&resourceId=4&timestamp=1477128892754&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=25&resourceId=4&timestamp=1477045920437&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=25&resourceId=4&timestamp=1477128892754&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892758,
    "testId": "25",
    "state": "ended"
   },
@@ -820,9 +925,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -834,18 +940,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=26&resourceId=3&timestamp=1477045920510&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=26&resourceId=3&timestamp=1477128892801&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=26&resourceId=3&timestamp=1477045920510&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=26&resourceId=3&timestamp=1477128892801&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892805,
    "testId": "26",
    "state": "ended"
   },
@@ -853,9 +962,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -867,18 +977,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=27&resourceId=2&timestamp=1477045920660&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=27&resourceId=2&timestamp=1477128892887&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=27&resourceId=2&timestamp=1477045920660&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=27&resourceId=2&timestamp=1477128892887&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128892891,
    "testId": "27",
    "state": "ended"
   },
@@ -886,9 +999,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -900,18 +1014,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=28&resourceId=1&timestamp=1477045921062&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=28&resourceId=1&timestamp=1477128893277&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=28&resourceId=1&timestamp=1477045921062&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=28&resourceId=1&timestamp=1477128893277&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128893282,
    "testId": "28",
    "state": "ended"
   },
@@ -919,9 +1036,10 @@
    "name": "<link rel=prefetch>",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -933,18 +1051,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=29&resourceId=0&timestamp=1477045921309&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=29&resourceId=0&timestamp=1477128893358&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=29&resourceId=0&timestamp=1477045921309&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=29&resourceId=0&timestamp=1477128893358&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128893361,
    "testId": "29",
    "state": "ended"
   },
@@ -952,9 +1073,10 @@
    "name": "<object>",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -966,18 +1088,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=30&resourceId=0&timestamp=1477045921398&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=30&resourceId=0&timestamp=1477128893412&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=30&resourceId=0&timestamp=1477045921398&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=30&resourceId=0&timestamp=1477128893412&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128893418,
    "testId": "30",
    "state": "ended"
   },
@@ -985,9 +1110,10 @@
    "name": "<object>",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": false,
       "statusCode": null
@@ -1013,10 +1139,13 @@
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128893469,
    "testId": "31",
    "state": "ended"
   },
@@ -1024,9 +1153,10 @@
    "name": "<object>",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1038,18 +1168,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=32&resourceId=8&timestamp=1477045927529&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=32&resourceId=8&timestamp=1477128903503&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=32&resourceId=8&timestamp=1477045927529&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=32&resourceId=8&timestamp=1477128903503&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128903509,
    "testId": "32",
    "state": "ended"
   },
@@ -1057,9 +1190,10 @@
    "name": "<object>",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1071,18 +1205,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=33&resourceId=7&timestamp=1477045927624&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=33&resourceId=7&timestamp=1477128903703&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=33&resourceId=7&timestamp=1477045927624&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=33&resourceId=7&timestamp=1477128903703&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128903707,
    "testId": "33",
    "state": "ended"
   },
@@ -1090,9 +1227,10 @@
    "name": "<object>",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1104,18 +1242,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=34&resourceId=6&timestamp=1477045929247&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=34&resourceId=6&timestamp=1477128905443&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=34&resourceId=6&timestamp=1477045929247&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=34&resourceId=6&timestamp=1477128905443&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128905453,
    "testId": "34",
    "state": "ended"
   },
@@ -1123,9 +1264,10 @@
    "name": "<object>",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1137,18 +1279,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=35&resourceId=5&timestamp=1477045929319&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=35&resourceId=5&timestamp=1477128905531&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=35&resourceId=5&timestamp=1477045929319&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=35&resourceId=5&timestamp=1477128905531&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128905534,
    "testId": "35",
    "state": "ended"
   },
@@ -1156,9 +1301,10 @@
    "name": "<object>",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1170,18 +1316,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=36&resourceId=4&timestamp=1477045929437&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=36&resourceId=4&timestamp=1477128905610&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=36&resourceId=4&timestamp=1477045929437&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=36&resourceId=4&timestamp=1477128905610&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128905613,
    "testId": "36",
    "state": "ended"
   },
@@ -1189,9 +1338,10 @@
    "name": "<object>",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1203,18 +1353,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=37&resourceId=3&timestamp=1477045929595&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=37&resourceId=3&timestamp=1477128905709&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=37&resourceId=3&timestamp=1477045929595&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=37&resourceId=3&timestamp=1477128905709&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128905712,
    "testId": "37",
    "state": "ended"
   },
@@ -1222,9 +1375,10 @@
    "name": "<object>",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1236,18 +1390,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=38&resourceId=2&timestamp=1477045929780&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=38&resourceId=2&timestamp=1477128905796&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=38&resourceId=2&timestamp=1477045929780&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=38&resourceId=2&timestamp=1477128905796&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128905801,
    "testId": "38",
    "state": "ended"
   },
@@ -1255,9 +1412,10 @@
    "name": "<object>",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1269,18 +1427,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=39&resourceId=1&timestamp=1477045930297&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=39&resourceId=1&timestamp=1477128906173&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=39&resourceId=1&timestamp=1477045930297&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=39&resourceId=1&timestamp=1477128906173&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128906179,
    "testId": "39",
    "state": "ended"
   },
@@ -1288,9 +1449,10 @@
    "name": "<object>",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1302,18 +1464,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=40&resourceId=0&timestamp=1477045930581&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=40&resourceId=0&timestamp=1477128906351&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=40&resourceId=0&timestamp=1477045930581&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=40&resourceId=0&timestamp=1477128906351&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128906371,
    "testId": "40",
    "state": "ended"
   },
@@ -1321,9 +1486,10 @@
    "name": "<object>",
    "resourceId": 0,
    "resource": {
-    "path": "http://localhost:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1335,13 +1501,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/11B.css?sessionId=1&testId=41&resourceId=0&timestamp=1477045930672&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/11B.css?sessionId=2&testId=41&resourceId=0&timestamp=1477128906420&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=1&testId=41&resourceId=0&timestamp=1477045930672&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=41&resourceId=0&timestamp=1477128906420&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128906424,
    "testId": "41",
    "state": "ended"
   },
@@ -1349,9 +1518,10 @@
    "name": "<object>",
    "resourceId": 1,
    "resource": {
-    "path": "http://localhost:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1363,13 +1533,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=1&testId=42&resourceId=1&timestamp=1477045930754&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=2&testId=42&resourceId=1&timestamp=1477128906476&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=1&testId=42&resourceId=1&timestamp=1477045930754&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=42&resourceId=1&timestamp=1477128906476&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128906481,
    "testId": "42",
    "state": "ended"
   },
@@ -1377,9 +1550,10 @@
    "name": "<object>",
    "resourceId": 2,
    "resource": {
-    "path": "http://localhost:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1391,13 +1565,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/1516kB.jpg?sessionId=1&testId=43&resourceId=2&timestamp=1477045930937&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/1516kB.jpg?sessionId=2&testId=43&resourceId=2&timestamp=1477128906637&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=1&testId=43&resourceId=2&timestamp=1477045930937&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=43&resourceId=2&timestamp=1477128906637&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128906641,
    "testId": "43",
    "state": "ended"
   },
@@ -1405,9 +1582,10 @@
    "name": "<object>",
    "resourceId": 3,
    "resource": {
-    "path": "http://localhost:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1419,13 +1597,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=1&testId=44&resourceId=3&timestamp=1477045931381&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=2&testId=44&resourceId=3&timestamp=1477128907016&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=1&testId=44&resourceId=3&timestamp=1477045931381&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=44&resourceId=3&timestamp=1477128907016&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128907021,
    "testId": "44",
    "state": "ended"
   },
@@ -1433,9 +1614,10 @@
    "name": "<object>",
    "resourceId": 4,
    "resource": {
-    "path": "http://localhost:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1447,13 +1629,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=1&testId=45&resourceId=4&timestamp=1477045931515&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=2&testId=45&resourceId=4&timestamp=1477128907192&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=1&testId=45&resourceId=4&timestamp=1477045931515&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=45&resourceId=4&timestamp=1477128907192&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128907198,
    "testId": "45",
    "state": "ended"
   },
@@ -1461,9 +1646,10 @@
    "name": "<object>",
    "resourceId": 5,
    "resource": {
-    "path": "http://localhost:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1475,13 +1661,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=1&testId=46&resourceId=5&timestamp=1477045931657&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=2&testId=46&resourceId=5&timestamp=1477128907289&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=1&testId=46&resourceId=5&timestamp=1477045931657&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=46&resourceId=5&timestamp=1477128907289&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128907293,
    "testId": "46",
    "state": "ended"
   },
@@ -1489,9 +1678,10 @@
    "name": "<object>",
    "resourceId": 6,
    "resource": {
-    "path": "http://localhost:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1503,13 +1693,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=1&testId=47&resourceId=6&timestamp=1477045931779&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=2&testId=47&resourceId=6&timestamp=1477128907370&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=1&testId=47&resourceId=6&timestamp=1477045931779&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=47&resourceId=6&timestamp=1477128907370&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128907374,
    "testId": "47",
    "state": "ended"
   },
@@ -1517,9 +1710,10 @@
    "name": "<object>",
    "resourceId": 7,
    "resource": {
-    "path": "http://localhost:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1531,13 +1725,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=1&testId=48&resourceId=7&timestamp=1477045931862&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=2&testId=48&resourceId=7&timestamp=1477128907435&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=1&testId=48&resourceId=7&timestamp=1477045931862&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=48&resourceId=7&timestamp=1477128907435&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128907439,
    "testId": "48",
    "state": "ended"
   },
@@ -1545,9 +1742,10 @@
    "name": "<object>",
    "resourceId": 8,
    "resource": {
-    "path": "http://localhost:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1559,13 +1757,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/8B.js?sessionId=1&testId=49&resourceId=8&timestamp=1477045933563&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/8B.js?sessionId=2&testId=49&resourceId=8&timestamp=1477128909050&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=1&testId=49&resourceId=8&timestamp=1477045933563&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=49&resourceId=8&timestamp=1477128909050&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128909054,
    "testId": "49",
    "state": "ended"
   },
@@ -1573,9 +1774,10 @@
    "name": "<object>",
    "resourceId": 9,
    "resource": {
-    "path": "http://localhost:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": false,
       "statusCode": null
@@ -1593,10 +1795,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=1&testId=50&resourceId=9&timestamp=1477045933662&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=50&resourceId=9&timestamp=1477128909111&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128909115,
    "testId": "50",
    "state": "ended"
   },
@@ -1604,9 +1809,10 @@
    "name": "<object>",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": false,
       "statusCode": null
@@ -1624,15 +1830,18 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=51&resourceId=9&timestamp=1477045936825&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=51&resourceId=9&timestamp=1477128914554&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128914562,
    "testId": "51",
    "state": "ended"
   },
@@ -1640,9 +1849,10 @@
    "name": "<object>",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1654,18 +1864,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=52&resourceId=8&timestamp=1477045939980&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=52&resourceId=8&timestamp=1477128919925&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=52&resourceId=8&timestamp=1477045939980&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=52&resourceId=8&timestamp=1477128919925&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128919929,
    "testId": "52",
    "state": "ended"
   },
@@ -1673,9 +1886,10 @@
    "name": "<object>",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1687,18 +1901,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=53&resourceId=7&timestamp=1477045940057&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=53&resourceId=7&timestamp=1477128919982&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=53&resourceId=7&timestamp=1477045940057&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=53&resourceId=7&timestamp=1477128919982&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128919986,
    "testId": "53",
    "state": "ended"
   },
@@ -1706,9 +1923,10 @@
    "name": "<object>",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1720,18 +1938,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=54&resourceId=6&timestamp=1477045941645&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=54&resourceId=6&timestamp=1477128921498&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=54&resourceId=6&timestamp=1477045941645&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=54&resourceId=6&timestamp=1477128921498&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128921502,
    "testId": "54",
    "state": "ended"
   },
@@ -1739,9 +1960,10 @@
    "name": "<object>",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1753,18 +1975,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=55&resourceId=5&timestamp=1477045941716&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=55&resourceId=5&timestamp=1477128921576&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=55&resourceId=5&timestamp=1477045941716&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=55&resourceId=5&timestamp=1477128921576&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128921580,
    "testId": "55",
    "state": "ended"
   },
@@ -1772,9 +1997,10 @@
    "name": "<object>",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1786,18 +2012,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=56&resourceId=4&timestamp=1477045941845&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=56&resourceId=4&timestamp=1477128921639&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=56&resourceId=4&timestamp=1477045941845&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=56&resourceId=4&timestamp=1477128921639&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128921643,
    "testId": "56",
    "state": "ended"
   },
@@ -1805,9 +2034,10 @@
    "name": "<object>",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1819,18 +2049,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=57&resourceId=3&timestamp=1477045942030&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=57&resourceId=3&timestamp=1477128921738&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=57&resourceId=3&timestamp=1477045942030&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=57&resourceId=3&timestamp=1477128921738&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128921741,
    "testId": "57",
    "state": "ended"
   },
@@ -1838,9 +2071,10 @@
    "name": "<object>",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1852,18 +2086,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=58&resourceId=2&timestamp=1477045942144&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=58&resourceId=2&timestamp=1477128921828&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=58&resourceId=2&timestamp=1477045942144&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=58&resourceId=2&timestamp=1477128921828&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128921832,
    "testId": "58",
    "state": "ended"
   },
@@ -1871,9 +2108,10 @@
    "name": "<object>",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1885,18 +2123,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=59&resourceId=1&timestamp=1477045942670&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=59&resourceId=1&timestamp=1477128922188&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=59&resourceId=1&timestamp=1477045942670&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=59&resourceId=1&timestamp=1477128922188&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128922193,
    "testId": "59",
    "state": "ended"
   },
@@ -1904,9 +2145,10 @@
    "name": "new Image()",
    "resourceId": 1,
    "resource": {
-    "path": "http://localhost:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1920,17 +2162,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=1&testId=60&resourceId=1&timestamp=1477045942986&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=2&testId=60&resourceId=1&timestamp=1477128922488&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=1&testId=60&resourceId=1&timestamp=1477045942986&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=60&resourceId=1&timestamp=1477128922488&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128922492,
    "testId": "60",
    "state": "ended"
   },
@@ -1938,9 +2183,10 @@
    "name": "new Image()",
    "resourceId": 0,
    "resource": {
-    "path": "http://localhost:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1954,17 +2200,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=1&testId=61&resourceId=0&timestamp=1477045943111&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=2&testId=61&resourceId=0&timestamp=1477128922579&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=1&testId=61&resourceId=0&timestamp=1477045943111&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=61&resourceId=0&timestamp=1477128922579&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128922586,
    "testId": "61",
    "state": "ended"
   },
@@ -1972,9 +2221,10 @@
    "name": "new Image()",
    "resourceId": 2,
    "resource": {
-    "path": "http://localhost:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -1986,13 +2236,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=1&testId=62&resourceId=2&timestamp=1477045943185&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=2&testId=62&resourceId=2&timestamp=1477128922641&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=1&testId=62&resourceId=2&timestamp=1477045943185&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=62&resourceId=2&timestamp=1477128922641&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128922647,
    "testId": "62",
    "state": "ended"
   },
@@ -2000,9 +2253,10 @@
    "name": "new Image()",
    "resourceId": 3,
    "resource": {
-    "path": "http://localhost:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2014,13 +2268,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=1&testId=63&resourceId=3&timestamp=1477045943607&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=2&testId=63&resourceId=3&timestamp=1477128922987&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=1&testId=63&resourceId=3&timestamp=1477045943607&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=63&resourceId=3&timestamp=1477128922987&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128922996,
    "testId": "63",
    "state": "ended"
   },
@@ -2028,9 +2285,10 @@
    "name": "new Image()",
    "resourceId": 4,
    "resource": {
-    "path": "http://localhost:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2044,17 +2302,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=1&testId=64&resourceId=4&timestamp=1477045943708&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=2&testId=64&resourceId=4&timestamp=1477128923143&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=1&testId=64&resourceId=4&timestamp=1477045943708&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=64&resourceId=4&timestamp=1477128923143&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923148,
    "testId": "64",
    "state": "ended"
   },
@@ -2062,9 +2323,10 @@
    "name": "new Image()",
    "resourceId": 5,
    "resource": {
-    "path": "http://localhost:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2078,17 +2340,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=1&testId=65&resourceId=5&timestamp=1477045943795&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=2&testId=65&resourceId=5&timestamp=1477128923226&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=1&testId=65&resourceId=5&timestamp=1477045943795&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=65&resourceId=5&timestamp=1477128923226&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923229,
    "testId": "65",
    "state": "ended"
   },
@@ -2096,9 +2361,10 @@
    "name": "new Image()",
    "resourceId": 6,
    "resource": {
-    "path": "http://localhost:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2110,13 +2376,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=1&testId=66&resourceId=6&timestamp=1477045943868&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=2&testId=66&resourceId=6&timestamp=1477128923267&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=1&testId=66&resourceId=6&timestamp=1477045943868&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=66&resourceId=6&timestamp=1477128923267&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923271,
    "testId": "66",
    "state": "ended"
   },
@@ -2124,9 +2393,10 @@
    "name": "new Image()",
    "resourceId": 7,
    "resource": {
-    "path": "http://localhost:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2140,17 +2410,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=1&testId=67&resourceId=7&timestamp=1477045943939&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=2&testId=67&resourceId=7&timestamp=1477128923317&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=1&testId=67&resourceId=7&timestamp=1477045943939&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=67&resourceId=7&timestamp=1477128923317&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923323,
    "testId": "67",
    "state": "ended"
   },
@@ -2158,9 +2431,10 @@
    "name": "new Image()",
    "resourceId": 8,
    "resource": {
-    "path": "http://localhost:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2174,17 +2448,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=1&testId=68&resourceId=8&timestamp=1477045944165&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=2&testId=68&resourceId=8&timestamp=1477128923531&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=1&testId=68&resourceId=8&timestamp=1477045944165&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=68&resourceId=8&timestamp=1477128923531&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923535,
    "testId": "68",
    "state": "ended"
   },
@@ -2192,9 +2469,10 @@
    "name": "new Image()",
    "resourceId": 9,
    "resource": {
-    "path": "http://localhost:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2208,17 +2486,20 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=1&testId=69&resourceId=9&timestamp=1477045944213&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=2&testId=69&resourceId=9&timestamp=1477128923571&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=1&testId=69&resourceId=9&timestamp=1477045944213&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=69&resourceId=9&timestamp=1477128923571&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923575,
    "testId": "69",
    "state": "ended"
   },
@@ -2226,9 +2507,10 @@
    "name": "new Image()",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2242,22 +2524,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=70&resourceId=0&timestamp=1477045944373&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=70&resourceId=0&timestamp=1477128923717&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=70&resourceId=0&timestamp=1477045944373&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=70&resourceId=0&timestamp=1477128923717&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923720,
    "testId": "70",
    "state": "ended"
   },
@@ -2265,9 +2550,10 @@
    "name": "new Image()",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2281,22 +2567,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=71&resourceId=9&timestamp=1477045944450&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=71&resourceId=9&timestamp=1477128923773&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=71&resourceId=9&timestamp=1477045944450&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=71&resourceId=9&timestamp=1477128923773&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923778,
    "testId": "71",
    "state": "ended"
   },
@@ -2304,9 +2593,10 @@
    "name": "new Image()",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2320,22 +2610,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=72&resourceId=8&timestamp=1477045944610&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=72&resourceId=8&timestamp=1477128923919&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=72&resourceId=8&timestamp=1477045944610&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=72&resourceId=8&timestamp=1477128923919&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923923,
    "testId": "72",
    "state": "ended"
   },
@@ -2343,9 +2636,10 @@
    "name": "new Image()",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2359,22 +2653,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=73&resourceId=7&timestamp=1477045944670&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=73&resourceId=7&timestamp=1477128923960&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=73&resourceId=7&timestamp=1477045944670&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=73&resourceId=7&timestamp=1477128923960&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128923963,
    "testId": "73",
    "state": "ended"
   },
@@ -2382,9 +2679,10 @@
    "name": "new Image()",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2396,18 +2694,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=74&resourceId=6&timestamp=1477045944896&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=74&resourceId=6&timestamp=1477128924163&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=74&resourceId=6&timestamp=1477045944896&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=74&resourceId=6&timestamp=1477128924163&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924166,
    "testId": "74",
    "state": "ended"
   },
@@ -2415,9 +2716,10 @@
    "name": "new Image()",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2431,22 +2733,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=75&resourceId=5&timestamp=1477045944962&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=75&resourceId=5&timestamp=1477128924212&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=75&resourceId=5&timestamp=1477045944962&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=75&resourceId=5&timestamp=1477128924212&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924217,
    "testId": "75",
    "state": "ended"
   },
@@ -2454,9 +2759,10 @@
    "name": "new Image()",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2470,22 +2776,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=76&resourceId=4&timestamp=1477045945030&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=76&resourceId=4&timestamp=1477128924260&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=76&resourceId=4&timestamp=1477045945030&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=76&resourceId=4&timestamp=1477128924260&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924264,
    "testId": "76",
    "state": "ended"
   },
@@ -2493,9 +2802,10 @@
    "name": "new Image()",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2507,18 +2817,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=77&resourceId=3&timestamp=1477045945090&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=77&resourceId=3&timestamp=1477128924305&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=77&resourceId=3&timestamp=1477045945090&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=77&resourceId=3&timestamp=1477128924305&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924309,
    "testId": "77",
    "state": "ended"
   },
@@ -2526,9 +2839,10 @@
    "name": "new Image()",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2540,18 +2854,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=78&resourceId=2&timestamp=1477045945192&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=78&resourceId=2&timestamp=1477128924392&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=78&resourceId=2&timestamp=1477045945192&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=78&resourceId=2&timestamp=1477128924392&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924397,
    "testId": "78",
    "state": "ended"
   },
@@ -2559,9 +2876,10 @@
    "name": "new Image()",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2575,22 +2893,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=79&resourceId=1&timestamp=1477045945647&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=79&resourceId=1&timestamp=1477128924736&useCors=true]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=79&resourceId=1&timestamp=1477045945647&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=79&resourceId=1&timestamp=1477128924736&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924748,
    "testId": "79",
    "state": "ended"
   },
@@ -2598,9 +2919,10 @@
    "name": "new Image()",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2614,22 +2936,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=80&resourceId=0&timestamp=1477045945767&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=80&resourceId=0&timestamp=1477128924897&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=80&resourceId=0&timestamp=1477045945767&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=80&resourceId=0&timestamp=1477128924897&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924903,
    "testId": "80",
    "state": "ended"
   },
@@ -2637,9 +2962,10 @@
    "name": "new Image()",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2653,22 +2979,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=81&resourceId=1&timestamp=1477045945832&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=81&resourceId=1&timestamp=1477128924942&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=81&resourceId=1&timestamp=1477045945832&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=81&resourceId=1&timestamp=1477128924942&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128924947,
    "testId": "81",
    "state": "ended"
   },
@@ -2676,9 +3005,10 @@
    "name": "new Image()",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2690,18 +3020,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=82&resourceId=2&timestamp=1477045945973&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=82&resourceId=2&timestamp=1477128925029&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=82&resourceId=2&timestamp=1477045945973&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=82&resourceId=2&timestamp=1477128925029&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925036,
    "testId": "82",
    "state": "ended"
   },
@@ -2709,9 +3042,10 @@
    "name": "new Image()",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2723,18 +3057,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=83&resourceId=3&timestamp=1477045946399&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=83&resourceId=3&timestamp=1477128925373&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=83&resourceId=3&timestamp=1477045946399&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=83&resourceId=3&timestamp=1477128925373&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925382,
    "testId": "83",
    "state": "ended"
   },
@@ -2742,9 +3079,10 @@
    "name": "new Image()",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2758,22 +3096,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=84&resourceId=4&timestamp=1477045946510&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=84&resourceId=4&timestamp=1477128925534&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=84&resourceId=4&timestamp=1477045946510&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=84&resourceId=4&timestamp=1477128925534&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925547,
    "testId": "84",
    "state": "ended"
   },
@@ -2781,9 +3122,10 @@
    "name": "new Image()",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2797,22 +3139,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=85&resourceId=5&timestamp=1477045946621&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=85&resourceId=5&timestamp=1477128925615&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=85&resourceId=5&timestamp=1477045946621&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=85&resourceId=5&timestamp=1477128925615&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925619,
    "testId": "85",
    "state": "ended"
   },
@@ -2820,9 +3165,10 @@
    "name": "new Image()",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2834,18 +3180,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=86&resourceId=6&timestamp=1477045946685&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=86&resourceId=6&timestamp=1477128925660&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=86&resourceId=6&timestamp=1477045946685&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=86&resourceId=6&timestamp=1477128925660&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925664,
    "testId": "86",
    "state": "ended"
   },
@@ -2853,9 +3202,10 @@
    "name": "new Image()",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2869,22 +3219,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=87&resourceId=7&timestamp=1477045946750&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=87&resourceId=7&timestamp=1477128925719&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=87&resourceId=7&timestamp=1477045946750&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=87&resourceId=7&timestamp=1477128925719&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925724,
    "testId": "87",
    "state": "ended"
   },
@@ -2892,9 +3245,10 @@
    "name": "new Image()",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2908,22 +3262,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=88&resourceId=8&timestamp=1477045946980&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=88&resourceId=8&timestamp=1477128925930&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=88&resourceId=8&timestamp=1477045946980&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=88&resourceId=8&timestamp=1477128925930&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925934,
    "testId": "88",
    "state": "ended"
   },
@@ -2931,9 +3288,10 @@
    "name": "new Image()",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2947,7 +3305,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=89&resourceId=9&timestamp=1477045947034&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=89&resourceId=9&timestamp=1477128925967&useCors=false]",
        "event": {
         "type": "error"
        }
@@ -2962,10 +3320,13 @@
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128925971,
    "testId": "89",
    "state": "ended"
   },
@@ -2973,9 +3334,10 @@
    "name": "XHR",
    "resourceId": 5,
    "resource": {
-    "path": "http://localhost:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -2987,13 +3349,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=1&testId=90&resourceId=5&timestamp=1477045950078&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=2&testId=90&resourceId=5&timestamp=1477128931005&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=1&testId=90&resourceId=5&timestamp=1477045950078&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=90&resourceId=5&timestamp=1477128931005&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931009,
    "testId": "90",
    "state": "ended"
   },
@@ -3001,9 +3366,10 @@
    "name": "XHR",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3015,18 +3381,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=91&resourceId=9&timestamp=1477045950141&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=91&resourceId=9&timestamp=1477128931051&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=91&resourceId=9&timestamp=1477045950141&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=91&resourceId=9&timestamp=1477128931051&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931054,
    "testId": "91",
    "state": "ended"
   },
@@ -3034,9 +3403,10 @@
    "name": "XHR",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3050,22 +3420,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=92&resourceId=2&timestamp=1477045950307&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=92&resourceId=2&timestamp=1477128931197&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=92&resourceId=2&timestamp=1477045950307&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=92&resourceId=2&timestamp=1477128931197&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931200,
    "testId": "92",
    "state": "ended"
   },
@@ -3073,9 +3446,10 @@
    "name": "XHR",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3089,22 +3463,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=93&resourceId=3&timestamp=1477045950773&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=93&resourceId=3&timestamp=1477128931580&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=93&resourceId=3&timestamp=1477045950773&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=93&resourceId=3&timestamp=1477128931580&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931583,
    "testId": "93",
    "state": "ended"
   },
@@ -3112,9 +3489,10 @@
    "name": "XHR",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3128,22 +3506,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=94&resourceId=4&timestamp=1477045950992&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=94&resourceId=4&timestamp=1477128931681&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=94&resourceId=4&timestamp=1477045950992&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=94&resourceId=4&timestamp=1477128931681&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931685,
    "testId": "94",
    "state": "ended"
   },
@@ -3151,38 +3532,42 @@
    "name": "XHR",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=95&resourceId=5&timestamp=1477045951060&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=95&resourceId=5&timestamp=1477128931751&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=95&resourceId=5&timestamp=1477045951060&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=95&resourceId=5&timestamp=1477128931751&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931755,
    "testId": "95",
    "state": "ended"
   },
@@ -3190,9 +3575,10 @@
    "name": "XHR",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3206,22 +3592,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=96&resourceId=6&timestamp=1477045951126&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=96&resourceId=6&timestamp=1477128931817&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=96&resourceId=6&timestamp=1477045951126&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=96&resourceId=6&timestamp=1477128931817&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931821,
    "testId": "96",
    "state": "ended"
   },
@@ -3229,9 +3618,10 @@
    "name": "XHR",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3245,22 +3635,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=97&resourceId=7&timestamp=1477045951211&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=97&resourceId=7&timestamp=1477128931885&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=97&resourceId=7&timestamp=1477045951211&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=97&resourceId=7&timestamp=1477128931885&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128931889,
    "testId": "97",
    "state": "ended"
   },
@@ -3268,9 +3661,10 @@
    "name": "XHR",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3284,22 +3678,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=98&resourceId=8&timestamp=1477045951454&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=98&resourceId=8&timestamp=1477128932104&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=98&resourceId=8&timestamp=1477045951454&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=98&resourceId=8&timestamp=1477128932104&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128932107,
    "testId": "98",
    "state": "ended"
   },
@@ -3307,9 +3704,10 @@
    "name": "XHR",
    "resourceId": 9,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3323,7 +3721,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/pacifico.woff?sessionId=1&testId=99&resourceId=9&timestamp=1477045951518&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=99&resourceId=9&timestamp=1477128932147&useCors=false]",
        "event": {
         "type": "error"
        }
@@ -3338,10 +3736,13 @@
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128932152,
    "testId": "99",
    "state": "ended"
   },
@@ -3349,9 +3750,10 @@
    "name": "XHR",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3363,18 +3765,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=100&resourceId=0&timestamp=1477045954570&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=100&resourceId=0&timestamp=1477128937189&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=100&resourceId=0&timestamp=1477045954570&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=100&resourceId=0&timestamp=1477128937189&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128937193,
    "testId": "100",
    "state": "ended"
   },
@@ -3382,9 +3787,10 @@
    "name": "XHR",
    "resourceId": 9,
    "resource": {
-    "path": "http://localhost:3002/download-files/pacifico.woff",
-    "resourceId": 9,
+    "src": "/download-files/pacifico.woff",
+    "type": "font",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/pacifico.woff",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3396,13 +3802,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=1&testId=101&resourceId=9&timestamp=1477045954653&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=2&testId=101&resourceId=9&timestamp=1477128937255&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=1&testId=101&resourceId=9&timestamp=1477045954653&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=101&resourceId=9&timestamp=1477128937255&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128937261,
    "testId": "101",
    "state": "ended"
   },
@@ -3410,9 +3819,10 @@
    "name": "XHR",
    "resourceId": 8,
    "resource": {
-    "path": "http://localhost:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3424,13 +3834,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=1&testId=102&resourceId=8&timestamp=1477045954820&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=2&testId=102&resourceId=8&timestamp=1477128937407&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=1&testId=102&resourceId=8&timestamp=1477045954820&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=102&resourceId=8&timestamp=1477128937407&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128937411,
    "testId": "102",
    "state": "ended"
   },
@@ -3438,9 +3851,10 @@
    "name": "XHR",
    "resourceId": 7,
    "resource": {
-    "path": "http://localhost:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3452,13 +3866,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=1&testId=103&resourceId=7&timestamp=1477045954876&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=2&testId=103&resourceId=7&timestamp=1477128937447&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=1&testId=103&resourceId=7&timestamp=1477045954876&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=103&resourceId=7&timestamp=1477128937447&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128937452,
    "testId": "103",
    "state": "ended"
   },
@@ -3466,9 +3883,10 @@
    "name": "XHR",
    "resourceId": 6,
    "resource": {
-    "path": "http://localhost:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3480,13 +3898,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=1&testId=104&resourceId=6&timestamp=1477045955399&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=2&testId=104&resourceId=6&timestamp=1477128937939&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=1&testId=104&resourceId=6&timestamp=1477045955399&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=104&resourceId=6&timestamp=1477128937939&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128937942,
    "testId": "104",
    "state": "ended"
   },
@@ -3494,9 +3915,10 @@
    "name": "XHR",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3510,22 +3932,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=105&resourceId=1&timestamp=1477045955499&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=105&resourceId=1&timestamp=1477128937996&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=105&resourceId=1&timestamp=1477045955499&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=105&resourceId=1&timestamp=1477128937996&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938000,
    "testId": "105",
    "state": "ended"
   },
@@ -3533,9 +3958,10 @@
    "name": "XHR",
    "resourceId": 4,
    "resource": {
-    "path": "http://localhost:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3547,13 +3973,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=1&testId=106&resourceId=4&timestamp=1477045955623&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=2&testId=106&resourceId=4&timestamp=1477128938088&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=1&testId=106&resourceId=4&timestamp=1477045955623&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=106&resourceId=4&timestamp=1477128938088&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938094,
    "testId": "106",
    "state": "ended"
   },
@@ -3561,9 +3990,10 @@
    "name": "XHR",
    "resourceId": 3,
    "resource": {
-    "path": "http://localhost:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3575,13 +4005,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=1&testId=107&resourceId=3&timestamp=1477045955691&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=2&testId=107&resourceId=3&timestamp=1477128938143&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=1&testId=107&resourceId=3&timestamp=1477045955691&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=107&resourceId=3&timestamp=1477128938143&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938147,
    "testId": "107",
    "state": "ended"
   },
@@ -3589,9 +4022,10 @@
    "name": "XHR",
    "resourceId": 2,
    "resource": {
-    "path": "http://localhost:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3603,13 +4037,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=1&testId=108&resourceId=2&timestamp=1477045955802&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=2&testId=108&resourceId=2&timestamp=1477128938245&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=1&testId=108&resourceId=2&timestamp=1477045955802&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=108&resourceId=2&timestamp=1477128938245&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938249,
    "testId": "108",
    "state": "ended"
   },
@@ -3617,9 +4054,10 @@
    "name": "XHR",
    "resourceId": 1,
    "resource": {
-    "path": "http://localhost:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3631,13 +4069,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=1&testId=109&resourceId=1&timestamp=1477045956236&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=2&testId=109&resourceId=1&timestamp=1477128938673&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=1&testId=109&resourceId=1&timestamp=1477045956236&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=109&resourceId=1&timestamp=1477128938673&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938679,
    "testId": "109",
    "state": "ended"
   },
@@ -3645,9 +4086,10 @@
    "name": "XHR",
    "resourceId": 0,
    "resource": {
-    "path": "http://localhost:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests1:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3659,13 +4101,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=1&testId=110&resourceId=0&timestamp=1477045956466&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=2&testId=110&resourceId=0&timestamp=1477128938844&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=1&testId=110&resourceId=0&timestamp=1477045956466&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=110&resourceId=0&timestamp=1477128938844&useCors=false]"
      }
     }
    },
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938849,
    "testId": "110",
    "state": "ended"
   },
@@ -3673,9 +4118,10 @@
    "name": "XHR",
    "resourceId": 1,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/146kB.css",
-    "resourceId": 1,
+    "src": "/download-files/146kB.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/146kB.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3687,18 +4133,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=111&resourceId=1&timestamp=1477045956523&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=111&resourceId=1&timestamp=1477128938880&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/146kB.css?sessionId=1&testId=111&resourceId=1&timestamp=1477045956523&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=111&resourceId=1&timestamp=1477128938880&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938884,
    "testId": "111",
    "state": "ended"
   },
@@ -3706,9 +4155,10 @@
    "name": "XHR",
    "resourceId": 2,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/1516kB.jpg",
-    "resourceId": 2,
+    "src": "/download-files/1516kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/1516kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3720,18 +4170,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=112&resourceId=2&timestamp=1477045956648&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=112&resourceId=2&timestamp=1477128938979&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/1516kB.jpg?sessionId=1&testId=112&resourceId=2&timestamp=1477045956648&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=112&resourceId=2&timestamp=1477128938979&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128938984,
    "testId": "112",
    "state": "ended"
   },
@@ -3739,9 +4192,10 @@
    "name": "XHR",
    "resourceId": 3,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/256kB.jpg",
-    "resourceId": 3,
+    "src": "/download-files/256kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/256kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3753,18 +4207,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=113&resourceId=3&timestamp=1477045957127&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=113&resourceId=3&timestamp=1477128939409&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/256kB.jpg?sessionId=1&testId=113&resourceId=3&timestamp=1477045957127&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=113&resourceId=3&timestamp=1477128939409&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128939414,
    "testId": "113",
    "state": "ended"
   },
@@ -3772,9 +4229,10 @@
    "name": "XHR",
    "resourceId": 4,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/30.8kB.js",
-    "resourceId": 4,
+    "src": "/download-files/30.8kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/30.8kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3786,18 +4244,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=114&resourceId=4&timestamp=1477045957373&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=114&resourceId=4&timestamp=1477128939602&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/30.8kB.js?sessionId=1&testId=114&resourceId=4&timestamp=1477045957373&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=114&resourceId=4&timestamp=1477128939602&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128939607,
    "testId": "114",
    "state": "ended"
   },
@@ -3805,9 +4266,10 @@
    "name": "XHR",
    "resourceId": 5,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/6.9kB.js",
-    "resourceId": 5,
+    "src": "/download-files/6.9kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/6.9kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3819,18 +4281,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=115&resourceId=5&timestamp=1477045957459&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=115&resourceId=5&timestamp=1477128939675&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/6.9kB.js?sessionId=1&testId=115&resourceId=5&timestamp=1477045957459&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=115&resourceId=5&timestamp=1477128939675&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128939678,
    "testId": "115",
    "state": "ended"
   },
@@ -3838,9 +4303,10 @@
    "name": "XHR",
    "resourceId": 6,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/64kB.jpg",
-    "resourceId": 6,
+    "src": "/download-files/64kB.jpg",
+    "type": "img",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/64kB.jpg",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3852,18 +4318,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=116&resourceId=6&timestamp=1477045957510&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=116&resourceId=6&timestamp=1477128939712&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://127.0.0.1:3002/download-files/64kB.jpg?sessionId=1&testId=116&resourceId=6&timestamp=1477045957510&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=116&resourceId=6&timestamp=1477128939712&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128939716,
    "testId": "116",
    "state": "ended"
   },
@@ -3871,9 +4340,10 @@
    "name": "XHR",
    "resourceId": 7,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/779kB.js",
-    "resourceId": 7,
+    "src": "/download-files/779kB.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/779kB.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3885,18 +4355,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=117&resourceId=7&timestamp=1477045957584&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=117&resourceId=7&timestamp=1477128939780&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/779kB.js?sessionId=1&testId=117&resourceId=7&timestamp=1477045957584&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=117&resourceId=7&timestamp=1477128939780&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128939785,
    "testId": "117",
    "state": "ended"
   },
@@ -3904,9 +4377,10 @@
    "name": "XHR",
    "resourceId": 8,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/8B.js",
-    "resourceId": 8,
+    "src": "/download-files/8B.js",
+    "type": "script",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/8B.js",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3918,18 +4392,21 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=118&resourceId=8&timestamp=1477045958060&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=118&resourceId=8&timestamp=1477128940279&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://127.0.0.1:3002/download-files/8B.js?sessionId=1&testId=118&resourceId=8&timestamp=1477045958060&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=118&resourceId=8&timestamp=1477128940279&useCors=true]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": true,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128940283,
    "testId": "118",
    "state": "ended"
   },
@@ -3937,9 +4414,10 @@
    "name": "XHR",
    "resourceId": 0,
    "resource": {
-    "path": "http://127.0.0.1:3002/download-files/11B.css",
-    "resourceId": 0,
+    "src": "/download-files/11B.css",
+    "type": "css",
     "server": {
+     "path": "http://resource-prefetch-tests2:3002/download-files/11B.css",
      "prefetch": {
       "requested": true,
       "statusCode": 200
@@ -3953,22 +4431,25 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=119&resourceId=0&timestamp=1477045958115&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=119&resourceId=0&timestamp=1477128940315&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://127.0.0.1:3002/download-files/11B.css?sessionId=1&testId=119&resourceId=0&timestamp=1477045958115&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=119&resourceId=0&timestamp=1477128940315&useCors=false]"
      }
     }
    },
    "protocol": "http:",
-   "hostname": "127.0.0.1",
+   "hostname": "resource-prefetch-tests2",
    "port": "3002",
    "useCors": false,
    "crossDomain": true,
+   "prefetchTimeoutMs": 5000,
+   "loadResourceNormallyTimeoutMs": 5000,
+   "timestamp": 1477128940319,
    "testId": "119",
    "state": "ended"
   }
