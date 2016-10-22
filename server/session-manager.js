@@ -18,12 +18,14 @@ module.exports = class SessionManager {
       active: true
     });
     this.sessions[id] = session;
+
     return session;
   }
 
   endSession(sessionId) {
     const session = this.sessions[sessionId];
     session.active = false;
+
     return session;
   }
 
@@ -36,11 +38,13 @@ module.exports = class SessionManager {
     if (strict === true && !session) {
       throw new Error("session " + sessionId + " does not exist");
     }
+
     return session;
   }
 
   makeSessionFilename(session) {
     const ua = uaParser(session.userAgent);
+
     return session.timestamp + "-" + session.sessionId + "-" + ua.browser.name + "-" + ua.browser.version;
   }
 
@@ -58,42 +62,68 @@ module.exports = class SessionManager {
     const test = Object.assign({}, attrs, {
       timestamp: Date.now(),
       testId,
-      state: "prefetch",
-      resource: null
+      state: "prefetch"
     });
     session.tests[testId] = test;
+
     return test;
+  }
+
+  newResource(resourceId, resourcePath) {
+    return {
+      resourceId: resourceId,
+      server: this.newServerResults(resourcePath)
+    };
+  }
+
+  newServerResults(resourcePath) {
+    return {
+      path: resourcePath,
+      prefetch: {
+        requested: false,
+        statusCode: null
+      },
+      normal: {
+        requested: false,
+        statusCode: null
+      }
+    };
+  }
+
+  ensureHasResource(test, resourceId, resourcePath) {
+    if (!test.resource) {
+      test.resource = this.newResource(resourceId, resourcePath);
+    }
+    if (!test.resource.server) {
+      test.resource.server = this.newServerResults(resourcePath);
+    }
+    return test.resource;
   }
 
   testResourceRequest(sessionId, testId, resourceId, resourcePath) {
+    console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
-    test.resource = test.resource || {
-      path: resourcePath,
-      resourceId: resourceId,
-      server: {
-        prefetch: {
-          requested: false,
-          statusCode: null
-        },
-        normal: {
-          requested: false,
-          statusCode: null
-        }
-      }
-    };
-    const resource = test.resource;
+    console.log("testResourceRequest", "session", Boolean(session), "test", Boolean(test));
+
+    const resource = this.ensureHasResource(test, resourceId, resourcePath);
+
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
     prefetchOrNormal.requested = true;
+
     return test;
   }
 
-  testResourceResponse(sessionId, testId, resourceId, statusCode) {
+  testResourceResponse(sessionId, testId, resourceId, resourcePath, statusCode) {
+    console.log("testResourceResponse", sessionId, testId, resourceId, statusCode);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
-    const resource = test.resource;
+
+    const resource = this.ensureHasResource(test, resourceId, resourcePath);
+
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
     prefetchOrNormal.statusCode = statusCode;
+
     return test;
   }
 
@@ -101,6 +131,7 @@ module.exports = class SessionManager {
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
     test.state = "normal";
+
     return test;
   }
 
@@ -108,8 +139,11 @@ module.exports = class SessionManager {
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
     test.state = "ended";
-    const resource = test.resource;
+    // test.resource should be present unless the browser hasn't been able to
+    // make either the prefetch or the normal request!
+    const resource = this.ensureHasResource(test, null, null);
     resource.client = clientData;
+
     return test;
   }
 };

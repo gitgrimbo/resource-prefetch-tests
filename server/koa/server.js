@@ -45,7 +45,7 @@ app.use(route.get(downloadPathRegExp, function* (next) {
     const resourceId = Number(this.query.resourceId);
     sessionManager.testResourceRequest(sessionId, testId, resourceId, resourcePath);
     yield next;
-    sessionManager.testResourceResponse(sessionId, testId, resourceId, this.response.status);
+    sessionManager.testResourceResponse(sessionId, testId, resourceId, resourcePath, this.response.status);
   } else {
     yield next;
   }

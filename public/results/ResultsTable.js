@@ -24,7 +24,12 @@ define(["mustache"], function(Mustache) {
     var resource = data.result.serverResult.resource;
     var client = resource.client;
     var server = resource.server;
-    var srcWithoutParams = resource.path.split("?")[0];
+
+    // If server.path does not exist, it means neither a prefetch
+    // nor a normal request made it to the server.
+    // In that case use resource.src, which is the URL used to make
+    // (or rather not make) the request.
+    var pathWithoutParams = (server && server.path) ? server.path.split("?")[0] : resource.src;
 
     var prefetchRequestStatusCode = server && server.prefetch && server.prefetch.statusCode;
     var normalRequestStatusCode = server && server.normal && server.normal.statusCode;
@@ -37,14 +42,14 @@ define(["mustache"], function(Mustache) {
     var normalInfo = [];
 
     if (!prefetchRequestReceivedByServer) {
-      prefetchInfo.push("<code>" + srcWithoutParams + "</code>" + " failed to be prefetched");
+      prefetchInfo.push("<code>" + pathWithoutParams + "</code>" + " failed to be prefetched");
     } else if (normalRequestReceivedByServer) {
-      normalInfo.push("<code>" + srcWithoutParams + "</code>" + " was requested again");
+      normalInfo.push("<code>" + pathWithoutParams + "</code>" + " was requested again");
     }
-    if (client.prefetch.err) {
+    if (client && client.prefetch && client.prefetch.err) {
       prefetchInfo = prefetchInfo.concat(this.clientErrorToLines(client.prefetch.err));
     }
-    if (client.normal.err) {
+    if (client && client.normal && client.normal.err) {
       normalInfo = normalInfo.concat(this.clientErrorToLines(client.normal.err));
     }
 
@@ -52,7 +57,7 @@ define(["mustache"], function(Mustache) {
       i: data.i + 1,
       numTests: data.numTests,
       name: test.name,
-      src: srcWithoutParams,
+      src: pathWithoutParams,
       crossDomain: test.crossDomain ? "xd" : "",
       useCors: test.useCors ? "cors" : "",
       pass: pass ? "P" : "F",

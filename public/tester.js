@@ -3,7 +3,6 @@ define([
   "./extend", "./prefetch", "./ajax-utils", "./promise-utils", "./url", "./tests"
 ], function(extend, prefetch, ajaxUtils, promiseUtils, url, tests) {
   var resolveWithDelay = promiseUtils.resolveWithDelay;
-  var timeoutMs = 3000;
 
   var getter = ajaxUtils.getter;
   var poster = ajaxUtils.poster;
@@ -94,7 +93,7 @@ define([
         return handleRejectAsResolve(test.prefetcher({
           src: src,
           container: prefetchContainer
-        }, timeoutMs));
+        }, test.prefetchTimeoutMs));
       })
       .then(function(prefetchResult_) {
         prefetchResult = prefetchResult_;
@@ -112,7 +111,7 @@ define([
         return handleRejectAsResolve(prefetch.loadResourceNormally({
           src: src,
           type: test.resource.type
-        }, timeoutMs));
+        }, test.loadResourceNormallyTimeoutMs));
       })
       .then(function(normalResult_) {
         normalResult = normalResult_;
@@ -237,7 +236,11 @@ define([
       .then(function() {
         console.log("Running tests");
         var allTests = combineTests(resources, config, port);
-        //allTests = allTests.slice(30);
+        allTests.forEach(function(test) {
+          test.prefetchTimeoutMs = 5 * 1000;
+          test.loadResourceNormallyTimeoutMs = 5 * 1000;
+        });
+        //allTests = allTests.slice(0, 1);
         console.log(allTests);
         return runTests(allTests, sessionId, prefetchContainer, listener);
       })
