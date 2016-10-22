@@ -23,11 +23,9 @@ displayed in the browser (as each individual test completes) and saved to disk
 
 What do the results look like?
 
-Clone the repo and take a look at [./samples/results.html](./samples/results.html).
-Or view via
-[https://rawgit.com/](https://rawgit.com/) :
+- [https://gitgrimbo.github.io/resource-prefetch-tests/](https://gitgrimbo.github.io/resource-prefetch-tests/)
 
-- [https://rawgit.com/gitgrimbo/resource-prefetch-tests/master/samples/results.html](https://rawgit.com/gitgrimbo/resource-prefetch-tests/master/samples/results.html)
+Or clone the repo and take a look at [./samples/results.html](./samples/results.html).
 
 Also see [./samples/session.json](./samples/session.json).
 
