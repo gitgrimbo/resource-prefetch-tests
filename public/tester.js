@@ -1,7 +1,13 @@
 /* eslint-env browser, amd */
 define([
-  "./extend", "./prefetch", "./ajax-utils", "./promise-utils", "./url", "./tests"
-], function(extend, prefetch, ajaxUtils, promiseUtils, url, tests) {
+  "./extend",
+  "./prefetch",
+  "./ajax-utils",
+  "./promise-utils",
+  "./url",
+  "./tests",
+  "./test-utils"
+], function(extend, prefetch, ajaxUtils, promiseUtils, url, testList, testUtils) {
   var resolveWithDelay = promiseUtils.resolveWithDelay;
 
   var getter = ajaxUtils.getter;
@@ -151,18 +157,14 @@ define([
   }
 
   function combineTests(resources, config, port) {
-    var baseTests = tests.tests;
-    baseTests = tests.createTestsPerResource(baseTests, resources);
-    var xdWithCorsTests = tests.createTestsForCrossDomain(baseTests, "http:", config.http2, port, true);
-    var xdWithoutCorsTests = tests.createTestsForCrossDomain(baseTests, "http:", config.http2, port, false);
+    var baseTests = testList;
+    baseTests = testUtils.createTestsPerResource(baseTests, resources);
+    var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, true);
+    var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, false);
 
     var allTests = baseTests.concat(xdWithCorsTests, xdWithoutCorsTests);
 
-    allTests.sort(function(a, b) {
-      return a.name.localeCompare(b.name);
-    });
-
-    return allTests;
+    return testUtils.sortTests(allTests);
   }
 
   function notifyListener(listener, type, data) {
