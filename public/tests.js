@@ -15,6 +15,9 @@ define(["./prefetch"], function(prefetch) {
     }, {
       name: "<link rel=prefetch>",
       prefetcher: prefetch.loadResourceByLinkRelPrefetchTag
+    }, {
+      name: "<link rel=prefetch crossorigin>",
+      prefetcher: prefetch.loadResourceByLinkRelPrefetchTagWithCrossoriginAttr
     }
   ];
 

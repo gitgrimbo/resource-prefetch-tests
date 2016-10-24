@@ -121,6 +121,15 @@ define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
     }));
   }
 
+  function loadResourceByLinkRelPrefetchTagWithCrossoriginAttr(opts) {
+    return loadResourceByLink(extend({}, opts, {
+      linkAttrs: {
+        rel: "prefetch",
+        crossorigin: "anonymous"
+      }
+    }));
+  }
+
   function loadResourceByFontFaceCss(opts) {
     var src = opts.src;
     var container = opts.container;
@@ -171,6 +180,7 @@ define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
     loadResourceByImgTag: loadResourceByImgTag,
     loadResourceByLink: loadResourceByLink,
     loadResourceByLinkRelPrefetchTag: loadResourceByLinkRelPrefetchTag,
+    loadResourceByLinkRelPrefetchTagWithCrossoriginAttr: loadResourceByLinkRelPrefetchTagWithCrossoriginAttr,
     loadResourceByLinkRelStylesheetTag: loadResourceByLinkRelStylesheetTag,
     loadResourceByNewImage: loadResourceByNewImage,
     loadResourceByObjectTag: loadResourceByObjectTag,

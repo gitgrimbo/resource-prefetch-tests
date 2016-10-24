@@ -14,14 +14,19 @@ define(["jquery", "./promise-utils", "./resource-loaders"], function($, promiseU
     $(container).empty();
   }
 
-  var loadResourceByFontFaceCss = timeoutify(resourceLoaders.loadResourceByFontFaceCss, "loadResourceByFontFaceCss");
-  var loadResourceByNewImage = timeoutify(resourceLoaders.loadResourceByNewImage, "loadResourceByNewImage");
-  var loadResourceByImgTag = timeoutify(resourceLoaders.loadResourceByImgTag, "loadResourceByImgTag");
-  var loadResourceByObjectTag = timeoutify(resourceLoaders.loadResourceByObjectTag, "loadResourceByObjectTag");
-  var loadResourceByScriptTag = timeoutify(resourceLoaders.loadResourceByScriptTag, "loadResourceByScriptTag");
-  var loadResourceByXHR = timeoutify(resourceLoaders.loadResourceByXHR, "loadResourceByXHR");
-  var loadResourceByLinkRelStylesheetTag = timeoutify(resourceLoaders.loadResourceByLinkRelStylesheetTag, "loadResourceByLinkRelStylesheetTag");
-  var loadResourceByLinkRelPrefetchTag = timeoutify(resourceLoaders.loadResourceByLinkRelPrefetchTag, "loadResourceByLinkRelPrefetchTag");
+  function timeoutifyLoader(loaderName) {
+    return timeoutify(resourceLoaders[loaderName], loaderName);
+  }
+
+  var loadResourceByFontFaceCss = timeoutifyLoader("loadResourceByFontFaceCss");
+  var loadResourceByNewImage = timeoutifyLoader("loadResourceByNewImage");
+  var loadResourceByImgTag = timeoutifyLoader("loadResourceByImgTag");
+  var loadResourceByObjectTag = timeoutifyLoader("loadResourceByObjectTag");
+  var loadResourceByScriptTag = timeoutifyLoader("loadResourceByScriptTag");
+  var loadResourceByXHR = timeoutifyLoader("loadResourceByXHR");
+  var loadResourceByLinkRelStylesheetTag = timeoutifyLoader("loadResourceByLinkRelStylesheetTag");
+  var loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
+  var loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
 
   function loadResourceNormally(resource, timeout) {
     var opts = {
@@ -62,6 +67,7 @@ define(["jquery", "./promise-utils", "./resource-loaders"], function($, promiseU
   var loadResourcesByLinkRelStylesheetTag = loadResources(loadResourceByLinkRelStylesheetTag);
   var loadResourcesByObjectTag = loadResources(loadResourceByObjectTag);
   var loadResourcesByLinkRelPrefetchTag = loadResources(loadResourceByLinkRelPrefetchTag);
+  var loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr = loadResources(loadResourceByLinkRelPrefetchTagWithCrossoriginAttr);
 
   function loadResourcesNormally(resources) {
     return new Promise(function(resolve, reject) {
@@ -79,6 +85,7 @@ define(["jquery", "./promise-utils", "./resource-loaders"], function($, promiseU
     loadResourceNormally: loadResourceNormally,
     loadResourceByImgTag: loadResourceByImgTag,
     loadResourceByLinkRelPrefetchTag: loadResourceByLinkRelPrefetchTag,
+    loadResourceByLinkRelPrefetchTagWithCrossoriginAttr: loadResourceByLinkRelPrefetchTagWithCrossoriginAttr,
     loadResourceByLinkRelStylesheetTag: loadResourceByLinkRelStylesheetTag,
     loadResourceByNewImage: loadResourceByNewImage,
     loadResourceByObjectTag: loadResourceByObjectTag,
@@ -87,6 +94,7 @@ define(["jquery", "./promise-utils", "./resource-loaders"], function($, promiseU
     loadResourcesNormally: loadResourcesNormally,
     loadResourcesByImgTag: loadResourcesByImgTag,
     loadResourcesByLinkRelPrefetchTag: loadResourcesByLinkRelPrefetchTag,
+    loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr: loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr,
     loadResourcesByLinkRelStylesheetTag: loadResourcesByLinkRelStylesheetTag,
     loadResourcesByNewImage: loadResourcesByNewImage,
     loadResourcesByObjectTag: loadResourcesByObjectTag,
