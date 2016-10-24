@@ -6,7 +6,7 @@
   "scripts": {
     "deploy-gh-pages": "node server/deploy-gh-pages.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/"
   },
   "author": "Paul Grime <gitgrimbo@gmail.com> (https://github.com/gitgrimbo)",
   "license": "MIT",
