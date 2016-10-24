@@ -147,8 +147,10 @@ app.use(route.get("/session.html", function* (next) {
   }
 }));
 
+const args = process.argv.slice(2);
+const port = args[0] || 3002;
 
 // Start the server
-app.listen(3002, function() {
+app.listen(port, function() {
   console.log(`Listening on port ${this.address().port}`);
 });
