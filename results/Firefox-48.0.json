@@ -1,7 +1,7 @@
 {
- "userAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0",
- "timestamp": 1477333577190,
- "sessionId": 2,
+ "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0",
+ "timestamp": 1477300377437,
+ "sessionId": 3,
  "tests": {
   "0": {
    "name": "<link rel=prefetch>",
@@ -28,13 +28,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=0&resourceId=0&timestamp=1477333577194&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=3&testId=0&resourceId=0&timestamp=1477300377297&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333577217,
+   "timestamp": 1477300377811,
    "testId": "0",
    "state": "ended"
   },
@@ -63,13 +63,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=1&resourceId=1&timestamp=1477333582267&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=3&testId=1&resourceId=1&timestamp=1477300383579&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333582296,
+   "timestamp": 1477300384285,
    "testId": "1",
    "state": "ended"
   },
@@ -98,13 +98,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=2&resourceId=9&timestamp=1477333587377&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=3&testId=2&resourceId=9&timestamp=1477300390403&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333587397,
+   "timestamp": 1477300391119,
    "testId": "2",
    "state": "ended"
   },
@@ -133,13 +133,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=3&resourceId=2&timestamp=1477333592537&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=3&testId=3&resourceId=2&timestamp=1477300396924&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333592572,
+   "timestamp": 1477300397422,
    "testId": "3",
    "state": "ended"
   },
@@ -168,13 +168,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=4&resourceId=3&timestamp=1477333597611&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=3&testId=4&resourceId=3&timestamp=1477300403614&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333597631,
+   "timestamp": 1477300404312,
    "testId": "4",
    "state": "ended"
   },
@@ -203,13 +203,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=5&resourceId=6&timestamp=1477333602648&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=3&testId=5&resourceId=6&timestamp=1477300410463&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333602671,
+   "timestamp": 1477300410991,
    "testId": "5",
    "state": "ended"
   },
@@ -238,13 +238,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=6&resourceId=4&timestamp=1477333607700&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=3&testId=6&resourceId=4&timestamp=1477300417109&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333607733,
+   "timestamp": 1477300417622,
    "testId": "6",
    "state": "ended"
   },
@@ -273,13 +273,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=7&resourceId=5&timestamp=1477333612762&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=3&testId=7&resourceId=5&timestamp=1477300423381&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333612779,
+   "timestamp": 1477300423910,
    "testId": "7",
    "state": "ended"
   },
@@ -308,13 +308,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=8&resourceId=7&timestamp=1477333617793&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=3&testId=8&resourceId=7&timestamp=1477300429458&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333617817,
+   "timestamp": 1477300430007,
    "testId": "8",
    "state": "ended"
   },
@@ -343,13 +343,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=9&resourceId=8&timestamp=1477333623090&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=3&testId=9&resourceId=8&timestamp=1477300435557&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333623108,
+   "timestamp": 1477300436093,
    "testId": "9",
    "state": "ended"
   },
@@ -378,7 +378,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=10&resourceId=0&timestamp=1477333628146&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=10&resourceId=0&timestamp=1477300441766&useCors=false]"
      }
     }
    },
@@ -389,7 +389,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333628163,
+   "timestamp": 1477300442301,
    "testId": "10",
    "state": "ended"
   },
@@ -418,7 +418,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=11&resourceId=1&timestamp=1477333633201&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=11&resourceId=1&timestamp=1477300448387&useCors=false]"
      }
     }
    },
@@ -429,7 +429,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333633230,
+   "timestamp": 1477300449097,
    "testId": "11",
    "state": "ended"
   },
@@ -446,8 +446,8 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
@@ -458,7 +458,10 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=12&resourceId=9&timestamp=1477333638271&useCors=false]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByFontFaceCss"
+      }
      }
     }
    },
@@ -469,7 +472,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333638289,
+   "timestamp": 1477300456181,
    "testId": "12",
    "state": "ended"
   },
@@ -498,7 +501,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=13&resourceId=2&timestamp=1477333643422&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=13&resourceId=2&timestamp=1477300466892&useCors=false]"
      }
     }
    },
@@ -509,7 +512,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333643443,
+   "timestamp": 1477300467396,
    "testId": "13",
    "state": "ended"
   },
@@ -538,7 +541,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=14&resourceId=3&timestamp=1477333648519&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=14&resourceId=3&timestamp=1477300473331&useCors=false]"
      }
     }
    },
@@ -549,7 +552,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333648561,
+   "timestamp": 1477300473880,
    "testId": "14",
    "state": "ended"
   },
@@ -578,7 +581,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=15&resourceId=6&timestamp=1477333653588&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=15&resourceId=6&timestamp=1477300479987&useCors=false]"
      }
     }
    },
@@ -589,7 +592,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333653623,
+   "timestamp": 1477300480513,
    "testId": "15",
    "state": "ended"
   },
@@ -618,7 +621,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=16&resourceId=4&timestamp=1477333658660&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=16&resourceId=4&timestamp=1477300486503&useCors=false]"
      }
     }
    },
@@ -629,7 +632,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333658692,
+   "timestamp": 1477300487042,
    "testId": "16",
    "state": "ended"
   },
@@ -658,7 +661,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=17&resourceId=5&timestamp=1477333663735&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=17&resourceId=5&timestamp=1477300492670&useCors=false]"
      }
     }
    },
@@ -669,7 +672,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333663766,
+   "timestamp": 1477300493209,
    "testId": "17",
    "state": "ended"
   },
@@ -698,7 +701,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=18&resourceId=7&timestamp=1477333668795&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=18&resourceId=7&timestamp=1477300499349&useCors=false]"
      }
     }
    },
@@ -709,7 +712,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333668828,
+   "timestamp": 1477300499875,
    "testId": "18",
    "state": "ended"
   },
@@ -738,7 +741,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=19&resourceId=8&timestamp=1477333674107&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=19&resourceId=8&timestamp=1477300506144&useCors=false]"
      }
     }
    },
@@ -749,7 +752,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333674137,
+   "timestamp": 1477300506650,
    "testId": "19",
    "state": "ended"
   },
@@ -778,7 +781,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=20&resourceId=0&timestamp=1477333679155&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=20&resourceId=0&timestamp=1477300512402&useCors=true]"
      }
     }
    },
@@ -789,7 +792,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333679174,
+   "timestamp": 1477300512938,
    "testId": "20",
    "state": "ended"
   },
@@ -818,7 +821,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=21&resourceId=1&timestamp=1477333684202&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=21&resourceId=1&timestamp=1477300518502&useCors=true]"
      }
     }
    },
@@ -829,7 +832,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333684222,
+   "timestamp": 1477300519049,
    "testId": "21",
    "state": "ended"
   },
@@ -846,8 +849,8 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
@@ -858,7 +861,10 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=22&resourceId=9&timestamp=1477333689267&useCors=true]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByFontFaceCss"
+      }
      }
     }
    },
@@ -869,7 +875,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333689301,
+   "timestamp": 1477300525318,
    "testId": "22",
    "state": "ended"
   },
@@ -898,7 +904,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=23&resourceId=2&timestamp=1477333694435&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=23&resourceId=2&timestamp=1477300536213&useCors=true]"
      }
     }
    },
@@ -909,7 +915,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333694478,
+   "timestamp": 1477300536919,
    "testId": "23",
    "state": "ended"
   },
@@ -938,7 +944,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=24&resourceId=3&timestamp=1477333699521&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=24&resourceId=3&timestamp=1477300542799&useCors=true]"
      }
     }
    },
@@ -949,7 +955,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333699540,
+   "timestamp": 1477300543521,
    "testId": "24",
    "state": "ended"
   },
@@ -978,7 +984,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=25&resourceId=6&timestamp=1477333704577&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=25&resourceId=6&timestamp=1477300549597&useCors=true]"
      }
     }
    },
@@ -989,7 +995,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333704597,
+   "timestamp": 1477300550308,
    "testId": "25",
    "state": "ended"
   },
@@ -1018,7 +1024,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=26&resourceId=4&timestamp=1477333709636&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=26&resourceId=4&timestamp=1477300556052&useCors=true]"
      }
     }
    },
@@ -1029,7 +1035,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333709671,
+   "timestamp": 1477300556572,
    "testId": "26",
    "state": "ended"
   },
@@ -1058,7 +1064,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=27&resourceId=5&timestamp=1477333714704&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=27&resourceId=5&timestamp=1477300562553&useCors=true]"
      }
     }
    },
@@ -1069,7 +1075,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333714737,
+   "timestamp": 1477300563091,
    "testId": "27",
    "state": "ended"
   },
@@ -1098,7 +1104,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=28&resourceId=7&timestamp=1477333719782&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=28&resourceId=7&timestamp=1477300568709&useCors=true]"
      }
     }
    },
@@ -1109,7 +1115,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333719804,
+   "timestamp": 1477300569262,
    "testId": "28",
    "state": "ended"
   },
@@ -1138,7 +1144,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=29&resourceId=8&timestamp=1477333725099&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=29&resourceId=8&timestamp=1477300575337&useCors=true]"
      }
     }
    },
@@ -1149,7 +1155,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333725140,
+   "timestamp": 1477300575887,
    "testId": "29",
    "state": "ended"
   },
@@ -1172,16 +1178,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/11B.css?sessionId=2&testId=30&resourceId=0&timestamp=1477333730162&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/11B.css?sessionId=3&testId=30&resourceId=0&timestamp=1477300581455&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=30&resourceId=0&timestamp=1477333730162&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=3&testId=30&resourceId=0&timestamp=1477300581455&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333730184,
+   "timestamp": 1477300582001,
    "testId": "30",
    "state": "ended"
   },
@@ -1204,16 +1210,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=2&testId=31&resourceId=1&timestamp=1477333730304&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=3&testId=31&resourceId=1&timestamp=1477300582907&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=31&resourceId=1&timestamp=1477333730304&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=3&testId=31&resourceId=1&timestamp=1477300582907&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333730389,
+   "timestamp": 1477300583402,
    "testId": "31",
    "state": "ended"
   },
@@ -1242,13 +1248,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=32&resourceId=9&timestamp=1477333730641&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=3&testId=32&resourceId=9&timestamp=1477300584879&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333730725,
+   "timestamp": 1477300585373,
    "testId": "32",
    "state": "ended"
   },
@@ -1271,16 +1277,19 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/1516kB.jpg?sessionId=2&testId=33&resourceId=2&timestamp=1477333735855&useCors=false]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByObjectTag"
+      }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=33&resourceId=2&timestamp=1477333735855&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=3&testId=33&resourceId=2&timestamp=1477300591719&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333735904,
+   "timestamp": 1477300592292,
    "testId": "33",
    "state": "ended"
   },
@@ -1303,16 +1312,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=2&testId=34&resourceId=3&timestamp=1477333736270&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=3&testId=34&resourceId=3&timestamp=1477300598294&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=34&resourceId=3&timestamp=1477333736270&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=3&testId=34&resourceId=3&timestamp=1477300598294&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333736293,
+   "timestamp": 1477300598962,
    "testId": "34",
    "state": "ended"
   },
@@ -1335,16 +1344,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=2&testId=35&resourceId=6&timestamp=1477333736394&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=3&testId=35&resourceId=6&timestamp=1477300600858&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=35&resourceId=6&timestamp=1477333736394&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=3&testId=35&resourceId=6&timestamp=1477300600858&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333736434,
+   "timestamp": 1477300601372,
    "testId": "35",
    "state": "ended"
   },
@@ -1367,16 +1376,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=2&testId=36&resourceId=4&timestamp=1477333736477&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=3&testId=36&resourceId=4&timestamp=1477300602834&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=36&resourceId=4&timestamp=1477333736477&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=3&testId=36&resourceId=4&timestamp=1477300602834&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333736522,
+   "timestamp": 1477300603377,
    "testId": "36",
    "state": "ended"
   },
@@ -1399,16 +1408,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=2&testId=37&resourceId=5&timestamp=1477333736646&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=3&testId=37&resourceId=5&timestamp=1477300604507&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=37&resourceId=5&timestamp=1477333736646&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=3&testId=37&resourceId=5&timestamp=1477300604507&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333736743,
+   "timestamp": 1477300605222,
    "testId": "37",
    "state": "ended"
   },
@@ -1431,16 +1440,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=2&testId=38&resourceId=7&timestamp=1477333736846&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=3&testId=38&resourceId=7&timestamp=1477300606883&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=38&resourceId=7&timestamp=1477333736846&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=3&testId=38&resourceId=7&timestamp=1477300606883&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333736942,
+   "timestamp": 1477300607370,
    "testId": "38",
    "state": "ended"
   },
@@ -1463,16 +1472,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/8B.js?sessionId=2&testId=39&resourceId=8&timestamp=1477333737802&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/8B.js?sessionId=3&testId=39&resourceId=8&timestamp=1477300611014&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=39&resourceId=8&timestamp=1477333737802&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=3&testId=39&resourceId=8&timestamp=1477300611014&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333737894,
+   "timestamp": 1477300611496,
    "testId": "39",
    "state": "ended"
   },
@@ -1495,10 +1504,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=40&resourceId=0&timestamp=1477333737989&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=40&resourceId=0&timestamp=1477300612780&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=40&resourceId=0&timestamp=1477333737989&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=40&resourceId=0&timestamp=1477300612780&useCors=false]"
      }
     }
    },
@@ -1509,7 +1518,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333738098,
+   "timestamp": 1477300613328,
    "testId": "40",
    "state": "ended"
   },
@@ -1532,10 +1541,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=41&resourceId=1&timestamp=1477333738215&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=41&resourceId=1&timestamp=1477300615059&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=41&resourceId=1&timestamp=1477333738215&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=41&resourceId=1&timestamp=1477300615059&useCors=false]"
      }
     }
    },
@@ -1546,7 +1555,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333738334,
+   "timestamp": 1477300615543,
    "testId": "41",
    "state": "ended"
   },
@@ -1575,7 +1584,10 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=42&resourceId=9&timestamp=1477333738609&useCors=false]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByFontFaceCss"
+      }
      }
     }
    },
@@ -1586,7 +1598,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333738724,
+   "timestamp": 1477300617426,
    "testId": "42",
    "state": "ended"
   },
@@ -1609,10 +1621,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=43&resourceId=2&timestamp=1477333743892&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=43&resourceId=2&timestamp=1477300627949&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=43&resourceId=2&timestamp=1477333743892&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=43&resourceId=2&timestamp=1477300627949&useCors=false]"
      }
     }
    },
@@ -1623,7 +1635,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333743950,
+   "timestamp": 1477300628438,
    "testId": "43",
    "state": "ended"
   },
@@ -1646,10 +1658,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=44&resourceId=3&timestamp=1477333744303&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=44&resourceId=3&timestamp=1477300633815&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=44&resourceId=3&timestamp=1477333744303&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=44&resourceId=3&timestamp=1477300633815&useCors=false]"
      }
     }
    },
@@ -1660,7 +1672,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333744354,
+   "timestamp": 1477300634501,
    "testId": "44",
    "state": "ended"
   },
@@ -1683,10 +1695,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=45&resourceId=6&timestamp=1477333744434&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=45&resourceId=6&timestamp=1477300636637&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=45&resourceId=6&timestamp=1477333744434&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=45&resourceId=6&timestamp=1477300636637&useCors=false]"
      }
     }
    },
@@ -1697,7 +1709,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333744482,
+   "timestamp": 1477300637189,
    "testId": "45",
    "state": "ended"
   },
@@ -1720,10 +1732,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=46&resourceId=4&timestamp=1477333744529&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=46&resourceId=4&timestamp=1477300638412&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=46&resourceId=4&timestamp=1477333744529&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=46&resourceId=4&timestamp=1477300638412&useCors=false]"
      }
     }
    },
@@ -1734,7 +1746,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333744577,
+   "timestamp": 1477300638944,
    "testId": "46",
    "state": "ended"
   },
@@ -1757,10 +1769,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=47&resourceId=5&timestamp=1477333744735&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=47&resourceId=5&timestamp=1477300640212&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=47&resourceId=5&timestamp=1477333744735&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=47&resourceId=5&timestamp=1477300640212&useCors=false]"
      }
     }
    },
@@ -1771,7 +1783,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333744858,
+   "timestamp": 1477300640732,
    "testId": "47",
    "state": "ended"
   },
@@ -1794,10 +1806,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=48&resourceId=7&timestamp=1477333744997&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=48&resourceId=7&timestamp=1477300642199&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=48&resourceId=7&timestamp=1477333744997&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=48&resourceId=7&timestamp=1477300642199&useCors=false]"
      }
     }
    },
@@ -1808,7 +1820,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333745120,
+   "timestamp": 1477300642715,
    "testId": "48",
    "state": "ended"
   },
@@ -1831,10 +1843,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=49&resourceId=8&timestamp=1477333745995&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=49&resourceId=8&timestamp=1477300646008&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=49&resourceId=8&timestamp=1477333745995&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=49&resourceId=8&timestamp=1477300646008&useCors=false]"
      }
     }
    },
@@ -1845,7 +1857,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333746114,
+   "timestamp": 1477300646486,
    "testId": "49",
    "state": "ended"
   },
@@ -1868,10 +1880,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=50&resourceId=0&timestamp=1477333746236&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=50&resourceId=0&timestamp=1477300648006&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=50&resourceId=0&timestamp=1477333746236&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=50&resourceId=0&timestamp=1477300648006&useCors=true]"
      }
     }
    },
@@ -1882,7 +1894,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333746355,
+   "timestamp": 1477300648488,
    "testId": "50",
    "state": "ended"
   },
@@ -1905,10 +1917,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=51&resourceId=1&timestamp=1477333746546&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=51&resourceId=1&timestamp=1477300650008&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=51&resourceId=1&timestamp=1477333746546&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=51&resourceId=1&timestamp=1477300650008&useCors=true]"
      }
     }
    },
@@ -1919,7 +1931,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333746679,
+   "timestamp": 1477300650488,
    "testId": "51",
    "state": "ended"
   },
@@ -1948,7 +1960,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=52&resourceId=9&timestamp=1477333747021&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=52&resourceId=9&timestamp=1477300652349&useCors=true]"
      }
     }
    },
@@ -1959,7 +1971,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333747148,
+   "timestamp": 1477300652899,
    "testId": "52",
    "state": "ended"
   },
@@ -1982,10 +1994,13 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=53&resourceId=2&timestamp=1477333752300&useCors=true]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByObjectTag"
+      }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=53&resourceId=2&timestamp=1477333752300&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=53&resourceId=2&timestamp=1477300658866&useCors=true]"
      }
     }
    },
@@ -1996,7 +2011,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333752358,
+   "timestamp": 1477300659364,
    "testId": "53",
    "state": "ended"
   },
@@ -2019,10 +2034,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=54&resourceId=3&timestamp=1477333752708&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=54&resourceId=3&timestamp=1477300665375&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=54&resourceId=3&timestamp=1477333752708&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=54&resourceId=3&timestamp=1477300665375&useCors=true]"
      }
     }
    },
@@ -2033,7 +2048,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333752760,
+   "timestamp": 1477300666074,
    "testId": "54",
    "state": "ended"
   },
@@ -2056,10 +2071,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=55&resourceId=6&timestamp=1477333752839&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=55&resourceId=6&timestamp=1477300667748&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=55&resourceId=6&timestamp=1477333752839&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=55&resourceId=6&timestamp=1477300667748&useCors=true]"
      }
     }
    },
@@ -2070,7 +2085,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333752892,
+   "timestamp": 1477300668268,
    "testId": "55",
    "state": "ended"
   },
@@ -2093,10 +2108,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=56&resourceId=4&timestamp=1477333752936&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=56&resourceId=4&timestamp=1477300669769&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=56&resourceId=4&timestamp=1477333752936&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=56&resourceId=4&timestamp=1477300669769&useCors=true]"
      }
     }
    },
@@ -2107,7 +2122,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333752987,
+   "timestamp": 1477300670304,
    "testId": "56",
    "state": "ended"
   },
@@ -2130,10 +2145,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=57&resourceId=5&timestamp=1477333753142&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=57&resourceId=5&timestamp=1477300671475&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=57&resourceId=5&timestamp=1477333753142&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=57&resourceId=5&timestamp=1477300671475&useCors=true]"
      }
     }
    },
@@ -2144,7 +2159,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333753267,
+   "timestamp": 1477300672160,
    "testId": "57",
    "state": "ended"
   },
@@ -2167,10 +2182,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=58&resourceId=7&timestamp=1477333753403&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=58&resourceId=7&timestamp=1477300673823&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=58&resourceId=7&timestamp=1477333753403&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=58&resourceId=7&timestamp=1477300673823&useCors=true]"
      }
     }
    },
@@ -2181,7 +2196,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333753524,
+   "timestamp": 1477300674357,
    "testId": "58",
    "state": "ended"
   },
@@ -2204,10 +2219,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=59&resourceId=8&timestamp=1477333755798&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=59&resourceId=8&timestamp=1477300678389&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=59&resourceId=8&timestamp=1477333755798&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=59&resourceId=8&timestamp=1477300678389&useCors=true]"
      }
     }
    },
@@ -2218,7 +2233,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333755914,
+   "timestamp": 1477300679042,
    "testId": "59",
    "state": "ended"
   },
@@ -2235,15 +2250,15 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=2&testId=60&resourceId=0&timestamp=1477333756065&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=3&testId=60&resourceId=0&timestamp=1477300680503&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2251,13 +2266,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=60&resourceId=0&timestamp=1477333756065&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=3&testId=60&resourceId=0&timestamp=1477300680503&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333756185,
+   "timestamp": 1477300681203,
    "testId": "60",
    "state": "ended"
   },
@@ -2282,7 +2297,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=2&testId=61&resourceId=1&timestamp=1477333756245&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=3&testId=61&resourceId=1&timestamp=1477300682871&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2290,13 +2305,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=61&resourceId=1&timestamp=1477333756245&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=3&testId=61&resourceId=1&timestamp=1477300682871&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333756289,
+   "timestamp": 1477300683365,
    "testId": "61",
    "state": "ended"
   },
@@ -2321,7 +2336,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=2&testId=62&resourceId=9&timestamp=1477333756402&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=3&testId=62&resourceId=9&timestamp=1477300685397&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2329,13 +2344,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=62&resourceId=9&timestamp=1477333756402&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=3&testId=62&resourceId=9&timestamp=1477300685397&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333756424,
+   "timestamp": 1477300686056,
    "testId": "62",
    "state": "ended"
   },
@@ -2358,16 +2373,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=2&testId=63&resourceId=2&timestamp=1477333756610&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=3&testId=63&resourceId=2&timestamp=1477300688034&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=63&resourceId=2&timestamp=1477333756610&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=3&testId=63&resourceId=2&timestamp=1477300688034&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333756668,
+   "timestamp": 1477300688522,
    "testId": "63",
    "state": "ended"
   },
@@ -2390,16 +2405,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=2&testId=64&resourceId=3&timestamp=1477333756990&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=3&testId=64&resourceId=3&timestamp=1477300694262&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=64&resourceId=3&timestamp=1477333756990&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=3&testId=64&resourceId=3&timestamp=1477300694262&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757033,
+   "timestamp": 1477300694824,
    "testId": "64",
    "state": "ended"
   },
@@ -2422,16 +2437,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=2&testId=65&resourceId=6&timestamp=1477333757104&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=3&testId=65&resourceId=6&timestamp=1477300696176&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=65&resourceId=6&timestamp=1477333757104&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=3&testId=65&resourceId=6&timestamp=1477300696176&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757149,
+   "timestamp": 1477300696868,
    "testId": "65",
    "state": "ended"
   },
@@ -2456,7 +2471,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=2&testId=66&resourceId=4&timestamp=1477333757190&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=3&testId=66&resourceId=4&timestamp=1477300698144&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2464,13 +2479,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=66&resourceId=4&timestamp=1477333757190&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=3&testId=66&resourceId=4&timestamp=1477300698144&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757234,
+   "timestamp": 1477300698838,
    "testId": "66",
    "state": "ended"
   },
@@ -2495,7 +2510,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=2&testId=67&resourceId=5&timestamp=1477333757268&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=3&testId=67&resourceId=5&timestamp=1477300700532&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2503,13 +2518,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=67&resourceId=5&timestamp=1477333757268&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=3&testId=67&resourceId=5&timestamp=1477300700532&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757288,
+   "timestamp": 1477300701072,
    "testId": "67",
    "state": "ended"
   },
@@ -2534,7 +2549,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=2&testId=68&resourceId=7&timestamp=1477333757339&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=3&testId=68&resourceId=7&timestamp=1477300702996&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2542,13 +2557,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=68&resourceId=7&timestamp=1477333757339&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=3&testId=68&resourceId=7&timestamp=1477300702996&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757381,
+   "timestamp": 1477300703522,
    "testId": "68",
    "state": "ended"
   },
@@ -2565,15 +2580,15 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=2&testId=69&resourceId=8&timestamp=1477333757597&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=3&testId=69&resourceId=8&timestamp=1477300708420&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2581,13 +2596,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=69&resourceId=8&timestamp=1477333757597&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=3&testId=69&resourceId=8&timestamp=1477300708420&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757624,
+   "timestamp": 1477300708986,
    "testId": "69",
    "state": "ended"
   },
@@ -2612,7 +2627,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=70&resourceId=0&timestamp=1477333757673&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=70&resourceId=0&timestamp=1477300710075&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2620,7 +2635,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=70&resourceId=0&timestamp=1477333757673&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=70&resourceId=0&timestamp=1477300710075&useCors=false]"
      }
     }
    },
@@ -2631,7 +2646,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757718,
+   "timestamp": 1477300710589,
    "testId": "70",
    "state": "ended"
   },
@@ -2656,7 +2671,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=71&resourceId=1&timestamp=1477333757745&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=71&resourceId=1&timestamp=1477300712090&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2664,7 +2679,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=71&resourceId=1&timestamp=1477333757745&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=71&resourceId=1&timestamp=1477300712090&useCors=false]"
      }
     }
    },
@@ -2675,7 +2690,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757788,
+   "timestamp": 1477300712762,
    "testId": "71",
    "state": "ended"
   },
@@ -2700,7 +2715,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=72&resourceId=9&timestamp=1477333757891&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=72&resourceId=9&timestamp=1477300714964&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2708,7 +2723,10 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=72&resourceId=9&timestamp=1477333757891&useCors=false]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByFontFaceCss"
+      }
      }
     }
    },
@@ -2719,7 +2737,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333757935,
+   "timestamp": 1477300715429,
    "testId": "72",
    "state": "ended"
   },
@@ -2742,10 +2760,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=73&resourceId=2&timestamp=1477333758088&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=73&resourceId=2&timestamp=1477300721799&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=73&resourceId=2&timestamp=1477333758088&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=73&resourceId=2&timestamp=1477300721799&useCors=false]"
      }
     }
    },
@@ -2756,7 +2774,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758147,
+   "timestamp": 1477300722341,
    "testId": "73",
    "state": "ended"
   },
@@ -2779,10 +2797,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=74&resourceId=3&timestamp=1477333758489&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=74&resourceId=3&timestamp=1477300728062&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=74&resourceId=3&timestamp=1477333758489&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=74&resourceId=3&timestamp=1477300728062&useCors=false]"
      }
     }
    },
@@ -2793,7 +2811,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758538,
+   "timestamp": 1477300728759,
    "testId": "74",
    "state": "ended"
   },
@@ -2816,10 +2834,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=75&resourceId=6&timestamp=1477333758623&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=75&resourceId=6&timestamp=1477300730484&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=75&resourceId=6&timestamp=1477333758623&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=75&resourceId=6&timestamp=1477300730484&useCors=false]"
      }
     }
    },
@@ -2830,7 +2848,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758644,
+   "timestamp": 1477300731027,
    "testId": "75",
    "state": "ended"
   },
@@ -2855,7 +2873,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=76&resourceId=4&timestamp=1477333758703&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=76&resourceId=4&timestamp=1477300731937&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2863,7 +2881,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=76&resourceId=4&timestamp=1477333758703&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=76&resourceId=4&timestamp=1477300731937&useCors=false]"
      }
     }
    },
@@ -2874,7 +2892,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758724,
+   "timestamp": 1477300732427,
    "testId": "76",
    "state": "ended"
   },
@@ -2899,7 +2917,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=77&resourceId=5&timestamp=1477333758781&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=77&resourceId=5&timestamp=1477300733862&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2907,7 +2925,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=77&resourceId=5&timestamp=1477333758781&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=77&resourceId=5&timestamp=1477300733862&useCors=false]"
      }
     }
    },
@@ -2918,7 +2936,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758802,
+   "timestamp": 1477300734358,
    "testId": "77",
    "state": "ended"
   },
@@ -2943,7 +2961,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=78&resourceId=7&timestamp=1477333758847&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=78&resourceId=7&timestamp=1477300736413&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2951,7 +2969,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=78&resourceId=7&timestamp=1477333758847&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=78&resourceId=7&timestamp=1477300736413&useCors=false]"
      }
     }
    },
@@ -2962,7 +2980,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333758868,
+   "timestamp": 1477300737089,
    "testId": "78",
    "state": "ended"
   },
@@ -2979,15 +2997,15 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=79&resourceId=8&timestamp=1477333759111&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=79&resourceId=8&timestamp=1477300742557&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -2995,7 +3013,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=79&resourceId=8&timestamp=1477333759111&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=79&resourceId=8&timestamp=1477300742557&useCors=false]"
      }
     }
    },
@@ -3006,7 +3024,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333759155,
+   "timestamp": 1477300743239,
    "testId": "79",
    "state": "ended"
   },
@@ -3023,15 +3041,15 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=80&resourceId=0&timestamp=1477333759184&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=80&resourceId=0&timestamp=1477300744976&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3039,7 +3057,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=80&resourceId=0&timestamp=1477333759184&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=80&resourceId=0&timestamp=1477300744976&useCors=true]"
      }
     }
    },
@@ -3050,7 +3068,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333759205,
+   "timestamp": 1477300745486,
    "testId": "80",
    "state": "ended"
   },
@@ -3075,7 +3093,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=81&resourceId=1&timestamp=1477333759255&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=81&resourceId=1&timestamp=1477300747188&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3083,7 +3101,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=81&resourceId=1&timestamp=1477333759255&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=81&resourceId=1&timestamp=1477300747188&useCors=true]"
      }
     }
    },
@@ -3094,7 +3112,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333759276,
+   "timestamp": 1477300747734,
    "testId": "81",
    "state": "ended"
   },
@@ -3119,7 +3137,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=82&resourceId=9&timestamp=1477333759404&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=82&resourceId=9&timestamp=1477300749454&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3127,7 +3145,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=82&resourceId=9&timestamp=1477333759404&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=82&resourceId=9&timestamp=1477300749454&useCors=true]"
      }
     }
    },
@@ -3138,7 +3156,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333759425,
+   "timestamp": 1477300750154,
    "testId": "82",
    "state": "ended"
   },
@@ -3161,10 +3179,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=83&resourceId=2&timestamp=1477333759601&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=83&resourceId=2&timestamp=1477300751534&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=83&resourceId=2&timestamp=1477333759601&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=83&resourceId=2&timestamp=1477300751534&useCors=true]"
      }
     }
    },
@@ -3175,7 +3193,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333759631,
+   "timestamp": 1477300752201,
    "testId": "83",
    "state": "ended"
   },
@@ -3198,10 +3216,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=84&resourceId=3&timestamp=1477333759995&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=84&resourceId=3&timestamp=1477300757568&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=84&resourceId=3&timestamp=1477333759995&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=84&resourceId=3&timestamp=1477300757568&useCors=true]"
      }
     }
    },
@@ -3212,7 +3230,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760044,
+   "timestamp": 1477300758222,
    "testId": "84",
    "state": "ended"
   },
@@ -3235,10 +3253,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=85&resourceId=6&timestamp=1477333760121&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=85&resourceId=6&timestamp=1477300759845&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=85&resourceId=6&timestamp=1477333760121&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=85&resourceId=6&timestamp=1477300759845&useCors=true]"
      }
     }
    },
@@ -3249,7 +3267,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760143,
+   "timestamp": 1477300760384,
    "testId": "85",
    "state": "ended"
   },
@@ -3274,7 +3292,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=86&resourceId=4&timestamp=1477333760210&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=86&resourceId=4&timestamp=1477300761868&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3282,7 +3300,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=86&resourceId=4&timestamp=1477333760210&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=86&resourceId=4&timestamp=1477300761868&useCors=true]"
      }
     }
    },
@@ -3293,7 +3311,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760260,
+   "timestamp": 1477300762382,
    "testId": "86",
    "state": "ended"
   },
@@ -3318,7 +3336,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=87&resourceId=5&timestamp=1477333760295&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=87&resourceId=5&timestamp=1477300763841&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3326,7 +3344,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=87&resourceId=5&timestamp=1477333760295&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=87&resourceId=5&timestamp=1477300763841&useCors=true]"
      }
     }
    },
@@ -3337,7 +3355,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760339,
+   "timestamp": 1477300764531,
    "testId": "87",
    "state": "ended"
   },
@@ -3362,7 +3380,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=88&resourceId=7&timestamp=1477333760705&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=88&resourceId=7&timestamp=1477300766026&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3370,7 +3388,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=88&resourceId=7&timestamp=1477333760705&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=88&resourceId=7&timestamp=1477300766026&useCors=true]"
      }
     }
    },
@@ -3381,7 +3399,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760725,
+   "timestamp": 1477300766510,
    "testId": "88",
    "state": "ended"
   },
@@ -3406,7 +3424,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=89&resourceId=8&timestamp=1477333760969&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=89&resourceId=8&timestamp=1477300772940&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -3414,7 +3432,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=89&resourceId=8&timestamp=1477333760969&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=89&resourceId=8&timestamp=1477300772940&useCors=true]"
      }
     }
    },
@@ -3425,7 +3443,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333760989,
+   "timestamp": 1477300773459,
    "testId": "89",
    "state": "ended"
   },
@@ -3448,16 +3466,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=2&testId=90&resourceId=0&timestamp=1477333761046&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=3&testId=90&resourceId=0&timestamp=1477300774968&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=2&testId=90&resourceId=0&timestamp=1477333761046&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=3&testId=90&resourceId=0&timestamp=1477300774968&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333761067,
+   "timestamp": 1477300775461,
    "testId": "90",
    "state": "ended"
   },
@@ -3480,16 +3498,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=2&testId=91&resourceId=1&timestamp=1477333761117&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=3&testId=91&resourceId=1&timestamp=1477300776584&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=2&testId=91&resourceId=1&timestamp=1477333761117&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=3&testId=91&resourceId=1&timestamp=1477300776584&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333761137,
+   "timestamp": 1477300777123,
    "testId": "91",
    "state": "ended"
   },
@@ -3512,16 +3530,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=2&testId=92&resourceId=9&timestamp=1477333761261&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=3&testId=92&resourceId=9&timestamp=1477300778717&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=2&testId=92&resourceId=9&timestamp=1477333761261&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=3&testId=92&resourceId=9&timestamp=1477300778717&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333761313,
+   "timestamp": 1477300779257,
    "testId": "92",
    "state": "ended"
   },
@@ -3544,16 +3562,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=2&testId=93&resourceId=2&timestamp=1477333761480&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=3&testId=93&resourceId=2&timestamp=1477300780528&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=2&testId=93&resourceId=2&timestamp=1477333761480&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=3&testId=93&resourceId=2&timestamp=1477300780528&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333761512,
+   "timestamp": 1477300781043,
    "testId": "93",
    "state": "ended"
   },
@@ -3576,16 +3594,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=2&testId=94&resourceId=3&timestamp=1477333761917&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=3&testId=94&resourceId=3&timestamp=1477300786719&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=2&testId=94&resourceId=3&timestamp=1477333761917&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=3&testId=94&resourceId=3&timestamp=1477300786719&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333761999,
+   "timestamp": 1477300787258,
    "testId": "94",
    "state": "ended"
   },
@@ -3608,16 +3626,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=2&testId=95&resourceId=6&timestamp=1477333762841&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=3&testId=95&resourceId=6&timestamp=1477300789048&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=2&testId=95&resourceId=6&timestamp=1477333762841&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=3&testId=95&resourceId=6&timestamp=1477300789048&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333762864,
+   "timestamp": 1477300789534,
    "testId": "95",
    "state": "ended"
   },
@@ -3640,16 +3658,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=2&testId=96&resourceId=4&timestamp=1477333762946&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=3&testId=96&resourceId=4&timestamp=1477300791111&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=2&testId=96&resourceId=4&timestamp=1477333762946&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=3&testId=96&resourceId=4&timestamp=1477300791111&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763001,
+   "timestamp": 1477300791596,
    "testId": "96",
    "state": "ended"
   },
@@ -3672,16 +3690,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=2&testId=97&resourceId=5&timestamp=1477333763034&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=3&testId=97&resourceId=5&timestamp=1477300793081&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=2&testId=97&resourceId=5&timestamp=1477333763034&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=3&testId=97&resourceId=5&timestamp=1477300793081&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763055,
+   "timestamp": 1477300793778,
    "testId": "97",
    "state": "ended"
   },
@@ -3704,16 +3722,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=2&testId=98&resourceId=7&timestamp=1477333763124&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=3&testId=98&resourceId=7&timestamp=1477300795059&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=2&testId=98&resourceId=7&timestamp=1477333763124&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=3&testId=98&resourceId=7&timestamp=1477300795059&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763144,
+   "timestamp": 1477300795754,
    "testId": "98",
    "state": "ended"
   },
@@ -3736,16 +3754,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=2&testId=99&resourceId=8&timestamp=1477333763624&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=3&testId=99&resourceId=8&timestamp=1477300798778&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=2&testId=99&resourceId=8&timestamp=1477333763624&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=3&testId=99&resourceId=8&timestamp=1477300798778&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763645,
+   "timestamp": 1477300799339,
    "testId": "99",
    "state": "ended"
   },
@@ -3770,14 +3788,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=100&resourceId=0&timestamp=1477333763697&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=100&resourceId=0&timestamp=1477300800418&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=100&resourceId=0&timestamp=1477333763697&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=100&resourceId=0&timestamp=1477300800418&useCors=false]"
      }
     }
    },
@@ -3788,7 +3806,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763764,
+   "timestamp": 1477300800977,
    "testId": "100",
    "state": "ended"
   },
@@ -3813,14 +3831,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=101&resourceId=1&timestamp=1477333763792&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=101&resourceId=1&timestamp=1477300802261&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=101&resourceId=1&timestamp=1477333763792&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=101&resourceId=1&timestamp=1477300802261&useCors=false]"
      }
     }
    },
@@ -3831,7 +3849,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333763814,
+   "timestamp": 1477300802976,
    "testId": "101",
    "state": "ended"
   },
@@ -3856,14 +3874,17 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=102&resourceId=9&timestamp=1477333763995&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=102&resourceId=9&timestamp=1477300804818&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=102&resourceId=9&timestamp=1477333763995&useCors=false]"
+      "err": {
+       "name": "TimeoutError",
+       "message": "loadResourceByFontFaceCss"
+      }
      }
     }
    },
@@ -3874,7 +3895,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333764051,
+   "timestamp": 1477300805361,
    "testId": "102",
    "state": "ended"
   },
@@ -3899,14 +3920,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=103&resourceId=2&timestamp=1477333764219&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=103&resourceId=2&timestamp=1477300811895&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=103&resourceId=2&timestamp=1477333764219&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=103&resourceId=2&timestamp=1477300811895&useCors=false]"
      }
     }
    },
@@ -3917,7 +3938,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333764257,
+   "timestamp": 1477300812380,
    "testId": "103",
    "state": "ended"
   },
@@ -3942,14 +3963,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=104&resourceId=3&timestamp=1477333764728&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=104&resourceId=3&timestamp=1477300818890&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=104&resourceId=3&timestamp=1477333764728&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=104&resourceId=3&timestamp=1477300818890&useCors=false]"
      }
     }
    },
@@ -3960,7 +3981,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333764785,
+   "timestamp": 1477300819382,
    "testId": "104",
    "state": "ended"
   },
@@ -3985,14 +4006,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=105&resourceId=6&timestamp=1477333764879&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=105&resourceId=6&timestamp=1477300821295&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=105&resourceId=6&timestamp=1477333764879&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=105&resourceId=6&timestamp=1477300821295&useCors=false]"
      }
     }
    },
@@ -4003,7 +4024,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333764933,
+   "timestamp": 1477300821979,
    "testId": "105",
    "state": "ended"
   },
@@ -4028,14 +4049,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=106&resourceId=4&timestamp=1477333764981&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=106&resourceId=4&timestamp=1477300823645&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=106&resourceId=4&timestamp=1477333764981&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=106&resourceId=4&timestamp=1477300823645&useCors=false]"
      }
     }
    },
@@ -4046,7 +4067,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765033,
+   "timestamp": 1477300824324,
    "testId": "106",
    "state": "ended"
   },
@@ -4071,14 +4092,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=107&resourceId=5&timestamp=1477333765067&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=107&resourceId=5&timestamp=1477300825745&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=107&resourceId=5&timestamp=1477333765067&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=107&resourceId=5&timestamp=1477300825745&useCors=false]"
      }
     }
    },
@@ -4089,7 +4110,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765087,
+   "timestamp": 1477300826405,
    "testId": "107",
    "state": "ended"
   },
@@ -4114,14 +4135,14 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=108&resourceId=7&timestamp=1477333765141&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=108&resourceId=7&timestamp=1477300827945&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=108&resourceId=7&timestamp=1477333765141&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=108&resourceId=7&timestamp=1477300827945&useCors=false]"
      }
     }
    },
@@ -4132,7 +4153,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765161,
+   "timestamp": 1477300828473,
    "testId": "108",
    "state": "ended"
   },
@@ -4149,22 +4170,22 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=109&resourceId=8&timestamp=1477333765435&useCors=false]",
+       "message": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=109&resourceId=8&timestamp=1477300834238&useCors=false]",
        "event": {
         "type": "error"
        }
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=109&resourceId=8&timestamp=1477333765435&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=109&resourceId=8&timestamp=1477300834238&useCors=false]"
      }
     }
    },
@@ -4175,7 +4196,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765456,
+   "timestamp": 1477300834762,
    "testId": "109",
    "state": "ended"
   },
@@ -4192,16 +4213,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=110&resourceId=0&timestamp=1477333765505&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=110&resourceId=0&timestamp=1477300835660&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=2&testId=110&resourceId=0&timestamp=1477333765505&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=3&testId=110&resourceId=0&timestamp=1477300835660&useCors=true]"
      }
     }
    },
@@ -4212,7 +4233,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765525,
+   "timestamp": 1477300836347,
    "testId": "110",
    "state": "ended"
   },
@@ -4229,16 +4250,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=111&resourceId=1&timestamp=1477333765576&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=111&resourceId=1&timestamp=1477300838288&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=2&testId=111&resourceId=1&timestamp=1477333765576&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=3&testId=111&resourceId=1&timestamp=1477300838288&useCors=true]"
      }
     }
    },
@@ -4249,7 +4270,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765597,
+   "timestamp": 1477300838815,
    "testId": "111",
    "state": "ended"
   },
@@ -4272,10 +4293,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=112&resourceId=9&timestamp=1477333765763&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=112&resourceId=9&timestamp=1477300839998&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=2&testId=112&resourceId=9&timestamp=1477333765763&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=3&testId=112&resourceId=9&timestamp=1477300839998&useCors=true]"
      }
     }
    },
@@ -4286,7 +4307,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333765809,
+   "timestamp": 1477300840490,
    "testId": "112",
    "state": "ended"
   },
@@ -4309,10 +4330,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=113&resourceId=2&timestamp=1477333765977&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=113&resourceId=2&timestamp=1477300841920&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=2&testId=113&resourceId=2&timestamp=1477333765977&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=3&testId=113&resourceId=2&timestamp=1477300841920&useCors=true]"
      }
     }
    },
@@ -4323,7 +4344,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333766011,
+   "timestamp": 1477300842420,
    "testId": "113",
    "state": "ended"
   },
@@ -4340,16 +4361,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=114&resourceId=3&timestamp=1477333766694&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=114&resourceId=3&timestamp=1477300852580&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=2&testId=114&resourceId=3&timestamp=1477333766694&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=3&testId=114&resourceId=3&timestamp=1477300852580&useCors=true]"
      }
     }
    },
@@ -4360,7 +4381,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333766715,
+   "timestamp": 1477300853112,
    "testId": "114",
    "state": "ended"
   },
@@ -4377,16 +4398,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=115&resourceId=6&timestamp=1477333766882&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=115&resourceId=6&timestamp=1477300855145&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=2&testId=115&resourceId=6&timestamp=1477333766882&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=3&testId=115&resourceId=6&timestamp=1477300855145&useCors=true]"
      }
     }
    },
@@ -4397,7 +4418,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333766933,
+   "timestamp": 1477300855632,
    "testId": "115",
    "state": "ended"
   },
@@ -4414,16 +4435,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=116&resourceId=4&timestamp=1477333766993&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=116&resourceId=4&timestamp=1477300857207&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=2&testId=116&resourceId=4&timestamp=1477333766993&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=3&testId=116&resourceId=4&timestamp=1477300857207&useCors=true]"
      }
     }
    },
@@ -4434,7 +4455,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333767013,
+   "timestamp": 1477300857702,
    "testId": "116",
    "state": "ended"
   },
@@ -4451,16 +4472,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=117&resourceId=5&timestamp=1477333767081&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=117&resourceId=5&timestamp=1477300859169&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=2&testId=117&resourceId=5&timestamp=1477333767081&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=3&testId=117&resourceId=5&timestamp=1477300859169&useCors=true]"
      }
     }
    },
@@ -4471,7 +4492,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333767126,
+   "timestamp": 1477300859659,
    "testId": "117",
    "state": "ended"
   },
@@ -4494,10 +4515,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=118&resourceId=7&timestamp=1477333767152&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=118&resourceId=7&timestamp=1477300860998&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=2&testId=118&resourceId=7&timestamp=1477333767152&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=3&testId=118&resourceId=7&timestamp=1477300860998&useCors=true]"
      }
     }
    },
@@ -4508,7 +4529,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333767172,
+   "timestamp": 1477300861487,
    "testId": "118",
    "state": "ended"
   },
@@ -4525,16 +4546,16 @@
       "statusCode": 200
      },
      "normal": {
-      "requested": true,
-      "statusCode": 200
+      "requested": false,
+      "statusCode": null
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=119&resourceId=8&timestamp=1477333767544&useCors=true]"
+      "data": "loadResourceByXHR[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=119&resourceId=8&timestamp=1477300868905&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=2&testId=119&resourceId=8&timestamp=1477333767544&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=3&testId=119&resourceId=8&timestamp=1477300868905&useCors=true]"
      }
     }
    },
@@ -4545,7 +4566,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477333767564,
+   "timestamp": 1477300869398,
    "testId": "119",
    "state": "ended"
   }
