@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "deploy-gh-pages": "node server/deploy-gh-pages.js",
+    "lint": "eslint public server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/"
   },
