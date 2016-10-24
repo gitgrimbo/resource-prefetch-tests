@@ -30,6 +30,7 @@
     "mkdirp": "^0.5.1",
     "morgan": "^1.7.0",
     "mustache": "^2.2.1",
+    "node-uuid": "^1.4.7",
     "requirejs": "^2.3.2",
     "response-time": "^2.3.1",
     "stream-throttle": "^0.1.3",

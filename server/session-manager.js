@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const mkdirp = require("mkdirp");
 const uaParser = require("ua-parser-js");
+const uuid = require("node-uuid");
 
 module.exports = class SessionManager {
   constructor() {
@@ -10,7 +11,7 @@ module.exports = class SessionManager {
   }
 
   startSession(attrs) {
-    const id = ++this.sessionId;
+    const id = uuid.v4();
     const session = Object.assign({}, attrs, {
       timestamp: Date.now(),
       sessionId: id,
