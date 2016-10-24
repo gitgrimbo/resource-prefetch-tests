@@ -6,7 +6,8 @@
   "scripts": {
     "deploy-gh-pages": "node server/deploy-gh-pages.js",
     "lint": "eslint public server",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node node_modules/intern/bin/intern-runner.js config=test/config/intern-functional-standalone",
+    "test-sauce": "node node_modules/intern/bin/intern-runner.js config=test/config/intern-saucelabs",
     "start": "node server/"
   },
   "author": "Paul Grime <gitgrimbo@gmail.com> (https://github.com/gitgrimbo)",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "eslint": "^3.8.1",
     "eslint-config-google": "^0.7.0",
+    "intern": "^3.3.1",
     "shelljs": "^0.7.4"
   },
   "repository": {

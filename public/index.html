@@ -42,6 +42,9 @@ require = {
     var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
     var resultsTextareaElement = $("#results")[0];
     var app = new App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement);
+    if (window.location.search.indexOf("autostart=true") > -1) {
+      app.startTest();
+    }
     $("#start-tests").click(function() {
       app.startTest();
     });

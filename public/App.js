@@ -21,6 +21,8 @@ define(["./tester"], function(tester) {
     function onSessionEnded(session) {
       this.resultsTextareaElement.value = JSON.stringify(session, null, 1);
       console.log(session);
+
+      window.resourcePrefetchTestResults = session;
     }
 
     function onTestComplete(data) {
