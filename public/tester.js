@@ -157,7 +157,13 @@ define([
   }
 
   function combineTests(resources, testFilter, config, port) {
-    var baseTests = testList;
+    var baseTests = testList.map(function(test) {
+      return extend(test, {
+        // The prefetcher functions here should have been 'timeoutified' already.
+        // See prefetch.js
+        prefetcher: prefetch[test.prefetcherName]
+      });
+    });
     baseTests = testUtils.createTestsPerResource(baseTests, resources);
     var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, true);
     var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, false);

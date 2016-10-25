@@ -1,23 +1,21 @@
 /* eslint-env browser, amd */
-define(["./prefetch"], function(prefetch) {
-  // The prefetcher functions here should have been 'timeoutified' already.
-  // See prefetch.js
+define([], function() {
   var tests = [
     {
       name: "new Image()",
-      prefetcher: prefetch.loadResourceByNewImage
+      prefetcherName: "loadResourceByNewImage"
     }, {
       name: "XHR",
-      prefetcher: prefetch.loadResourceByXHR
+      prefetcherName: "loadResourceByXHR"
     }, {
       name: "<object>",
-      prefetcher: prefetch.loadResourceByObjectTag
+      prefetcherName: "loadResourceByObjectTag"
     }, {
       name: "<link rel=prefetch>",
-      prefetcher: prefetch.loadResourceByLinkRelPrefetchTag
+      prefetcherName: "loadResourceByLinkRelPrefetchTag"
     }, {
       name: "<link rel=prefetch crossorigin>",
-      prefetcher: prefetch.loadResourceByLinkRelPrefetchTagWithCrossoriginAttr
+      prefetcherName: "loadResourceByLinkRelPrefetchTagWithCrossoriginAttr"
     }
   ];
 

@@ -1,22 +1,29 @@
 /* eslint-env amd */
 define([
   "intern",
-  "intern!object"
-], function(intern, registerSuite, ResourcesCollector) {
-  registerSuite({
-    name: "functional",
+  "intern!object",
+  "../../public/tests"
+], function(intern, registerSuite, tests) {
+  function makeTestUrl(url, testName) {
+    const char = (url.indexOf("?") > 1) ? "&" : "?";
+    return url + char + "grep=" + encodeURIComponent(testName);
+  }
 
-    test() {
+  const suite = {
+    name: "functional"
+  };
+
+  tests.forEach((test) => {
+    suite[test.name] = function() {
       // It's a long test so timeout after an hour.
       // Both the test timeout, and the async timeout need to be long.
       const oneHour = 60 * 60 * 1000;
       this.timeout = oneHour;
       const executeAsyncTimeout = oneHour;
-
-      const findTimeout = 10 * 1000;
+      const findTimeout = oneHour;
 
       const config = intern.config;
-      const url = config.testHarnessUrl;
+      const url = makeTestUrl(config.testHarnessUrl, test.name);
 
       return this.remote
         .setFindTimeout(findTimeout)
@@ -25,7 +32,7 @@ define([
         .executeAsync(function(done) {
           function checkForResults() {
             // eslint-disable-next-line
-            var results = (typeof window.resourcePrefetchTestResults !== "undefined") ? window.resourcePrefetchTestResults: null;
+            var results = (typeof window.resourcePrefetchTestResults !== "undefined") ? window.resourcePrefetchTestResults : null;
             if (results) {
               return done(results);
             }
@@ -33,6 +40,8 @@ define([
           }
           checkForResults();
         });
-    }
+    };
   });
+
+  registerSuite(suite);
 });
