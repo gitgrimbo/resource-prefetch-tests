@@ -6,7 +6,7 @@ define(["mustache"], function(Mustache) {
       lines.push("Client timeout waiting for load/error event");
     } else if (err.event) {
       var event = err.event;
-      var msg = '"' + event.type + "' event raised.";
+      var msg = '"' + event.type + "' event fired.";
       if (event.target && event.target.tagName) {
         msg += " On tag " + event.target.tagName;
       }
@@ -46,11 +46,20 @@ define(["mustache"], function(Mustache) {
     } else if (normalRequestReceivedByServer) {
       normalInfo.push("<code>" + pathWithoutParams + "</code>" + " was requested again");
     }
-    if (client && client.prefetch && client.prefetch.err) {
-      prefetchInfo = prefetchInfo.concat(this.clientErrorToLines(client.prefetch.err));
+
+    if (client && client.prefetch) {
+      if (client.prefetch.err) {
+        prefetchInfo = prefetchInfo.concat(this.clientErrorToLines(client.prefetch.err));
+      } else if (client.prefetch.data) {
+        prefetchInfo = prefetchInfo.concat('"load" event fired.');
+      }
     }
-    if (client && client.normal && client.normal.err) {
-      normalInfo = normalInfo.concat(this.clientErrorToLines(client.normal.err));
+    if (client && client.normal) {
+      if (client.normal.err) {
+        normalInfo = normalInfo.concat(this.clientErrorToLines(client.normal.err));
+      } else if (client.normal.data) {
+        normalInfo = normalInfo.concat('"load" event fired.');
+      }
     }
 
     return {
