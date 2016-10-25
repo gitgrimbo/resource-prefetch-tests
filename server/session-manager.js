@@ -105,8 +105,8 @@ module.exports = class SessionManager {
     return test.resource;
   }
 
-  testResourceRequest(sessionId, testId, resourceId, resourcePath) {
-    console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath);
+  testResourceRequest(sessionId, testId, resourceId, resourcePath, requestHeaders) {
+    console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath, requestHeaders);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
     console.log("testResourceRequest", "session", Boolean(session), "test", Boolean(test));
@@ -115,12 +115,13 @@ module.exports = class SessionManager {
 
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
     prefetchOrNormal.requested = true;
+    prefetchOrNormal.requestHeaders = requestHeaders;
 
     return test;
   }
 
-  testResourceResponse(sessionId, testId, resourceId, resourcePath, statusCode) {
-    console.log("testResourceResponse", sessionId, testId, resourceId, statusCode);
+  testResourceResponse(sessionId, testId, resourceId, resourcePath, statusCode, responseHeaders) {
+    console.log("testResourceResponse", sessionId, testId, resourceId, statusCode, responseHeaders);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
 
@@ -128,6 +129,7 @@ module.exports = class SessionManager {
 
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
     prefetchOrNormal.statusCode = statusCode;
+    prefetchOrNormal.responseHeaders = responseHeaders;
 
     return test;
   }
