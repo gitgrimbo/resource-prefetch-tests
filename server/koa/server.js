@@ -7,6 +7,7 @@ const bodyParser = require("koa-bodyparser");
 const serve = require("koa-static");
 const json = require("koa-json");
 const logger = require("koa-logger");
+const ctxCacheControl = require("koa-ctx-cache-control");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
@@ -21,6 +22,9 @@ const resultsSaveDir = path.join("./", "results");
 const downloadPathRegExp = /\/download-files/;
 
 const app = koa();
+
+// Add cache control capabilities
+ctxCacheControl(app);
 
 app.use(logger());
 app.use(route.get(downloadPathRegExp, throttler({ rate: 4, chunk: 20 * 1024, debug: 0 })));
@@ -102,6 +106,8 @@ app.use(route.get("/config", function* (next) {
 
 // Output a single result from disk
 app.use(route.get("/result.html", function* (next) {
+  this.response.cacheControl(false);
+
   const { name } = this.query;
 
   if (!name) {
@@ -125,14 +131,18 @@ app.use(route.get("/result.html", function* (next) {
 
 // Output list of results from disk
 app.use(route.get("/results.html", function* (next) {
-  const link = f => `<a href="result.html?name=${path.parse(f).name}">${f}</a>`;
+  this.response.cacheControl(false);
+
+  const link = (f) => `<a href="result.html?name=${path.parse(f).name}">${f}</a>`;
   const files = yield fs.readdir(resultsSaveDir);
-  this.body = files.map(f => `<li>${link(f)}</li>`).join("\n");
+  this.body = files.map((f) => `<li>${link(f)}</li>`).join("\n");
 }));
 
 
 // Output a single session from memory
 app.use(route.get("/session.html", function* (next) {
+  this.response.cacheControl(false);
+
   const { sessionId } = this.query;
 
   if (!sessionId) {
@@ -149,10 +159,12 @@ app.use(route.get("/session.html", function* (next) {
 
 
 // Output list of sessions from memory
-app.use(route.get("/sessions.html", function* (next) {
+app.use(route.get("/sessions.html", function* () {
+  this.response.cacheControl(false);
+
   const sessionIds = sessionManager.getSessionIds();
-  const link = id => `<a href="session.html?sessionId=${id}">${id}</a>`;
-  this.body = sessionIds.map(id => `<li>${link(id)}</li>`).join("\n");
+  const link = (id) => `<a href="session.html?sessionId=${id}">${id}</a>`;
+  this.body = sessionIds.map((id) => `<li>${link(id)}</li>`).join("\n");
 }));
 
 
