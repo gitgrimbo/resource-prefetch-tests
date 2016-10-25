@@ -156,13 +156,17 @@ define([
       });
   }
 
-  function combineTests(resources, config, port) {
+  function combineTests(resources, testFilter, config, port) {
     var baseTests = testList;
     baseTests = testUtils.createTestsPerResource(baseTests, resources);
     var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, true);
     var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, false);
 
     var allTests = baseTests.concat(xdWithCorsTests, xdWithoutCorsTests);
+
+    if (testFilter) {
+      allTests = allTests.filter(testFilter);
+    }
 
     return testUtils.sortTests(allTests);
   }
@@ -211,8 +215,10 @@ define([
       .then(callback, errback);
   }
 
-  function test(resources, prefetchContainer, listener) {
-    prefetch.setContainer(prefetchContainer);
+  function test(options) {
+    options = options || {};
+
+    prefetch.setContainer(options.prefetchContainer);
 
     var config;
     var sessionId;
@@ -231,20 +237,20 @@ define([
       })
       .then(function(response) {
         sessionId = response.sessionId;
-        notifyListener(listener, "SessionStarted", {
+        notifyListener(options.listener, "SessionStarted", {
           sessionId: sessionId
         });
       })
       .then(function() {
         console.log("Running tests");
-        var allTests = combineTests(resources, config, port);
+        var allTests = combineTests(options.resources, options.testFilter, config, port);
         allTests.forEach(function(test) {
           test.prefetchTimeoutMs = 5 * 1000;
           test.loadResourceNormallyTimeoutMs = 5 * 1000;
         });
         //allTests = allTests.slice(0, 1);
         console.log(allTests);
-        return runTests(allTests, sessionId, prefetchContainer, listener);
+        return runTests(allTests, sessionId, options.prefetchContainer, options.listener);
       })
       .then(function(results_) {
         results = results_;
@@ -257,7 +263,7 @@ define([
         });
       })
       .then(function(session) {
-        notifyListener(listener, "SessionEnded", {
+        notifyListener(options.listener, "SessionEnded", {
           sessionId: sessionId,
           session: session
         });

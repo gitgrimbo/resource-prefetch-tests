@@ -30,6 +30,20 @@
 
 <script src="vendor/bluebird.js"></script>
 <script>
+// http://stackoverflow.com/a/2880929/319878
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
 require = {
   paths: {
     jquery: "vendor/jquery",
@@ -41,8 +55,8 @@ require = {
     var frame = $("#results-frame")[0];
     var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
     var resultsTextareaElement = $("#results")[0];
-    var app = new App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement);
-    if (window.location.search.indexOf("autostart=true") > -1) {
+    var app = new App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams.grep);
+    if (urlParams.autostart === "true") {
       app.startTest();
     }
     $("#start-tests").click(function() {

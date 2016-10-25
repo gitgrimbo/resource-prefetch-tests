@@ -10,11 +10,12 @@ define(["./tester"], function(tester) {
     };
   }
 
-  function App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement) {
+  function App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, grep) {
     this.resources = resources;
     this.prefetchContainer = prefetchContainer;
     this.resultsTableElement = resultsTableElement;
     this.resultsTextareaElement = resultsTextareaElement;
+    this.grep = grep;
   }
 
   App.prototype.startTest = function() {
@@ -31,10 +32,19 @@ define(["./tester"], function(tester) {
       resultsWindow.resultsTable.onTestComplete(data);
     }
 
-    tester(this.resources, this.prefetchContainer, {
-      onSessionStarted: log(),
-      onSessionEnded: onSessionEnded.bind(this),
-      onTestComplete: onTestComplete.bind(this)
+    var grep = this.grep;
+    tester({
+      resources: this.resources,
+      prefetchContainer: this.prefetchContainer,
+      testFilter: function(test) {
+        console.log(grep, test.name);
+        return grep ? (test.name.search(grep) > -1) : true;
+      },
+      listener: {
+        onSessionStarted: log(),
+        onSessionEnded: onSessionEnded.bind(this),
+        onTestComplete: onTestComplete.bind(this)
+      }
     });
   };
 
