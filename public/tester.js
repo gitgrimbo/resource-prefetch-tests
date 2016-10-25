@@ -10,13 +10,7 @@ define([
 ], function(extend, prefetch, ajaxUtils, promiseUtils, url, testList, testUtils) {
   var resolveWithDelay = promiseUtils.resolveWithDelay;
 
-  var getter = ajaxUtils.getter;
   var poster = ajaxUtils.poster;
-
-  var getConfig = getter("/config");
-  var startNormalDownload = getter("/startNormalDownload");
-  var startSession = getter("/startSession");
-  var endSession = getter("/endSession");
 
   function addTestParams(src, resourceId, sessionId, testId, timestamp, useCors) {
     var addParams = url.addParams;
@@ -109,7 +103,8 @@ define([
         return resolveWithDelay(100);
       })
       .then(function() {
-        return startNormalDownload(ids);
+        var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
+        return startNormalDownload();
       })
       .then(function() {
         console.log(testId, test.name, "Starting normal download");
@@ -231,12 +226,14 @@ define([
     var results;
     var port = window.location.port;
 
+    var getConfig = poster("/config");
     return getConfig()
       .then(function(config_) {
         config = config_;
       })
       .then(function() {
         console.log("Starting session");
+        var startSession = poster("/startSession");
         return startSession({
           userAgent: navigator.userAgent
         });
@@ -264,9 +261,10 @@ define([
       })
       .then(function() {
         console.log("Ending session");
-        return endSession({
+        var endSession = poster(url.addParams("/endSession", {
           sessionId: sessionId
-        });
+        }));
+        return endSession();
       })
       .then(function(session) {
         notifyListener(options.listener, "SessionEnded", {

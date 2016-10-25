@@ -71,7 +71,7 @@ app.use(route.post("/startTest", function* (next) {
 }));
 
 // startNormalDownload means the next resource requested will be loaded normally after prefetch.
-app.use(route.get("/startNormalDownload", function* (next) {
+app.use(route.post("/startNormalDownload", function* (next) {
   const { sessionId, testId } = this.query;
   const test = sessionManager.testStartNormalDownload(sessionId, testId);
   this.body = test;
@@ -83,23 +83,27 @@ app.use(route.post("/endTest", function* (next) {
   this.body = test;
 }));
 
-app.use(route.get("/startSession", function* (next) {
-  const session = sessionManager.startSession(this.query);
+app.use(route.post("/startSession", function* (next) {
+  const userAgent = this.req.headers["user-agent"];
+  console.log(userAgent);
+  const session = sessionManager.startSession({
+    userAgent
+  });
   this.body = session;
 }));
 
-app.use(route.get("/endSession", function* (next) {
+app.use(route.post("/endSession", function* (next) {
   const { sessionId } = this.query;
   const session = sessionManager.endSession(sessionId);
   this.body = session;
   sessionManager.saveSession(sessionId, sessionSaveDir);
 }));
 
-app.use(route.get("/getSessions", function* (next) {
+app.use(route.post("/getSessions", function* (next) {
   this.body = sessionManager.getSessions();
 }));
 
-app.use(route.get("/config", function* (next) {
+app.use(route.post("/config", function* (next) {
   this.body = testConfig;
 }));
 
