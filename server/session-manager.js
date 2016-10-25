@@ -34,6 +34,10 @@ module.exports = class SessionManager {
     return this.sessions;
   }
 
+  getSessionIds() {
+    return Object.keys(this.sessions);
+  }
+
   getSession(sessionId, strict) {
     const session = this.sessions[sessionId];
     if (strict === true && !session) {

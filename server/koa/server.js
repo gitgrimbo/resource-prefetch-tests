@@ -147,6 +147,15 @@ app.use(route.get("/session.html", function* (next) {
   }
 }));
 
+
+// Output list of sessions from memory
+app.use(route.get("/sessions.html", function* (next) {
+  const sessionIds = sessionManager.getSessionIds();
+  const link = id => `<a href="session.html?sessionId=${id}">${id}</a>`;
+  this.body = sessionIds.map(id => `<li>${link(id)}</li>`).join("\n");
+}));
+
+
 const args = process.argv.slice(2);
 const port = args[0] || 3002;
 
