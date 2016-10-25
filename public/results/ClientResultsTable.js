@@ -4,6 +4,7 @@ define(["jquery", "mustache", "./ResultsTable"], function($, Mustache, ResultsTa
     var table = $(this.container).find("table");
     var tbody = $(table).find("tbody")[0];
     $(tbody).append(Mustache.render(this.rowTemplate, row));
+    $(tbody).append(Mustache.render(this.headersRowTemplate, row));
   }
 
   function onTestComplete(data) {
@@ -14,6 +15,7 @@ define(["jquery", "mustache", "./ResultsTable"], function($, Mustache, ResultsTa
   function appendTo(container, view) {
     this.container = $(container);
     this.container.append(this.toHTML(view));
+    ResultsTable.addEventListeners();
   }
 
   ResultsTable.findTemplate = function(template, templateSelector) {
@@ -23,6 +25,7 @@ define(["jquery", "mustache", "./ResultsTable"], function($, Mustache, ResultsTa
     return template;
   };
 
+  // browser impl of escape function
   ResultsTable.escapeHtml = (function() {
     var div = $("<div></div>");
     return function(html) {

@@ -8,25 +8,33 @@ table {
     border-collapse: collapsed;
 }
 
-th {
+table.results > thead > tr > th {
     background: red;
     color: white;
     padding: 2px;
     vertical-align: top;
 }
 
-th.prefetch {
+table.results > thead > tr > th.prefetch {
     background: rgba(0, 128, 0, 0.9);
 }
 
-th.normal {
+table.results > thead > tr > th.normal {
     background: rgba(0, 0, 128, 0.9);
 }
 
-td {
+table.results > tbody > tr > td {
     border: solid 1px lightgray;
     padding: 2px;
     vertical-align: top;
+}
+
+table.results > tbody > tr.pass {
+    background: rgba(0, 255, 0, 0.08);
+}
+
+table.results > tbody > tr.fail {
+    background: rgba(255, 0, 0, 0.08);
 }
 
 code {
@@ -34,10 +42,10 @@ code {
     color: black;
 }
 
-tr.pass {
-    background: rgba(0, 255, 0, 0.08);
+.hidden {
+    display: none;
 }
 
-tr.fail {
-    background: rgba(255, 0, 0, 0.08);
+pre.headers {
+    font-family: inherit;
 }

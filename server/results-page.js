@@ -11,6 +11,10 @@ requirejs.config({
 
 const ResultsTable = requirejs("../public/results/ResultsTable");
 
+function filterOutFalseys(it) {
+  return Boolean(it);
+}
+
 function readTemplate(templateName) {
   return String(fs.readFileSync(dirname + "/../public/results/" + templateName + ".mst.html"));
 }
@@ -34,13 +38,14 @@ function sessionToView(session, resultsTable) {
     return resultsTable.testResultsToRowData(results);
   });
   return {
-    rows: rows.filter(r => r)
+    rows: rows.filter(filterOutFalseys)
   };
 }
 
 const opts = {
   tableTemplate: readTemplate("table"),
   rowTemplate: readTemplate("row"),
+  headersRowTemplate: readTemplate("headers-row"),
   escapeHtml: function(s) {
     return s;
   }
@@ -52,10 +57,17 @@ module.exports = function(session, stylesUrl) {
 
   stylesUrl = stylesUrl || "results/style.css";
 
-  const top = `<!doctype html>\
-    <head>\
-    <link rel="stylesheet" href="${stylesUrl}">\
-    </head>\
+  // Why do the weird "ResultsTable.addEventListeners.toString()" thing?
+  // Because we aren't actually loading that script in this generated page,
+  // so we use toString() to insert the actual function body.
+  const top = `<!doctype html>
+    <head>
+    <link rel="stylesheet" href="${stylesUrl}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.addEventListener("load", function() {
+    (` + ResultsTable.addEventListeners.toString() + `).call();
+    }, false);</script>
+    </head>
     `;
 
   return top + t.toHTML(view);

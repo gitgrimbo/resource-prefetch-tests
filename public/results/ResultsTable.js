@@ -1,5 +1,5 @@
 /* eslint-env browser, amd */
-define(["mustache"], function(Mustache) {
+define(["jquery", "mustache"], function($, Mustache) {
   function clientErrorToLines(err) {
     var lines = [];
     if (err.name === "TimeoutError") {
@@ -19,6 +19,22 @@ define(["mustache"], function(Mustache) {
     return lines;
   }
 
+  function headersList(headers) {
+    if (!headers) {
+      return "";
+    }
+    var omit = {
+      "user-agent": 1,
+      "referer": 1
+    };
+    var keys = Object.keys(headers).filter(function(name) {
+      return !(name.toLowerCase() in omit);
+    });
+    return keys.map(function(name) {
+      return name + "=" + headers[name];
+    }).join("\n");
+  }
+
   function testResultsToRowData(data) {
     var test = data.test;
     var resource = data.result.serverResult.resource;
@@ -31,8 +47,10 @@ define(["mustache"], function(Mustache) {
     // (or rather not make) the request.
     var pathWithoutParams = (server && server.path) ? server.path.split("?")[0] : resource.src;
 
-    var prefetchRequestStatusCode = server && server.prefetch && server.prefetch.statusCode;
-    var normalRequestStatusCode = server && server.normal && server.normal.statusCode;
+    var serverPrefetch = server && server.prefetch;
+    var serverNormal = server && server.normal;
+    var prefetchRequestStatusCode = serverPrefetch && serverPrefetch.statusCode;
+    var normalRequestStatusCode = serverNormal && serverNormal.statusCode;
 
     var prefetchRequestReceivedByServer = Boolean(prefetchRequestStatusCode);
     var normalRequestReceivedByServer = Boolean(normalRequestStatusCode);
@@ -63,7 +81,7 @@ define(["mustache"], function(Mustache) {
     }
 
     return {
-      i: data.i + 1,
+      row: data.i + 1,
       numTests: data.numTests,
       name: test.name,
       src: pathWithoutParams,
@@ -71,18 +89,25 @@ define(["mustache"], function(Mustache) {
       useCors: test.useCors ? "cors" : "",
       pass: pass ? "P" : "F",
       cssClass: pass ? "pass" : "fail",
+
       prefetchInfo: prefetchInfo.join("<br>"),
-      prefetchRequested: server.prefetch.requested ? "Y" : "N",
+      prefetchRequested: serverPrefetch.requested ? "Y" : "N",
       prefetchRequestStatusCode: prefetchRequestStatusCode || "",
+      prefetchRequestHeaders: headersList(serverPrefetch && serverPrefetch.requestHeaders),
+      prefetchResponseHeaders: headersList(serverPrefetch && serverPrefetch.responseHeaders),
+
       normalInfo: normalInfo.join("<br>"),
       normalRequested: server.normal.requested ? "Y" : "N",
-      normalRequestStatusCode: normalRequestStatusCode || ""
+      normalRequestStatusCode: normalRequestStatusCode || "",
+      normalRequestHeaders: headersList(serverNormal && serverNormal.requestHeaders),
+      normalResponseHeaders: headersList(serverNormal && serverNormal.responseHeaders)
     };
   }
 
   function toHTML(view) {
     return Mustache.render(this.tableTemplate, view, {
-      result_row: this.rowTemplate
+      result_row: this.rowTemplate,
+      result_headers_row: this.headersRowTemplate
     });
   }
 
@@ -90,15 +115,27 @@ define(["mustache"], function(Mustache) {
     opts = opts || {};
     this.tableTemplate = opts.tableTemplate;
     this.rowTemplate = opts.rowTemplate;
+    this.headersRowTemplate = opts.headersRowTemplate;
     this.escapeHtml = opts.escapeHtml;
     Mustache.parse(opts.tableTemplate);
     Mustache.parse(opts.rowTemplate);
+    Mustache.parse(opts.headersRowTemplate);
   }
 
   ResultsTable.prototype = {
     clientErrorToLines: clientErrorToLines,
     toHTML: toHTML,
     testResultsToRowData: testResultsToRowData
+  };
+
+  ResultsTable.addEventListeners = function(tableElement) {
+    var $table = $(tableElement || $("#results-table")[0]);
+    $table.on("click", "a[data-type=toggle-headers]", function(evt) {
+      evt.preventDefault();
+      var row = $(this).attr("data-row");
+      var $headersRow = $table.find("tr.headers[data-row=" + row + "]");
+      $headersRow.toggleClass("hidden");
+    });
   };
 
   return ResultsTable;

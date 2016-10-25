@@ -1,22 +1,31 @@
 /* eslint-env browser, amd */
 define(["jquery", "./ClientResultsTable"], function($, ResultsTable) {
-  function loadTemplates() {
-    return Promise.all([
-      $.get("./table.mst.html"),
-      $.get("./row.mst.html")
-    ]).then(function(templates) {
-      return {
-        tableTemplate: templates[0],
-        rowTemplate: templates[1]
-      };
+  function loadTemplates(templates) {
+    var keys = Object.keys(templates);
+    var gets = keys.map(function(key) {
+      return $.get(templates[key]);
     });
+    return Promise.all(gets)
+      .then(function(responses) {
+        return responses.reduce(function(templates, r, i) {
+          // set the template to the appropriate key
+          templates[keys[i]] = r;
+          return templates;
+        }, {});
+      });
   }
 
   function init(container) {
-    loadTemplates().then(function(templates) {
+    var templatePaths = {
+      tableTemplate: "./table.mst.html",
+      rowTemplate: "./row.mst.html",
+      headersRowTemplate: "./headers-row.mst.html"
+    };
+    loadTemplates(templatePaths).then(function(templates) {
       var t = new ResultsTable({
         tableTemplate: templates.tableTemplate,
         rowTemplate: templates.rowTemplate,
+        headersRowTemplate: templates.headersRowTemplate,
         escapeHtml: ResultsTable.escapeHtml
       });
       t.appendTo(container, {});
