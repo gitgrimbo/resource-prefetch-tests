@@ -1,0 +1,12 @@
+{
+  "env": {
+    "amd": true,
+    "browser": true
+  },
+  "globals": {
+    "Promise": false
+  },
+  "rules": {
+    "no-var": "warn"
+  }
+}

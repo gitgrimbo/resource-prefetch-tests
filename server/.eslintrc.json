@@ -1,0 +1,14 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules-reasons": {
+    "require-yield": "https://github.com/eslint/eslint/issues/6550#issuecomment-231751969"
+  },
+  "rules": {
+    "generator-star-spacing": 0,
+    "require-yield": "off",
+    "yield-star-spacing": 0
+  }
+}
