@@ -8,6 +8,7 @@ const serve = require("koa-static");
 const json = require("koa-json");
 const logger = require("koa-logger");
 const ctxCacheControl = require("koa-ctx-cache-control");
+const koaResponseTime = require("koa-response-time");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
@@ -26,6 +27,7 @@ const app = koa();
 // Add cache control capabilities
 ctxCacheControl(app);
 
+app.use(koaResponseTime());
 app.use(logger());
 app.use(route.get(downloadPathRegExp, throttler({ rate: 4, chunk: 20 * 1024, debug: 0 })));
 app.use(route.get(downloadPathRegExp, cors({
