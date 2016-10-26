@@ -1,7 +1,7 @@
 {
  "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)",
- "timestamp": 1477492233510,
- "sessionId": "4700714e-bb0a-4f0a-b72c-acd11be342cc",
+ "timestamp": 1477516031833,
+ "sessionId": "ece3d0bf-bbad-44d0-ad11-fad49d0683a8",
  "tests": {
   "0": {
    "name": "<link rel=prefetch crossorigin>",
@@ -31,7 +31,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "9ms"
       }
      }
     },
@@ -43,13 +44,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=0&resourceId=0&timestamp=1477492231496&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=0&resourceId=0&timestamp=1477516031343&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492233531,
+   "timestamp": 1477516031850,
    "testId": "0",
    "state": "ended"
   },
@@ -81,7 +82,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -93,13 +95,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=1&resourceId=1&timestamp=1477492237625&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=1&resourceId=1&timestamp=1477516037462&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492239288,
+   "timestamp": 1477516037371,
    "testId": "1",
    "state": "ended"
   },
@@ -132,7 +134,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "7ms"
       }
      }
     },
@@ -144,13 +147,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=2&resourceId=9&timestamp=1477492244472&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=2&resourceId=9&timestamp=1477516043482&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492245334,
+   "timestamp": 1477516042973,
    "testId": "2",
    "state": "ended"
   },
@@ -182,7 +185,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "6ms"
       }
      }
     },
@@ -194,13 +198,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=3&resourceId=2&timestamp=1477492251335&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=3&resourceId=2&timestamp=1477516049138&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492251198,
+   "timestamp": 1477516048492,
    "testId": "3",
    "state": "ended"
   },
@@ -232,7 +236,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -244,13 +249,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=4&resourceId=3&timestamp=1477492259215&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=4&resourceId=3&timestamp=1477516055112&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492257307,
+   "timestamp": 1477516054555,
    "testId": "4",
    "state": "ended"
   },
@@ -282,7 +287,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -294,13 +300,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=5&resourceId=6&timestamp=1477492266098&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=5&resourceId=6&timestamp=1477516060072&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492262993,
+   "timestamp": 1477516060172,
    "testId": "5",
    "state": "ended"
   },
@@ -332,7 +338,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "10ms"
       }
      }
     },
@@ -344,13 +351,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=6&resourceId=4&timestamp=1477492272790&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=6&resourceId=4&timestamp=1477516065216&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492268798,
+   "timestamp": 1477516066003,
    "testId": "6",
    "state": "ended"
   },
@@ -382,7 +389,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -394,13 +402,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=7&resourceId=5&timestamp=1477492278910&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=7&resourceId=5&timestamp=1477516070645&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492274426,
+   "timestamp": 1477516071632,
    "testId": "7",
    "state": "ended"
   },
@@ -432,7 +440,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -444,13 +453,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=8&resourceId=7&timestamp=1477492284923&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=8&resourceId=7&timestamp=1477516076316&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492280141,
+   "timestamp": 1477516077449,
    "testId": "8",
    "state": "ended"
   },
@@ -482,7 +491,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -494,13 +504,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=9&resourceId=8&timestamp=1477492290688&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=9&resourceId=8&timestamp=1477516082652&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492285952,
+   "timestamp": 1477516083398,
    "testId": "9",
    "state": "ended"
   },
@@ -532,7 +542,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -544,7 +555,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=10&resourceId=0&timestamp=1477492296066&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=10&resourceId=0&timestamp=1477516088966&useCors=false]"
      }
     }
    },
@@ -555,7 +566,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492291715,
+   "timestamp": 1477516089089,
    "testId": "10",
    "state": "ended"
   },
@@ -587,7 +598,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -599,7 +611,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=11&resourceId=1&timestamp=1477492301086&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=11&resourceId=1&timestamp=1477516095749&useCors=false]"
      }
     }
    },
@@ -610,7 +622,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492297559,
+   "timestamp": 1477516094912,
    "testId": "11",
    "state": "ended"
   },
@@ -643,7 +655,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -669,7 +682,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492303413,
+   "timestamp": 1477516100639,
    "testId": "12",
    "state": "ended"
   },
@@ -701,7 +714,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -713,7 +727,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=13&resourceId=2&timestamp=1477492313996&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=13&resourceId=2&timestamp=1477516113208&useCors=false]"
      }
     }
    },
@@ -724,7 +738,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492314077,
+   "timestamp": 1477516111192,
    "testId": "13",
    "state": "ended"
   },
@@ -756,7 +770,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -768,7 +783,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=14&resourceId=3&timestamp=1477492319058&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=14&resourceId=3&timestamp=1477516119019&useCors=false]"
      }
     }
    },
@@ -779,7 +794,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492320318,
+   "timestamp": 1477516117211,
    "testId": "14",
    "state": "ended"
   },
@@ -811,7 +826,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -823,7 +839,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=15&resourceId=6&timestamp=1477492323773&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=15&resourceId=6&timestamp=1477516124085&useCors=false]"
      }
     }
    },
@@ -834,7 +850,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492326084,
+   "timestamp": 1477516122869,
    "testId": "15",
    "state": "ended"
   },
@@ -866,7 +882,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -878,7 +895,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=16&resourceId=4&timestamp=1477492329102&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=16&resourceId=4&timestamp=1477516128867&useCors=false]"
      }
     }
    },
@@ -889,7 +906,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492332080,
+   "timestamp": 1477516128513,
    "testId": "16",
    "state": "ended"
   },
@@ -921,7 +938,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -933,7 +951,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=17&resourceId=5&timestamp=1477492334257&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=17&resourceId=5&timestamp=1477516133820&useCors=false]"
      }
     }
    },
@@ -944,7 +962,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492337657,
+   "timestamp": 1477516134245,
    "testId": "17",
    "state": "ended"
   },
@@ -976,7 +994,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -988,7 +1007,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=18&resourceId=7&timestamp=1477492340113&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=18&resourceId=7&timestamp=1477516139116&useCors=false]"
      }
     }
    },
@@ -999,7 +1018,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492343482,
+   "timestamp": 1477516139953,
    "testId": "18",
    "state": "ended"
   },
@@ -1031,7 +1050,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1043,7 +1063,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=19&resourceId=8&timestamp=1477492346203&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=19&resourceId=8&timestamp=1477516144922&useCors=false]"
      }
     }
    },
@@ -1054,7 +1074,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492349259,
+   "timestamp": 1477516145938,
    "testId": "19",
    "state": "ended"
   },
@@ -1086,7 +1106,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1098,7 +1119,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=20&resourceId=0&timestamp=1477492352610&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=20&resourceId=0&timestamp=1477516150751&useCors=true]"
      }
     }
    },
@@ -1109,7 +1130,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492355082,
+   "timestamp": 1477516151671,
    "testId": "20",
    "state": "ended"
   },
@@ -1141,7 +1162,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1153,7 +1175,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=21&resourceId=1&timestamp=1477492361236&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=21&resourceId=1&timestamp=1477516157052&useCors=true]"
      }
     }
    },
@@ -1164,7 +1186,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492360940,
+   "timestamp": 1477516157432,
    "testId": "21",
    "state": "ended"
   },
@@ -1198,8 +1220,10 @@
        "access-control-allow-origin": "*",
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
-      }
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
+      },
+      "cors": true
      }
     },
     "client": {
@@ -1210,7 +1234,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=22&resourceId=9&timestamp=1477492366054&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=22&resourceId=9&timestamp=1477516163537&useCors=true]"
      }
     }
    },
@@ -1221,7 +1245,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492366730,
+   "timestamp": 1477516163165,
    "testId": "22",
    "state": "ended"
   },
@@ -1253,7 +1277,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "6ms"
       }
      }
     },
@@ -1265,7 +1290,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=23&resourceId=2&timestamp=1477492370804&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=23&resourceId=2&timestamp=1477516169233&useCors=true]"
      }
     }
    },
@@ -1276,7 +1301,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492372291,
+   "timestamp": 1477516168834,
    "testId": "23",
    "state": "ended"
   },
@@ -1308,7 +1333,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -1320,7 +1346,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=24&resourceId=3&timestamp=1477492376367&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=24&resourceId=3&timestamp=1477516175332&useCors=true]"
      }
     }
    },
@@ -1331,7 +1357,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492378431,
+   "timestamp": 1477516174976,
    "testId": "24",
    "state": "ended"
   },
@@ -1363,7 +1389,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -1375,7 +1402,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=25&resourceId=6&timestamp=1477492381780&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=25&resourceId=6&timestamp=1477516180183&useCors=true]"
      }
     }
    },
@@ -1386,7 +1413,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492384101,
+   "timestamp": 1477516180140,
    "testId": "25",
    "state": "ended"
   },
@@ -1418,7 +1445,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -1430,7 +1458,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=26&resourceId=4&timestamp=1477492387549&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=26&resourceId=4&timestamp=1477516185065&useCors=true]"
      }
     }
    },
@@ -1441,7 +1469,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492389939,
+   "timestamp": 1477516185479,
    "testId": "26",
    "state": "ended"
   },
@@ -1473,7 +1501,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1485,7 +1514,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=27&resourceId=5&timestamp=1477492393469&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=27&resourceId=5&timestamp=1477516190551&useCors=true]"
      }
     }
    },
@@ -1496,7 +1525,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492395652,
+   "timestamp": 1477516191066,
    "testId": "27",
    "state": "ended"
   },
@@ -1528,7 +1557,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1540,7 +1570,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=28&resourceId=7&timestamp=1477492399783&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=28&resourceId=7&timestamp=1477516196322&useCors=true]"
      }
     }
    },
@@ -1551,7 +1581,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492401616,
+   "timestamp": 1477516196859,
    "testId": "28",
    "state": "ended"
   },
@@ -1583,7 +1613,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -1595,7 +1626,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=29&resourceId=8&timestamp=1477492406749&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=29&resourceId=8&timestamp=1477516202885&useCors=true]"
      }
     }
    },
@@ -1606,7 +1637,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492407631,
+   "timestamp": 1477516202926,
    "testId": "29",
    "state": "ended"
   },
@@ -1638,7 +1669,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -1650,13 +1682,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=30&resourceId=0&timestamp=1477492413697&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=30&resourceId=0&timestamp=1477516208976&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492413474,
+   "timestamp": 1477516208641,
    "testId": "30",
    "state": "ended"
   },
@@ -1688,7 +1720,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1700,13 +1733,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=31&resourceId=1&timestamp=1477492420077&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=31&resourceId=1&timestamp=1477516214661&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492419326,
+   "timestamp": 1477516214482,
    "testId": "31",
    "state": "ended"
   },
@@ -1739,7 +1772,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -1751,13 +1785,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=32&resourceId=9&timestamp=1477492426207&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=32&resourceId=9&timestamp=1477516220254&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492425022,
+   "timestamp": 1477516220347,
    "testId": "32",
    "state": "ended"
   },
@@ -1789,7 +1823,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -1801,13 +1836,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=33&resourceId=2&timestamp=1477492431804&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=33&resourceId=2&timestamp=1477516225453&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492430762,
+   "timestamp": 1477516226062,
    "testId": "33",
    "state": "ended"
   },
@@ -1839,7 +1874,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1851,13 +1887,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=34&resourceId=3&timestamp=1477492437749&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=34&resourceId=3&timestamp=1477516231433&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492437017,
+   "timestamp": 1477516232035,
    "testId": "34",
    "state": "ended"
   },
@@ -1889,7 +1925,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -1901,13 +1938,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=35&resourceId=6&timestamp=1477492442721&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=35&resourceId=6&timestamp=1477516237119&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492442539,
+   "timestamp": 1477516237634,
    "testId": "35",
    "state": "ended"
   },
@@ -1939,7 +1976,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -1951,13 +1989,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=36&resourceId=4&timestamp=1477492447952&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=36&resourceId=4&timestamp=1477516243382&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492448395,
+   "timestamp": 1477516243360,
    "testId": "36",
    "state": "ended"
   },
@@ -1989,7 +2027,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -2001,13 +2040,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=37&resourceId=5&timestamp=1477492453333&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=37&resourceId=5&timestamp=1477516249549&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492454029,
+   "timestamp": 1477516248925,
    "testId": "37",
    "state": "ended"
   },
@@ -2039,7 +2078,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -2051,13 +2091,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=38&resourceId=7&timestamp=1477492459038&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=38&resourceId=7&timestamp=1477516255463&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492459842,
+   "timestamp": 1477516254712,
    "testId": "38",
    "state": "ended"
   },
@@ -2089,7 +2129,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2101,13 +2142,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=39&resourceId=8&timestamp=1477492465357&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=39&resourceId=8&timestamp=1477516261364&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492465869,
+   "timestamp": 1477516260760,
    "testId": "39",
    "state": "ended"
   },
@@ -2139,7 +2180,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -2151,7 +2193,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=40&resourceId=0&timestamp=1477492471744&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=40&resourceId=0&timestamp=1477516266602&useCors=false]"
      }
     }
    },
@@ -2162,7 +2204,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492471549,
+   "timestamp": 1477516266417,
    "testId": "40",
    "state": "ended"
   },
@@ -2194,7 +2236,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -2206,7 +2249,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=41&resourceId=1&timestamp=1477492478575&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=41&resourceId=1&timestamp=1477516271839&useCors=false]"
      }
     }
    },
@@ -2217,7 +2260,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492477194,
+   "timestamp": 1477516272287,
    "testId": "41",
    "state": "ended"
   },
@@ -2250,7 +2293,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -2276,7 +2320,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492482904,
+   "timestamp": 1477516278119,
    "testId": "42",
    "state": "ended"
   },
@@ -2308,7 +2352,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -2320,7 +2365,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=43&resourceId=2&timestamp=1477492495544&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=43&resourceId=2&timestamp=1477516288708&useCors=false]"
      }
     }
    },
@@ -2331,7 +2376,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492493420,
+   "timestamp": 1477516288715,
    "testId": "43",
    "state": "ended"
   },
@@ -2363,7 +2408,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2375,7 +2421,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=44&resourceId=3&timestamp=1477492501424&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=44&resourceId=3&timestamp=1477516295347&useCors=false]"
      }
     }
    },
@@ -2386,7 +2432,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492499686,
+   "timestamp": 1477516294822,
    "testId": "44",
    "state": "ended"
   },
@@ -2418,7 +2464,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -2430,7 +2477,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=45&resourceId=6&timestamp=1477492506454&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=45&resourceId=6&timestamp=1477516300857&useCors=false]"
      }
     }
    },
@@ -2441,7 +2488,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492505286,
+   "timestamp": 1477516300439,
    "testId": "45",
    "state": "ended"
   },
@@ -2473,7 +2520,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -2485,7 +2533,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=46&resourceId=4&timestamp=1477492511423&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=46&resourceId=4&timestamp=1477516306389&useCors=false]"
      }
     }
    },
@@ -2496,7 +2544,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492511144,
+   "timestamp": 1477516306216,
    "testId": "46",
    "state": "ended"
   },
@@ -2528,7 +2576,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2540,7 +2589,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=47&resourceId=5&timestamp=1477492516422&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=47&resourceId=5&timestamp=1477516311272&useCors=false]"
      }
     }
    },
@@ -2551,7 +2600,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492516774,
+   "timestamp": 1477516311790,
    "testId": "47",
    "state": "ended"
   },
@@ -2583,7 +2632,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2595,7 +2645,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=48&resourceId=7&timestamp=1477492521730&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=48&resourceId=7&timestamp=1477516316517&useCors=false]"
      }
     }
    },
@@ -2606,7 +2656,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492522597,
+   "timestamp": 1477516317564,
    "testId": "48",
    "state": "ended"
   },
@@ -2638,7 +2688,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2650,7 +2701,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=49&resourceId=8&timestamp=1477492527582&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=49&resourceId=8&timestamp=1477516322222&useCors=false]"
      }
     }
    },
@@ -2661,7 +2712,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492528508,
+   "timestamp": 1477516323482,
    "testId": "49",
    "state": "ended"
   },
@@ -2693,7 +2744,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2705,7 +2757,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=50&resourceId=0&timestamp=1477492533387&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=50&resourceId=0&timestamp=1477516328058&useCors=true]"
      }
     }
    },
@@ -2716,7 +2768,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492534359,
+   "timestamp": 1477516329323,
    "testId": "50",
    "state": "ended"
   },
@@ -2748,7 +2800,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -2760,7 +2813,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=51&resourceId=1&timestamp=1477492539817&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=51&resourceId=1&timestamp=1477516334266&useCors=true]"
      }
     }
    },
@@ -2771,7 +2824,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492540242,
+   "timestamp": 1477516335341,
    "testId": "51",
    "state": "ended"
   },
@@ -2805,8 +2858,10 @@
        "access-control-allow-origin": "*",
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
-      }
+       "content-type": "application/font-woff",
+       "x-response-time": "4ms"
+      },
+      "cors": true
      }
     },
     "client": {
@@ -2817,7 +2872,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=52&resourceId=9&timestamp=1477492546247&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=52&resourceId=9&timestamp=1477516340902&useCors=true]"
      }
     }
    },
@@ -2828,7 +2883,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492546222,
+   "timestamp": 1477516341173,
    "testId": "52",
    "state": "ended"
   },
@@ -2860,7 +2915,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -2872,7 +2928,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=53&resourceId=2&timestamp=1477492551497&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=53&resourceId=2&timestamp=1477516347600&useCors=true]"
      }
     }
    },
@@ -2883,7 +2939,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492551977,
+   "timestamp": 1477516346882,
    "testId": "53",
    "state": "ended"
   },
@@ -2915,7 +2971,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2927,7 +2984,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=54&resourceId=3&timestamp=1477492557298&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=54&resourceId=3&timestamp=1477516354349&useCors=true]"
      }
     }
    },
@@ -2938,7 +2995,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492558184,
+   "timestamp": 1477516352984,
    "testId": "54",
    "state": "ended"
   },
@@ -2970,7 +3027,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -2982,7 +3040,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=55&resourceId=6&timestamp=1477492562995&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=55&resourceId=6&timestamp=1477516360305&useCors=true]"
      }
     }
    },
@@ -2993,7 +3051,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492563853,
+   "timestamp": 1477516358498,
    "testId": "55",
    "state": "ended"
   },
@@ -3025,7 +3083,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -3037,7 +3096,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=56&resourceId=4&timestamp=1477492569125&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=56&resourceId=4&timestamp=1477516365922&useCors=true]"
      }
     }
    },
@@ -3048,7 +3107,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492569807,
+   "timestamp": 1477516364156,
    "testId": "56",
    "state": "ended"
   },
@@ -3080,7 +3139,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3092,7 +3152,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=57&resourceId=5&timestamp=1477492575328&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=57&resourceId=5&timestamp=1477516371185&useCors=true]"
      }
     }
    },
@@ -3103,7 +3163,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492575525,
+   "timestamp": 1477516369643,
    "testId": "57",
    "state": "ended"
   },
@@ -3135,7 +3195,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -3147,7 +3208,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=58&resourceId=7&timestamp=1477492581463&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=58&resourceId=7&timestamp=1477516376167&useCors=true]"
      }
     }
    },
@@ -3158,7 +3219,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492581163,
+   "timestamp": 1477516375401,
    "testId": "58",
    "state": "ended"
   },
@@ -3190,7 +3251,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3202,7 +3264,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=59&resourceId=8&timestamp=1477492587383&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=59&resourceId=8&timestamp=1477516380840&useCors=true]"
      }
     }
    },
@@ -3213,7 +3275,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492587135,
+   "timestamp": 1477516380875,
    "testId": "59",
    "state": "ended"
   },
@@ -3241,7 +3303,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -3259,7 +3322,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3267,7 +3331,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=60&resourceId=0&timestamp=1477492592843&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=60&resourceId=0&timestamp=1477516385996&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3275,13 +3339,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=60&resourceId=0&timestamp=1477492592843&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=60&resourceId=0&timestamp=1477516385996&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492592967,
+   "timestamp": 1477516386478,
    "testId": "60",
    "state": "ended"
   },
@@ -3309,7 +3373,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3327,7 +3392,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3335,7 +3401,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=61&resourceId=1&timestamp=1477492593179&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=61&resourceId=1&timestamp=1477516386389&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3343,13 +3409,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=61&resourceId=1&timestamp=1477492593179&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=61&resourceId=1&timestamp=1477516386389&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492593344,
+   "timestamp": 1477516386881,
    "testId": "61",
    "state": "ended"
   },
@@ -3377,7 +3443,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3396,7 +3463,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3404,7 +3472,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=62&resourceId=9&timestamp=1477492593551&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=62&resourceId=9&timestamp=1477516386784&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3412,13 +3480,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=62&resourceId=9&timestamp=1477492593551&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=62&resourceId=9&timestamp=1477516386784&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492593760,
+   "timestamp": 1477516387322,
    "testId": "62",
    "state": "ended"
   },
@@ -3446,7 +3514,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -3456,16 +3525,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=63&resourceId=2&timestamp=1477492593794&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=63&resourceId=2&timestamp=1477516387035&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=63&resourceId=2&timestamp=1477492593794&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=63&resourceId=2&timestamp=1477516387035&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492594043,
+   "timestamp": 1477516387611,
    "testId": "63",
    "state": "ended"
   },
@@ -3493,7 +3562,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3503,16 +3573,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=64&resourceId=3&timestamp=1477492594499&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=64&resourceId=3&timestamp=1477516387722&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=64&resourceId=3&timestamp=1477492594499&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=64&resourceId=3&timestamp=1477516387722&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492594784,
+   "timestamp": 1477516388289,
    "testId": "64",
    "state": "ended"
   },
@@ -3540,7 +3610,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3550,16 +3621,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=65&resourceId=6&timestamp=1477492594666&useCors=false]"
+      "data": "loadResourceByObjectTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=65&resourceId=6&timestamp=1477516387891&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=65&resourceId=6&timestamp=1477492594666&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=65&resourceId=6&timestamp=1477516387891&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492594953,
+   "timestamp": 1477516388459,
    "testId": "65",
    "state": "ended"
   },
@@ -3587,7 +3658,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3605,7 +3677,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3613,7 +3686,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=66&resourceId=4&timestamp=1477492594949&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=66&resourceId=4&timestamp=1477516388202&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3621,13 +3694,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=66&resourceId=4&timestamp=1477492594949&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=66&resourceId=4&timestamp=1477516388202&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492595272,
+   "timestamp": 1477516388797,
    "testId": "66",
    "state": "ended"
   },
@@ -3655,7 +3728,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -3673,7 +3747,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3681,7 +3756,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=67&resourceId=5&timestamp=1477492595054&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=67&resourceId=5&timestamp=1477516388331&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3689,13 +3764,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=67&resourceId=5&timestamp=1477492595054&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=67&resourceId=5&timestamp=1477516388331&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492595380,
+   "timestamp": 1477516388926,
    "testId": "67",
    "state": "ended"
   },
@@ -3723,7 +3798,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3741,7 +3817,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -3749,7 +3826,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=68&resourceId=7&timestamp=1477492595324&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=68&resourceId=7&timestamp=1477516388725&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3757,13 +3834,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=68&resourceId=7&timestamp=1477492595324&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=68&resourceId=7&timestamp=1477516388725&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492595690,
+   "timestamp": 1477516389354,
    "testId": "68",
    "state": "ended"
   },
@@ -3791,7 +3868,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -3809,7 +3887,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -3817,7 +3896,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=69&resourceId=8&timestamp=1477492595764&useCors=false]",
+       "message": "loadResourceByObjectTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=69&resourceId=8&timestamp=1477516389168&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3825,13 +3904,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=69&resourceId=8&timestamp=1477492595764&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=69&resourceId=8&timestamp=1477516389168&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492596184,
+   "timestamp": 1477516389832,
    "testId": "69",
    "state": "ended"
   },
@@ -3859,7 +3938,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3877,7 +3957,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -3885,7 +3966,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=70&resourceId=0&timestamp=1477492596069&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=70&resourceId=0&timestamp=1477516389547&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3893,7 +3974,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=70&resourceId=0&timestamp=1477492596069&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=70&resourceId=0&timestamp=1477516389547&useCors=false]"
      }
     }
    },
@@ -3904,7 +3985,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492596491,
+   "timestamp": 1477516390212,
    "testId": "70",
    "state": "ended"
   },
@@ -3932,7 +4013,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -3950,7 +4032,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -3958,7 +4041,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=71&resourceId=1&timestamp=1477492596403&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=71&resourceId=1&timestamp=1477516389896&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -3966,7 +4049,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=71&resourceId=1&timestamp=1477492596403&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=71&resourceId=1&timestamp=1477516389896&useCors=false]"
      }
     }
    },
@@ -3977,7 +4060,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492596859,
+   "timestamp": 1477516390599,
    "testId": "71",
    "state": "ended"
   },
@@ -4005,7 +4088,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -4024,7 +4108,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -4032,7 +4117,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=72&resourceId=9&timestamp=1477492596590&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=72&resourceId=9&timestamp=1477516390428&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4054,7 +4139,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492597075,
+   "timestamp": 1477516391131,
    "testId": "72",
    "state": "ended"
   },
@@ -4082,7 +4167,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -4092,10 +4178,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=73&resourceId=2&timestamp=1477492601347&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=73&resourceId=2&timestamp=1477516395480&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=73&resourceId=2&timestamp=1477492601347&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=73&resourceId=2&timestamp=1477516395480&useCors=false]"
      }
     }
    },
@@ -4106,7 +4192,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492602236,
+   "timestamp": 1477516396300,
    "testId": "73",
    "state": "ended"
   },
@@ -4134,7 +4220,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -4144,10 +4231,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=74&resourceId=3&timestamp=1477492602023&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=74&resourceId=3&timestamp=1477516396209&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=74&resourceId=3&timestamp=1477492602023&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=74&resourceId=3&timestamp=1477516396209&useCors=false]"
      }
     }
    },
@@ -4158,7 +4245,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492602867,
+   "timestamp": 1477516396953,
    "testId": "74",
    "state": "ended"
   },
@@ -4186,7 +4273,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -4196,10 +4284,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=75&resourceId=6&timestamp=1477492602193&useCors=false]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=75&resourceId=6&timestamp=1477516396372&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=75&resourceId=6&timestamp=1477492602193&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=75&resourceId=6&timestamp=1477516396372&useCors=false]"
      }
     }
    },
@@ -4210,7 +4298,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492603024,
+   "timestamp": 1477516397112,
    "testId": "75",
    "state": "ended"
   },
@@ -4238,7 +4326,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -4256,7 +4345,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -4264,7 +4354,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=76&resourceId=4&timestamp=1477492602510&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=76&resourceId=4&timestamp=1477516396714&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4272,7 +4362,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=76&resourceId=4&timestamp=1477492602510&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=76&resourceId=4&timestamp=1477516396714&useCors=false]"
      }
     }
    },
@@ -4283,7 +4373,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492603353,
+   "timestamp": 1477516397435,
    "testId": "76",
    "state": "ended"
   },
@@ -4311,7 +4401,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -4329,7 +4420,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -4337,7 +4429,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=77&resourceId=5&timestamp=1477492602731&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=77&resourceId=5&timestamp=1477516396943&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4345,7 +4437,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=77&resourceId=5&timestamp=1477492602731&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=77&resourceId=5&timestamp=1477516396943&useCors=false]"
      }
     }
    },
@@ -4356,7 +4448,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492603558,
+   "timestamp": 1477516397642,
    "testId": "77",
    "state": "ended"
   },
@@ -4384,7 +4476,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -4402,7 +4495,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -4410,7 +4504,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=78&resourceId=7&timestamp=1477492603023&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=78&resourceId=7&timestamp=1477516397253&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4418,7 +4512,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=78&resourceId=7&timestamp=1477492603023&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=78&resourceId=7&timestamp=1477516397253&useCors=false]"
      }
     }
    },
@@ -4429,7 +4523,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492603862,
+   "timestamp": 1477516397949,
    "testId": "78",
    "state": "ended"
   },
@@ -4457,7 +4551,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -4475,7 +4570,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -4483,7 +4579,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=79&resourceId=8&timestamp=1477492603530&useCors=false]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=79&resourceId=8&timestamp=1477516397754&useCors=false]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4491,7 +4587,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=79&resourceId=8&timestamp=1477492603530&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=79&resourceId=8&timestamp=1477516397754&useCors=false]"
      }
     }
    },
@@ -4502,7 +4598,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492604369,
+   "timestamp": 1477516398443,
    "testId": "79",
    "state": "ended"
   },
@@ -4530,7 +4626,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "7ms"
       }
      },
      "normal": {
@@ -4548,7 +4645,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -4556,7 +4654,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=80&resourceId=0&timestamp=1477492603835&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=80&resourceId=0&timestamp=1477516398066&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4564,7 +4662,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=80&resourceId=0&timestamp=1477492603835&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=80&resourceId=0&timestamp=1477516398066&useCors=true]"
      }
     }
    },
@@ -4575,7 +4673,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492604679,
+   "timestamp": 1477516398763,
    "testId": "80",
    "state": "ended"
   },
@@ -4603,7 +4701,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -4621,7 +4720,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -4629,7 +4729,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=81&resourceId=1&timestamp=1477492604216&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=81&resourceId=1&timestamp=1477516398488&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4637,7 +4737,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=81&resourceId=1&timestamp=1477492604216&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=81&resourceId=1&timestamp=1477516398488&useCors=true]"
      }
     }
    },
@@ -4648,7 +4748,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492605055,
+   "timestamp": 1477516399173,
    "testId": "81",
    "state": "ended"
   },
@@ -4676,7 +4776,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "7ms"
       }
      },
      "normal": {
@@ -4696,15 +4797,17 @@
        "access-control-allow-origin": "*",
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
-      }
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
+      },
+      "cors": true
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=82&resourceId=9&timestamp=1477492604466&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=82&resourceId=9&timestamp=1477516398951&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4712,7 +4815,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=82&resourceId=9&timestamp=1477492604466&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=82&resourceId=9&timestamp=1477516398951&useCors=true]"
      }
     }
    },
@@ -4723,7 +4826,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492605287,
+   "timestamp": 1477516399628,
    "testId": "82",
    "state": "ended"
   },
@@ -4751,7 +4854,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -4761,10 +4865,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=83&resourceId=2&timestamp=1477492604749&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=83&resourceId=2&timestamp=1477516399257&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=83&resourceId=2&timestamp=1477492604749&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=83&resourceId=2&timestamp=1477516399257&useCors=true]"
      }
     }
    },
@@ -4775,7 +4879,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492605600,
+   "timestamp": 1477516399961,
    "testId": "83",
    "state": "ended"
   },
@@ -4803,7 +4907,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -4813,10 +4918,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=84&resourceId=3&timestamp=1477492605437&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=84&resourceId=3&timestamp=1477516399998&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=84&resourceId=3&timestamp=1477492605437&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=84&resourceId=3&timestamp=1477516399998&useCors=true]"
      }
     }
    },
@@ -4827,7 +4932,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492606246,
+   "timestamp": 1477516400636,
    "testId": "84",
    "state": "ended"
   },
@@ -4855,7 +4960,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -4865,10 +4971,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=85&resourceId=6&timestamp=1477492605623&useCors=true]"
+      "data": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=85&resourceId=6&timestamp=1477516400195&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=85&resourceId=6&timestamp=1477492605623&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=85&resourceId=6&timestamp=1477516400195&useCors=true]"
      }
     }
    },
@@ -4879,7 +4985,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492606415,
+   "timestamp": 1477516400813,
    "testId": "85",
    "state": "ended"
   },
@@ -4907,7 +5013,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -4925,7 +5032,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -4933,7 +5041,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=86&resourceId=4&timestamp=1477492605783&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=86&resourceId=4&timestamp=1477516400643&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -4941,7 +5049,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=86&resourceId=4&timestamp=1477492605783&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=86&resourceId=4&timestamp=1477516400643&useCors=true]"
      }
     }
    },
@@ -4952,7 +5060,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492606565,
+   "timestamp": 1477516401252,
    "testId": "86",
    "state": "ended"
   },
@@ -4980,7 +5088,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -4998,7 +5107,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -5006,7 +5116,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=87&resourceId=5&timestamp=1477492605988&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=87&resourceId=5&timestamp=1477516400779&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -5014,7 +5124,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=87&resourceId=5&timestamp=1477492605988&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=87&resourceId=5&timestamp=1477516400779&useCors=true]"
      }
     }
    },
@@ -5025,7 +5135,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492606769,
+   "timestamp": 1477516401378,
    "testId": "87",
    "state": "ended"
   },
@@ -5053,7 +5163,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5071,7 +5182,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -5079,7 +5191,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=88&resourceId=7&timestamp=1477492606288&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=88&resourceId=7&timestamp=1477516401077&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -5087,7 +5199,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=88&resourceId=7&timestamp=1477492606288&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=88&resourceId=7&timestamp=1477516401077&useCors=true]"
      }
     }
    },
@@ -5098,7 +5210,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492607084,
+   "timestamp": 1477516401692,
    "testId": "88",
    "state": "ended"
   },
@@ -5126,7 +5238,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -5144,7 +5257,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -5152,7 +5266,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=89&resourceId=8&timestamp=1477492606759&useCors=true]",
+       "message": "loadResourceByObjectTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=89&resourceId=8&timestamp=1477516401574&useCors=true]",
        "event": {
         "type": "error",
         "target": "OBJECT"
@@ -5160,7 +5274,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=89&resourceId=8&timestamp=1477492606759&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=89&resourceId=8&timestamp=1477516401574&useCors=true]"
      }
     }
    },
@@ -5171,7 +5285,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492607565,
+   "timestamp": 1477516402178,
    "testId": "89",
    "state": "ended"
   },
@@ -5199,7 +5313,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5217,7 +5332,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5225,7 +5341,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=90&resourceId=0&timestamp=1477492607056&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=90&resourceId=0&timestamp=1477516401936&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5233,13 +5349,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=90&resourceId=0&timestamp=1477492607056&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=90&resourceId=0&timestamp=1477516401936&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492607866,
+   "timestamp": 1477516402507,
    "testId": "90",
    "state": "ended"
   },
@@ -5267,7 +5383,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -5285,7 +5402,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5293,7 +5411,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=91&resourceId=1&timestamp=1477492607450&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=91&resourceId=1&timestamp=1477516402393&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5301,13 +5419,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=91&resourceId=1&timestamp=1477492607450&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=91&resourceId=1&timestamp=1477516402393&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492608263,
+   "timestamp": 1477516402920,
    "testId": "91",
    "state": "ended"
   },
@@ -5335,7 +5453,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "5ms"
       }
      },
      "normal": {
@@ -5354,7 +5473,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5362,7 +5482,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=92&resourceId=9&timestamp=1477492608230&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=92&resourceId=9&timestamp=1477516402881&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5370,13 +5490,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=92&resourceId=9&timestamp=1477492608230&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=92&resourceId=9&timestamp=1477516402881&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492609023,
+   "timestamp": 1477516403366,
    "testId": "92",
    "state": "ended"
   },
@@ -5404,7 +5524,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -5414,16 +5535,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=93&resourceId=2&timestamp=1477492608521&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=93&resourceId=2&timestamp=1477516403244&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=93&resourceId=2&timestamp=1477492608521&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=93&resourceId=2&timestamp=1477516403244&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492609351,
+   "timestamp": 1477516403719,
    "testId": "93",
    "state": "ended"
   },
@@ -5451,7 +5572,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5461,16 +5583,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=94&resourceId=3&timestamp=1477492609287&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=94&resourceId=3&timestamp=1477516404104&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=94&resourceId=3&timestamp=1477492609287&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=94&resourceId=3&timestamp=1477516404104&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492610060,
+   "timestamp": 1477516404404,
    "testId": "94",
    "state": "ended"
   },
@@ -5498,7 +5620,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -5508,16 +5631,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=95&resourceId=6&timestamp=1477492609486&useCors=false]"
+      "data": "loadResourceByNewImage[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=95&resourceId=6&timestamp=1477516404469&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=95&resourceId=6&timestamp=1477492609486&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=95&resourceId=6&timestamp=1477516404469&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492610245,
+   "timestamp": 1477516404708,
    "testId": "95",
    "state": "ended"
   },
@@ -5545,7 +5668,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5563,7 +5687,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5571,7 +5696,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=96&resourceId=4&timestamp=1477492609943&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=96&resourceId=4&timestamp=1477516404877&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5579,13 +5704,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=96&resourceId=4&timestamp=1477492609943&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=96&resourceId=4&timestamp=1477516404877&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492610699,
+   "timestamp": 1477516405078,
    "testId": "96",
    "state": "ended"
   },
@@ -5613,7 +5738,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5631,7 +5757,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "9ms"
       }
      }
     },
@@ -5639,7 +5766,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=97&resourceId=5&timestamp=1477492610060&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=97&resourceId=5&timestamp=1477516405039&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5647,13 +5774,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=97&resourceId=5&timestamp=1477492610060&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=97&resourceId=5&timestamp=1477516405039&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492610807,
+   "timestamp": 1477516405209,
    "testId": "97",
    "state": "ended"
   },
@@ -5681,7 +5808,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -5699,7 +5827,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5707,7 +5836,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=98&resourceId=7&timestamp=1477492610344&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=98&resourceId=7&timestamp=1477516405386&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5715,13 +5844,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=98&resourceId=7&timestamp=1477492610344&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=98&resourceId=7&timestamp=1477516405386&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492611099,
+   "timestamp": 1477516405529,
    "testId": "98",
    "state": "ended"
   },
@@ -5749,7 +5878,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5767,7 +5897,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5775,7 +5906,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=99&resourceId=8&timestamp=1477492610871&useCors=false]",
+       "message": "loadResourceByNewImage[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=99&resourceId=8&timestamp=1477516405927&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5783,13 +5914,13 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=99&resourceId=8&timestamp=1477492610871&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=99&resourceId=8&timestamp=1477516405927&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492611588,
+   "timestamp": 1477516406009,
    "testId": "99",
    "state": "ended"
   },
@@ -5817,7 +5948,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5835,7 +5967,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5843,7 +5976,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=100&resourceId=0&timestamp=1477492611204&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=100&resourceId=0&timestamp=1477516406267&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5851,7 +5984,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=100&resourceId=0&timestamp=1477492611204&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=100&resourceId=0&timestamp=1477516406267&useCors=false]"
      }
     }
    },
@@ -5862,7 +5995,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492611903,
+   "timestamp": 1477516406320,
    "testId": "100",
    "state": "ended"
   },
@@ -5890,7 +6023,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5908,7 +6042,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5916,7 +6051,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=101&resourceId=1&timestamp=1477492611638&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=101&resourceId=1&timestamp=1477516406736&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -5924,7 +6059,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=101&resourceId=1&timestamp=1477492611638&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=101&resourceId=1&timestamp=1477516406736&useCors=false]"
      }
     }
    },
@@ -5935,7 +6070,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492612302,
+   "timestamp": 1477516406724,
    "testId": "101",
    "state": "ended"
   },
@@ -5963,7 +6098,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -5982,7 +6118,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -5990,7 +6127,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=102&resourceId=9&timestamp=1477492611902&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=102&resourceId=9&timestamp=1477516407265&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6012,7 +6149,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492612546,
+   "timestamp": 1477516407186,
    "testId": "102",
    "state": "ended"
   },
@@ -6040,7 +6177,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6050,10 +6188,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=103&resourceId=2&timestamp=1477492617319&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=103&resourceId=2&timestamp=1477516412905&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=103&resourceId=2&timestamp=1477492617319&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=103&resourceId=2&timestamp=1477516412905&useCors=false]"
      }
     }
    },
@@ -6064,7 +6202,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492617713,
+   "timestamp": 1477516412362,
    "testId": "103",
    "state": "ended"
   },
@@ -6092,7 +6230,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6102,10 +6241,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=104&resourceId=3&timestamp=1477492618158&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=104&resourceId=3&timestamp=1477516413869&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=104&resourceId=3&timestamp=1477492618158&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=104&resourceId=3&timestamp=1477516413869&useCors=false]"
      }
     }
    },
@@ -6116,7 +6255,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492618407,
+   "timestamp": 1477516413126,
    "testId": "104",
    "state": "ended"
   },
@@ -6144,7 +6283,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6154,10 +6294,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=105&resourceId=6&timestamp=1477492618364&useCors=false]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=105&resourceId=6&timestamp=1477516414066&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=105&resourceId=6&timestamp=1477492618364&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=105&resourceId=6&timestamp=1477516414066&useCors=false]"
      }
     }
    },
@@ -6168,7 +6308,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492618584,
+   "timestamp": 1477516413310,
    "testId": "105",
    "state": "ended"
   },
@@ -6196,7 +6336,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -6214,7 +6355,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6222,7 +6364,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=106&resourceId=4&timestamp=1477492618715&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=106&resourceId=4&timestamp=1477516414455&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6230,7 +6372,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=106&resourceId=4&timestamp=1477492618715&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=106&resourceId=4&timestamp=1477516414455&useCors=false]"
      }
     }
    },
@@ -6241,7 +6383,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492618912,
+   "timestamp": 1477516413665,
    "testId": "106",
    "state": "ended"
   },
@@ -6269,7 +6411,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6287,7 +6430,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -6295,7 +6439,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=107&resourceId=5&timestamp=1477492618981&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=107&resourceId=5&timestamp=1477516414680&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6303,7 +6447,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=107&resourceId=5&timestamp=1477492618981&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=107&resourceId=5&timestamp=1477516414680&useCors=false]"
      }
     }
    },
@@ -6314,7 +6458,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492619136,
+   "timestamp": 1477516413895,
    "testId": "107",
    "state": "ended"
   },
@@ -6342,7 +6486,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6360,7 +6505,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6368,7 +6514,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=108&resourceId=7&timestamp=1477492619307&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=108&resourceId=7&timestamp=1477516415012&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6376,7 +6522,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=108&resourceId=7&timestamp=1477492619307&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=108&resourceId=7&timestamp=1477516415012&useCors=false]"
      }
     }
    },
@@ -6387,7 +6533,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492619442,
+   "timestamp": 1477516414200,
    "testId": "108",
    "state": "ended"
   },
@@ -6415,7 +6561,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6433,7 +6580,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6441,7 +6589,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=109&resourceId=8&timestamp=1477492619862&useCors=false]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=109&resourceId=8&timestamp=1477516415487&useCors=false]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6449,7 +6597,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=109&resourceId=8&timestamp=1477492619862&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=109&resourceId=8&timestamp=1477516415487&useCors=false]"
      }
     }
    },
@@ -6460,7 +6608,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492619948,
+   "timestamp": 1477516414690,
    "testId": "109",
    "state": "ended"
   },
@@ -6488,7 +6636,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6506,7 +6655,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6514,7 +6664,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=110&resourceId=0&timestamp=1477492620206&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=110&resourceId=0&timestamp=1477516415815&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6522,7 +6672,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=110&resourceId=0&timestamp=1477492620206&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=110&resourceId=0&timestamp=1477516415815&useCors=true]"
      }
     }
    },
@@ -6533,7 +6683,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492620262,
+   "timestamp": 1477516414992,
    "testId": "110",
    "state": "ended"
   },
@@ -6561,7 +6711,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -6579,7 +6730,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6587,7 +6739,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=111&resourceId=1&timestamp=1477492620656&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=111&resourceId=1&timestamp=1477516416244&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6595,7 +6747,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=111&resourceId=1&timestamp=1477492620656&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=111&resourceId=1&timestamp=1477516416244&useCors=true]"
      }
     }
    },
@@ -6606,7 +6758,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492620666,
+   "timestamp": 1477516415425,
    "testId": "111",
    "state": "ended"
   },
@@ -6634,7 +6786,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6654,15 +6807,17 @@
        "access-control-allow-origin": "*",
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
-      }
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
+      },
+      "cors": true
      }
     },
     "client": {
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=112&resourceId=9&timestamp=1477492621164&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=112&resourceId=9&timestamp=1477516416760&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6670,7 +6825,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=112&resourceId=9&timestamp=1477492621164&useCors=true]"
+      "data": "loadResourceByFontFaceCss[http://resource-prefetch-tests2:3002/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=112&resourceId=9&timestamp=1477516416760&useCors=true]"
      }
     }
    },
@@ -6681,7 +6836,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492621120,
+   "timestamp": 1477516415899,
    "testId": "112",
    "state": "ended"
   },
@@ -6709,7 +6864,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "2ms"
       }
      },
      "normal": {
@@ -6719,10 +6875,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=113&resourceId=2&timestamp=1477492621577&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=113&resourceId=2&timestamp=1477516417089&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=113&resourceId=2&timestamp=1477492621577&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=113&resourceId=2&timestamp=1477516417089&useCors=true]"
      }
     }
    },
@@ -6733,7 +6889,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492621533,
+   "timestamp": 1477516416296,
    "testId": "113",
    "state": "ended"
   },
@@ -6761,7 +6917,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6771,10 +6928,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=114&resourceId=3&timestamp=1477492622400&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=114&resourceId=3&timestamp=1477516417861&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=114&resourceId=3&timestamp=1477492622400&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=114&resourceId=3&timestamp=1477516417861&useCors=true]"
      }
     }
    },
@@ -6785,7 +6942,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492622218,
+   "timestamp": 1477516416979,
    "testId": "114",
    "state": "ended"
   },
@@ -6813,7 +6970,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6823,10 +6981,10 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=115&resourceId=6&timestamp=1477492622616&useCors=true]"
+      "data": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=115&resourceId=6&timestamp=1477516418072&useCors=true]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=115&resourceId=6&timestamp=1477492622616&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=115&resourceId=6&timestamp=1477516418072&useCors=true]"
      }
     }
    },
@@ -6837,7 +6995,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492622402,
+   "timestamp": 1477516417169,
    "testId": "115",
    "state": "ended"
   },
@@ -6865,7 +7023,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6883,7 +7042,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6891,7 +7051,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=116&resourceId=4&timestamp=1477492623024&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=116&resourceId=4&timestamp=1477516418536&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6899,7 +7059,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=116&resourceId=4&timestamp=1477492623024&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=116&resourceId=4&timestamp=1477516418536&useCors=true]"
      }
     }
    },
@@ -6910,7 +7070,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492622841,
+   "timestamp": 1477516417634,
    "testId": "116",
    "state": "ended"
   },
@@ -6938,7 +7098,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -6956,7 +7117,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -6964,7 +7126,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=117&resourceId=5&timestamp=1477492623143&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=117&resourceId=5&timestamp=1477516418670&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -6972,7 +7134,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=117&resourceId=5&timestamp=1477492623143&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=117&resourceId=5&timestamp=1477516418670&useCors=true]"
      }
     }
    },
@@ -6983,7 +7145,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492622951,
+   "timestamp": 1477516417739,
    "testId": "117",
    "state": "ended"
   },
@@ -7011,7 +7173,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7029,7 +7192,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7037,7 +7201,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=118&resourceId=7&timestamp=1477492623426&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=118&resourceId=7&timestamp=1477516418981&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -7045,7 +7209,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=118&resourceId=7&timestamp=1477492623426&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=118&resourceId=7&timestamp=1477516418981&useCors=true]"
      }
     }
    },
@@ -7056,7 +7220,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492623259,
+   "timestamp": 1477516418052,
    "testId": "118",
    "state": "ended"
   },
@@ -7084,7 +7248,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7102,7 +7267,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7110,7 +7276,7 @@
      "prefetch": {
       "err": {
        "name": "Error",
-       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=119&resourceId=8&timestamp=1477492623906&useCors=true]",
+       "message": "loadResourceByNewImage[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=119&resourceId=8&timestamp=1477516419458&useCors=true]",
        "event": {
         "type": "error",
         "target": "IMG"
@@ -7118,7 +7284,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=119&resourceId=8&timestamp=1477492623906&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=119&resourceId=8&timestamp=1477516419458&useCors=true]"
      }
     }
    },
@@ -7129,7 +7295,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492623739,
+   "timestamp": 1477516418530,
    "testId": "119",
    "state": "ended"
   },
@@ -7157,7 +7323,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7167,16 +7334,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=120&resourceId=0&timestamp=1477492624257&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=120&resourceId=0&timestamp=1477516419805&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=120&resourceId=0&timestamp=1477492624257&useCors=false]"
+      "data": "loadResourceByLink[/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=120&resourceId=0&timestamp=1477516419805&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492624068,
+   "timestamp": 1477516418848,
    "testId": "120",
    "state": "ended"
   },
@@ -7204,7 +7371,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7214,16 +7382,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=121&resourceId=1&timestamp=1477492624615&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=121&resourceId=1&timestamp=1477516420568&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=121&resourceId=1&timestamp=1477492624615&useCors=false]"
+      "data": "loadResourceByLink[/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=121&resourceId=1&timestamp=1477516420568&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492624439,
+   "timestamp": 1477516419586,
    "testId": "121",
    "state": "ended"
   },
@@ -7251,7 +7419,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7270,22 +7439,23 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "4ms"
       }
      }
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=122&resourceId=9&timestamp=1477492625082&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=122&resourceId=9&timestamp=1477516421075&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=122&resourceId=9&timestamp=1477492625082&useCors=false]"
+      "data": "loadResourceByFontFaceCss[/download-files/pacifico.woff?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=122&resourceId=9&timestamp=1477516421075&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492624900,
+   "timestamp": 1477516420084,
    "testId": "122",
    "state": "ended"
   },
@@ -7313,7 +7483,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7323,16 +7494,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=123&resourceId=2&timestamp=1477492625430&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=123&resourceId=2&timestamp=1477516421663&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=123&resourceId=2&timestamp=1477492625430&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=123&resourceId=2&timestamp=1477516421663&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492625300,
+   "timestamp": 1477516420726,
    "testId": "123",
    "state": "ended"
   },
@@ -7360,7 +7531,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7370,16 +7542,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=124&resourceId=3&timestamp=1477492626148&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=124&resourceId=3&timestamp=1477516422430&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=124&resourceId=3&timestamp=1477492626148&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=124&resourceId=3&timestamp=1477516422430&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492625947,
+   "timestamp": 1477516421393,
    "testId": "124",
    "state": "ended"
   },
@@ -7407,7 +7579,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -7417,16 +7590,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=125&resourceId=6&timestamp=1477492626456&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=125&resourceId=6&timestamp=1477516422777&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=125&resourceId=6&timestamp=1477492626456&useCors=false]"
+      "data": "loadResourceByImgTag[/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=125&resourceId=6&timestamp=1477516422777&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492626235,
+   "timestamp": 1477516421711,
    "testId": "125",
    "state": "ended"
   },
@@ -7454,7 +7627,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      },
      "normal": {
@@ -7464,16 +7638,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=126&resourceId=4&timestamp=1477492626590&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=126&resourceId=4&timestamp=1477516423126&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=126&resourceId=4&timestamp=1477492626590&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=126&resourceId=4&timestamp=1477516423126&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492626358,
+   "timestamp": 1477516422067,
    "testId": "126",
    "state": "ended"
   },
@@ -7501,7 +7675,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7511,16 +7686,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=127&resourceId=5&timestamp=1477492626692&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=127&resourceId=5&timestamp=1477516423251&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=127&resourceId=5&timestamp=1477492626692&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=127&resourceId=5&timestamp=1477516423251&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492626454,
+   "timestamp": 1477516422180,
    "testId": "127",
    "state": "ended"
   },
@@ -7548,7 +7723,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7558,16 +7734,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=128&resourceId=7&timestamp=1477492626962&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=128&resourceId=7&timestamp=1477516423527&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=128&resourceId=7&timestamp=1477492626962&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=128&resourceId=7&timestamp=1477516423527&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492626747,
+   "timestamp": 1477516422487,
    "testId": "128",
    "state": "ended"
   },
@@ -7595,7 +7771,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      },
      "normal": {
@@ -7605,16 +7782,16 @@
     },
     "client": {
      "prefetch": {
-      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=129&resourceId=8&timestamp=1477492627448&useCors=false]"
+      "data": "loadResourceByXHR[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=129&resourceId=8&timestamp=1477516424029&useCors=false]"
      },
      "normal": {
-      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=129&resourceId=8&timestamp=1477492627448&useCors=false]"
+      "data": "loadResourceByScriptTag[/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=129&resourceId=8&timestamp=1477516424029&useCors=false]"
      }
     }
    },
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492627230,
+   "timestamp": 1477516422961,
    "testId": "129",
    "state": "ended"
   },
@@ -7646,7 +7823,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7658,7 +7836,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=130&resourceId=0&timestamp=1477492627738&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=130&resourceId=0&timestamp=1477516424457&useCors=false]"
      }
     }
    },
@@ -7669,7 +7847,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492627525,
+   "timestamp": 1477516423382,
    "testId": "130",
    "state": "ended"
   },
@@ -7701,7 +7879,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7713,7 +7892,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=131&resourceId=1&timestamp=1477492628171&useCors=false]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=131&resourceId=1&timestamp=1477516424881&useCors=false]"
      }
     }
    },
@@ -7724,7 +7903,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492627933,
+   "timestamp": 1477516423794,
    "testId": "131",
    "state": "ended"
   },
@@ -7757,7 +7936,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/font-woff"
+       "content-type": "application/font-woff",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7783,7 +7963,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492628388,
+   "timestamp": 1477516424279,
    "testId": "132",
    "state": "ended"
   },
@@ -7815,7 +7995,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -7827,7 +8008,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=133&resourceId=2&timestamp=1477492633505&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=133&resourceId=2&timestamp=1477516430051&useCors=false]"
      }
     }
    },
@@ -7838,7 +8019,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492633559,
+   "timestamp": 1477516429476,
    "testId": "133",
    "state": "ended"
   },
@@ -7870,7 +8051,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7882,7 +8064,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=134&resourceId=3&timestamp=1477492634176&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=134&resourceId=3&timestamp=1477516430775&useCors=false]"
      }
     }
    },
@@ -7893,7 +8075,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492634201,
+   "timestamp": 1477516430167,
    "testId": "134",
    "state": "ended"
   },
@@ -7925,7 +8107,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7937,7 +8120,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=135&resourceId=6&timestamp=1477492634349&useCors=false]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=135&resourceId=6&timestamp=1477516430962&useCors=false]"
      }
     }
    },
@@ -7948,7 +8131,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492634374,
+   "timestamp": 1477516430358,
    "testId": "135",
    "state": "ended"
   },
@@ -7980,7 +8163,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -7992,7 +8176,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=136&resourceId=4&timestamp=1477492634651&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=136&resourceId=4&timestamp=1477516431309&useCors=false]"
      }
     }
    },
@@ -8003,7 +8187,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492634705,
+   "timestamp": 1477516430713,
    "testId": "136",
    "state": "ended"
   },
@@ -8035,7 +8219,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "16ms"
       }
      }
     },
@@ -8047,7 +8232,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=137&resourceId=5&timestamp=1477492634909&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=137&resourceId=5&timestamp=1477516431560&useCors=false]"
      }
     }
    },
@@ -8058,7 +8243,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492634963,
+   "timestamp": 1477516430990,
    "testId": "137",
    "state": "ended"
   },
@@ -8090,7 +8275,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8102,7 +8288,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=138&resourceId=7&timestamp=1477492635169&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=138&resourceId=7&timestamp=1477516431874&useCors=false]"
      }
     }
    },
@@ -8113,7 +8299,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492635254,
+   "timestamp": 1477516431328,
    "testId": "138",
    "state": "ended"
   },
@@ -8145,7 +8331,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "4ms"
       }
      }
     },
@@ -8157,7 +8344,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=139&resourceId=8&timestamp=1477492635590&useCors=false]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=139&resourceId=8&timestamp=1477516432330&useCors=false]"
      }
     }
    },
@@ -8168,7 +8355,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492635715,
+   "timestamp": 1477516431804,
    "testId": "139",
    "state": "ended"
   },
@@ -8200,7 +8387,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8212,7 +8400,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=140&resourceId=0&timestamp=1477492635865&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/11B.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=140&resourceId=0&timestamp=1477516432589&useCors=true]"
      }
     }
    },
@@ -8223,7 +8411,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492636018,
+   "timestamp": 1477516432105,
    "testId": "140",
    "state": "ended"
   },
@@ -8255,7 +8443,8 @@
       "responseHeaders": {
        "last-modified": "Mon, 24 Oct 2016 18:16:32 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "text/css; charset=utf-8"
+       "content-type": "text/css; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8267,7 +8456,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=141&resourceId=1&timestamp=1477492636268&useCors=true]"
+      "data": "loadResourceByLink[http://resource-prefetch-tests2:3002/download-files/146kB.css?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=141&resourceId=1&timestamp=1477516433014&useCors=true]"
      }
     }
    },
@@ -8278,7 +8467,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492636423,
+   "timestamp": 1477516432539,
    "testId": "141",
    "state": "ended"
   },
@@ -8322,7 +8511,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492636691,
+   "timestamp": 1477516433044,
    "testId": "142",
    "state": "ended"
   },
@@ -8354,7 +8543,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8366,7 +8556,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=143&resourceId=2&timestamp=1477492641075&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/1516kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=143&resourceId=2&timestamp=1477516437756&useCors=true]"
      }
     }
    },
@@ -8377,7 +8567,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492641885,
+   "timestamp": 1477516438242,
    "testId": "143",
    "state": "ended"
   },
@@ -8409,7 +8599,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8421,7 +8612,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=144&resourceId=3&timestamp=1477492641756&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/256kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=144&resourceId=3&timestamp=1477516438381&useCors=true]"
      }
     }
    },
@@ -8432,7 +8623,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492642514,
+   "timestamp": 1477516438897,
    "testId": "144",
    "state": "ended"
   },
@@ -8464,7 +8655,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "image/jpeg"
+       "content-type": "image/jpeg",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8476,7 +8668,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=145&resourceId=6&timestamp=1477492641915&useCors=true]"
+      "data": "loadResourceByImgTag[http://resource-prefetch-tests2:3002/download-files/64kB.jpg?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=145&resourceId=6&timestamp=1477516438538&useCors=true]"
      }
     }
    },
@@ -8487,7 +8679,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492642675,
+   "timestamp": 1477516439075,
    "testId": "145",
    "state": "ended"
   },
@@ -8519,7 +8711,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "2ms"
       }
      }
     },
@@ -8531,7 +8724,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=146&resourceId=4&timestamp=1477492642045&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/30.8kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=146&resourceId=4&timestamp=1477516438815&useCors=true]"
      }
     }
    },
@@ -8542,7 +8735,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492642803,
+   "timestamp": 1477516439414,
    "testId": "146",
    "state": "ended"
   },
@@ -8574,7 +8767,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "5ms"
       }
      }
     },
@@ -8586,7 +8780,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=147&resourceId=5&timestamp=1477492642295&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/6.9kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=147&resourceId=5&timestamp=1477516439037&useCors=true]"
      }
     }
    },
@@ -8597,7 +8791,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492643052,
+   "timestamp": 1477516439666,
    "testId": "147",
    "state": "ended"
   },
@@ -8629,7 +8823,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8641,7 +8836,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=148&resourceId=7&timestamp=1477492642589&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/779kB.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=148&resourceId=7&timestamp=1477516439294&useCors=true]"
      }
     }
    },
@@ -8652,7 +8847,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492643345,
+   "timestamp": 1477516439957,
    "testId": "148",
    "state": "ended"
   },
@@ -8684,7 +8879,8 @@
       "responseHeaders": {
        "last-modified": "Fri, 21 Oct 2016 12:17:17 GMT",
        "cache-control": "max-age=86400",
-       "content-type": "application/javascript; charset=utf-8"
+       "content-type": "application/javascript; charset=utf-8",
+       "x-response-time": "3ms"
       }
      }
     },
@@ -8696,7 +8892,7 @@
       }
      },
      "normal": {
-      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=4700714e-bb0a-4f0a-b72c-acd11be342cc&testId=149&resourceId=8&timestamp=1477492643013&useCors=true]"
+      "data": "loadResourceByScriptTag[http://resource-prefetch-tests2:3002/download-files/8B.js?sessionId=ece3d0bf-bbad-44d0-ad11-fad49d0683a8&testId=149&resourceId=8&timestamp=1477516439670&useCors=true]"
      }
     }
    },
@@ -8707,7 +8903,7 @@
    "crossDomain": true,
    "prefetchTimeoutMs": 5000,
    "loadResourceNormallyTimeoutMs": 5000,
-   "timestamp": 1477492643809,
+   "timestamp": 1477516440443,
    "testId": "149",
    "state": "ended"
   }
