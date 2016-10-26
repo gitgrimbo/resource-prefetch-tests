@@ -49,11 +49,11 @@ define(["jquery", "mustache"], function($, Mustache) {
 
     var serverPrefetch = server && server.prefetch;
     var serverNormal = server && server.normal;
-    var prefetchRequestStatusCode = serverPrefetch && serverPrefetch.statusCode;
-    var normalRequestStatusCode = serverNormal && serverNormal.statusCode;
+    var prefetchResponseStatusCode = serverPrefetch && serverPrefetch.statusCode;
+    var normalResponseStatusCode = serverNormal && serverNormal.statusCode;
 
-    var prefetchRequestReceivedByServer = Boolean(prefetchRequestStatusCode);
-    var normalRequestReceivedByServer = Boolean(normalRequestStatusCode);
+    var prefetchRequestReceivedByServer = Boolean(prefetchResponseStatusCode);
+    var normalRequestReceivedByServer = Boolean(normalResponseStatusCode);
     var pass = Boolean(prefetchRequestReceivedByServer && !normalRequestReceivedByServer);
 
     var prefetchInfo = [];
@@ -86,21 +86,26 @@ define(["jquery", "mustache"], function($, Mustache) {
       name: test.name,
       src: pathWithoutParams,
       crossDomain: test.crossDomain ? "xd" : "",
+      // test.useCors just means the browser requested CORS.
       useCors: test.useCors ? "cors" : "",
       pass: pass ? "P" : "F",
       cssClass: pass ? "pass" : "fail",
 
       prefetchInfo: prefetchInfo.join("<br>"),
       prefetchRequested: serverPrefetch.requested ? "Y" : "N",
-      prefetchRequestStatusCode: prefetchRequestStatusCode || "",
+      prefetchResponseStatusCode: prefetchResponseStatusCode || "",
       prefetchRequestHeaders: headersList(serverPrefetch && serverPrefetch.requestHeaders),
       prefetchResponseHeaders: headersList(serverPrefetch && serverPrefetch.responseHeaders),
+      // Did the server actuall reply with CORS header(s)?
+      prefetchResponseCors: (serverPrefetch && serverPrefetch.cors) ? "cors" : "",
 
       normalInfo: normalInfo.join("<br>"),
       normalRequested: server.normal.requested ? "Y" : "N",
-      normalRequestStatusCode: normalRequestStatusCode || "",
+      normalResponseStatusCode: normalResponseStatusCode || "",
       normalRequestHeaders: headersList(serverNormal && serverNormal.requestHeaders),
-      normalResponseHeaders: headersList(serverNormal && serverNormal.responseHeaders)
+      normalResponseHeaders: headersList(serverNormal && serverNormal.responseHeaders),
+      // Did the server actuall reply with CORS header(s)?
+      normalResponseCors: (serverNormal && serverNormal.cors) ? "cors" : ""
     };
   }
 

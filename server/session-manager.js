@@ -130,6 +130,9 @@ module.exports = class SessionManager {
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
     prefetchOrNormal.statusCode = statusCode;
     prefetchOrNormal.responseHeaders = responseHeaders;
+    if (responseHeaders["access-control-allow-origin"]) {
+      prefetchOrNormal.cors = true;
+    }
 
     return test;
   }
