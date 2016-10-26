@@ -248,8 +248,8 @@ define([
         console.log("Running tests");
         var allTests = combineTests(options.resources, options.testFilter, config, port);
         allTests.forEach(function(test) {
-          test.prefetchTimeoutMs = 5 * 1000;
-          test.loadResourceNormallyTimeoutMs = 5 * 1000;
+          test.prefetchTimeoutMs = 3.5 * 1000;
+          test.loadResourceNormallyTimeoutMs = 3.5 * 1000;
         });
         //allTests = allTests.slice(0, 1);
         console.log(allTests);
