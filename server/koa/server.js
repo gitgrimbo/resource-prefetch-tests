@@ -15,7 +15,7 @@ const vendorScripts = require("./vendor-scripts");
 
 const SessionManager = require("../session-manager");
 const testConfig = require("../test-config");
-const resultsPage = require("../results-page");
+const resultsPage = require("../scripts/results-page");
 
 const sessionManager = new SessionManager();
 const sessionSaveDir = path.join("./", "_sessions");

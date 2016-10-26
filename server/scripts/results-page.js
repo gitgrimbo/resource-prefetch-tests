@@ -1,7 +1,7 @@
 const fs = require("fs");
 const requirejs = require("requirejs");
 
-var dirname = __dirname;
+const dirname = __dirname;
 
 // http://requirejs.org/docs/node.html#nodeModules
 requirejs.config({
@@ -9,14 +9,14 @@ requirejs.config({
   nodeRequire: require
 });
 
-const ResultsTable = requirejs("../public/results/ResultsTable");
+const ResultsTable = requirejs("../../public/results/ResultsTable");
 
 function filterOutFalseys(it) {
   return Boolean(it);
 }
 
 function readTemplate(templateName) {
-  return String(fs.readFileSync(dirname + "/../public/results/" + templateName + ".mst.html"));
+  return String(fs.readFileSync(dirname + "/../../public/results/" + templateName + ".mst.html"));
 }
 
 function sessionToView(session, resultsTable) {
