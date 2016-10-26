@@ -31,14 +31,36 @@ ctxCacheControl(app);
 
 app.use(koaResponseTime());
 app.use(logger());
+
 app.use(route.get(downloadPathRegExp, throttler({ rate: 4, chunk: 20 * 1024, debug: 0 })));
+
+// CORS
+function* fakeOrigin(next) {
+  const origin = this.request.headers["origin"];
+  if (!origin) {
+    const referer = this.request.headers["referer"];
+    // Set the fakeOrigin to be the origin of the request.
+    // E.g. "http://resource-prefetch-tests1:3002".
+    const fakeOrigin = /^([^/]*\/\/[^/]*)\//.exec(referer)[1];
+    this.request.headers["origin"] = fakeOrigin;
+  }
+  yield next;
+}
+// kcors MUST have an "origin" header (as it follows the CORS spec).
+// If we want to send the CORS headers regardless, we can fake an "origin"
+// header which causes kcors to treat it as a standards-compliant CORS request.
+//app.use(route.get(downloadPathRegExp, fakeOrigin));
 app.use(route.get(downloadPathRegExp, cors({
   origin: function(req) {
     const useCors = (req.query.useCors === "true");
     return useCors ? "*" : false;
   }
 })));
+
+// body parsing
 app.use(bodyParser());
+
+// json
 app.use(json());
 
 
