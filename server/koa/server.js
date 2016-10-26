@@ -19,7 +19,9 @@ const resultsPage = require("../results-page");
 
 const sessionManager = new SessionManager();
 const sessionSaveDir = path.join("./", "_sessions");
-const resultsSaveDir = path.join("./", "results");
+const resultsPathMap = {
+  "results": path.resolve("./results"),
+};
 const downloadPathRegExp = /\/download-files/;
 
 const app = koa();
@@ -120,8 +122,15 @@ app.use(route.get("/result.html", function* (next) {
     return (this.body = "No result 'name' parameter provided");
   }
 
+  const split = name.split("/");
+  const alias = split[0];
+  const file = name.substring(alias.length);
+  const dir = resultsPathMap[alias];
+  if (!file || !dir) {
+    throw new Error(`Could not load file ${file} from alias ${alias}`);
+  }
   try {
-    const data = yield fs.readFile(path.join(resultsSaveDir, name + ".json"));
+    const data = yield fs.readFile(path.join(dir, file + ".json"));
     const sessionFromDisk = JSON.parse(String(data));
     return (this.body = resultsPage(sessionFromDisk, "results/style.css"));
   } catch (err) {
@@ -139,9 +148,20 @@ app.use(route.get("/result.html", function* (next) {
 app.use(route.get("/results.html", function* (next) {
   this.response.cacheControl(false);
 
-  const link = (f) => `<a href="result.html?name=${path.parse(f).name}">${f}</a>`;
-  const files = yield fs.readdir(resultsSaveDir);
-  this.body = files.map((f) => `<li>${link(f)}</li>`).join("\n");
+  const link = (nameParam, linkText) => `<a href="result.html?name=${nameParam}">${linkText}</a>`;
+
+  // Read the files from each alias directory.
+  const aliases = Object.keys(resultsPathMap);
+  const readdirs = yield aliases.map((alias) => fs.readdir(resultsPathMap[alias]));
+
+  this.body = aliases.map((alias, i) => {
+    const files = readdirs[i];
+    return files.map((f) => {
+      const parsed = path.parse(f);
+      const name = alias + "/" + parsed.name;
+      return `<li>${link(name, name)}</li>`;
+    }).join("\n");
+  }).join("\n");
 }));
 
 
