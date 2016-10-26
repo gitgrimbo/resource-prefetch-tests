@@ -100,7 +100,7 @@ define([
 
         console.log(testId, test.name, "Prefetch complete", prefetchResult);
 
-        return resolveWithDelay(100);
+        return resolveWithDelay(100, "ignore-me");
       })
       .then(function() {
         var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));

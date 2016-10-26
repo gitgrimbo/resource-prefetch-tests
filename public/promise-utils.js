@@ -14,7 +14,7 @@ define(["./extend"], function(extend) {
     };
   }
 
-  function resolveWithDelay(value, ms) {
+  function resolveWithDelay(ms, value) {
     ms = ms || 0;
     return new Promise(function(resolve, reject) {
       setTimeout(function() {
