@@ -1,5 +1,9 @@
 /* eslint-env browser, amd */
-define(["jquery", "./promise-utils", "./resource-loaders"], function($, promiseUtils, resourceLoaders) {
+define([
+  "jquery",
+  "./promise-utils",
+  "./resource-loaders"
+], function($, promiseUtils, resourceLoaders) {
   var timeoutify = promiseUtils.timeoutify;
   var countdownResolver = promiseUtils.countdownResolver;
 
