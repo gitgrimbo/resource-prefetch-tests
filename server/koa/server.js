@@ -9,6 +9,7 @@ const json = require("koa-json");
 const logger = require("koa-logger");
 const ctxCacheControl = require("koa-ctx-cache-control");
 const koaResponseTime = require("koa-response-time");
+const ms = require("ms");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
@@ -83,7 +84,7 @@ app.use(route.get(downloadPathRegExp, function* (next) {
 
 // Serve all the files in "./public".
 app.use(serve("public", {
-  maxage: 1 * 24 * 60 * 60 * 1000
+  maxage: ms("1 day")
 }));
 
 // Add the mappings to serve vendor scripts.
