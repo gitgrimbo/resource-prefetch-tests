@@ -28,7 +28,9 @@ define(["jquery", "./ClientResultsTable"], function($, ResultsTable) {
         headersRowTemplate: templates.headersRowTemplate,
         escapeHtml: ResultsTable.escapeHtml
       });
-      t.appendTo(container, {});
+      t.appendTo(container, {
+        userAgent: window.navigator.userAgent
+      });
       window.resultsTable = t;
     });
   }

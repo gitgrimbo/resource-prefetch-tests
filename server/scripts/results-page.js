@@ -38,6 +38,7 @@ function sessionToView(session, resultsTable) {
     return resultsTable.testResultsToRowData(results);
   });
   return {
+    userAgent: session.userAgent,
     rows: rows.filter(filterOutFalseys)
   };
 }
