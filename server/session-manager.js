@@ -105,7 +105,7 @@ module.exports = class SessionManager {
     return test.resource;
   }
 
-  testResourceRequest(sessionId, testId, resourceId, resourcePath, requestHeaders) {
+  testResourceRequest(sessionId, testId, resourceId, resourcePath, resourceUrl, requestHeaders) {
     console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath, requestHeaders);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
@@ -114,6 +114,7 @@ module.exports = class SessionManager {
     const resource = this.ensureHasResource(test, resourceId, resourcePath);
 
     const prefetchOrNormal = (test.state === "prefetch") ? resource.server.prefetch : resource.server.normal;
+    prefetchOrNormal.url = resourceUrl;
     prefetchOrNormal.requested = true;
     prefetchOrNormal.requestHeaders = requestHeaders;
 
