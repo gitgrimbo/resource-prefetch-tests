@@ -41,11 +41,38 @@ define([
     });
   }
 
+  var imgTagCount = 0;
   function loadResourceByImgTag(opts) {
     var src = opts.src;
     var container = opts.container;
     return new Promise(function(resolve, reject) {
       var tag = "loadResourceByImgTag";
+
+      var onload = resolveWith(resolve, tag, {
+        src: src,
+        tag: tag,
+        crossorigin: opts.crossorigin
+      });
+      var onerror = rejectWithEvent(reject, tag, src);
+
+      imgTagCount++;
+      var onloadname = "loadResourceByImgTag_load_" + imgTagCount;
+      var onerrorname = "loadResourceByImgTag_error_" + imgTagCount;
+      window[onloadname] = onload;
+      window[onerrorname] = onerror;
+
+      var crossoriginAttr = opts.crossorigin ? " crossorigin=anonymous" : "";
+
+      var img = "<img" + crossoriginAttr + " onload='" + onloadname + "()' onerror='" + onerrorname + "()' src='" + src + "'>";
+      container.innerHTML = img;
+    });
+  }
+
+  function loadResourceByImgElement(opts) {
+    var src = opts.src;
+    var container = opts.container;
+    return new Promise(function(resolve, reject) {
+      var tag = "loadResourceByImgElement";
 
       var img = document.createElement("img");
       img.addEventListener("load", resolveWith(resolve, tag, {
@@ -235,6 +262,7 @@ define([
 
   return {
     loadResourceByFontFaceCss: loadResourceByFontFaceCss,
+    loadResourceByImgElement: loadResourceByImgElement,
     loadResourceByImgTag: loadResourceByImgTag,
     loadResourceByLink: loadResourceByLink,
     loadResourceByLinkRelPrefetchTag: loadResourceByLinkRelPrefetchTag,
