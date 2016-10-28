@@ -2,19 +2,34 @@
 define([
   "intern",
   "intern!object",
-  "../../public/tests"
-], function(intern, registerSuite, tests) {
-  function makeTestUrl(url, testName) {
+  "intern/dojo/node!url",
+  "intern/dojo/node!../../server/test-config",
+  "../../public/resources",
+  "../../public/tests",
+  "../../public/test-utils"
+], function(intern, registerSuite, url, testConfig, resources, tests, testUtils) {
+  function makeTestUrl(url, testName, useCors, crossDomain) {
     const char = (url.indexOf("?") > 1) ? "&" : "?";
-    return url + char + "test.name=" + encodeURIComponent(testName);
+    const params = [];
+    if (typeof testName !== "undefined") {
+      params.push(["test.name", testName]);
+    }
+    if (typeof crossDomain !== "undefined") {
+      params.push(["test.crossDomain", crossDomain]);
+    }
+    if (typeof useCors !== "undefined") {
+      params.push(["test.useCors", useCors]);
+    }
+    if (params.length > 0) {
+      return url + char + params
+        .map((p) => p[0] + "=" + encodeURIComponent(p[1]))
+        .join("&");
+    }
+    return url;
   }
 
-  const suite = {
-    name: "functional"
-  };
-
-  tests.forEach((test) => {
-    suite[test.name] = function() {
+  function makeTest(name, userCors, crossDomain) {
+    return function() {
       // It's a long test so timeout after an hour.
       // Both the test timeout, and the async timeout need to be long.
       const oneHour = 60 * 60 * 1000;
@@ -22,8 +37,7 @@ define([
       const executeAsyncTimeout = oneHour;
       const findTimeout = oneHour;
 
-      const config = intern.config;
-      const url = makeTestUrl(config.testHarnessUrl, test.name);
+      const url = makeTestUrl(config.testHarnessUrl, name, userCors, crossDomain);
 
       return this.remote
         .setFindTimeout(findTimeout)
@@ -41,6 +55,20 @@ define([
           checkForResults();
         });
     };
+  }
+
+  const suite = {
+    name: "functional"
+  };
+
+  const config = intern.config;
+  const parsed = url.parse(config.testHarnessUrl);
+  tests = testUtils.combineTests(tests, resources, null, testConfig.http2, parsed.port);
+
+  tests.forEach((test) => {
+    suite[test.name] = makeTest(test.name, "!true", "!true");
+    suite[test.name + "-xd"] = makeTest(test.name, "!true", "true");
+    suite[test.name + "-xd-cors"] = makeTest(test.name, "true", "true");
   });
 
   registerSuite(suite);
