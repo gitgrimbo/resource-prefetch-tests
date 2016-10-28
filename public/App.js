@@ -22,12 +22,22 @@ define(["./tester"], function(tester) {
     console.log(match);
     return function(test) {
       for (var k in match) {
-        // E.g. match[k] could be "true" (string) and test[k] could be true (boolean).
-        if (match[k] !== String(test[k])) {
-          console.log("FAIL", k, match[k], test[k]);
-          return false;
+        var val = match[k];
+        var not = false;
+        if (val.charAt(0) === "!") {
+          not = true;
+          val = val.substring(1);
         }
-        console.log("MATCH", k, match[k], test[k]);
+        // E.g. match[k] could be "true" (string) and test[k] could be true (boolean).
+        if (val !== String(test[k])) {
+          if (!not) {
+            return false;
+          }
+        } else {
+          if (not) {
+            return false;
+          }
+        }
       }
       return true;
     };
