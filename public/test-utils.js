@@ -1,9 +1,9 @@
 /* eslint-env browser, amd */
-define(["./extend"], function(extend) {
+define([], function() {
   function createTestsPerResource(tests, resources) {
     return tests.reduce(function(tests, test) {
       resources.forEach(function(r, i) {
-        tests.push(extend({}, test, {
+        tests.push(Object.assign({}, test, {
           resourceId: i,
           resource: r
         }));
@@ -14,7 +14,7 @@ define(["./extend"], function(extend) {
 
   function createTestsForCrossDomain(tests, protocol, hostname, port, useCors) {
     return tests.map(function(test) {
-      return extend({}, test, {
+      return Object.assign({}, test, {
         protocol: protocol,
         hostname: hostname,
         port: port,

@@ -1,5 +1,7 @@
 /* eslint-env browser, amd */
-define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
+define([
+  "./promise-utils"
+], function(promiseUtils) {
   function rejectWithEvent(reject, msg, tag, src) {
     return function(event) {
       var attrs = {
@@ -105,7 +107,7 @@ define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
   }
 
   function loadResourceByLinkRelStylesheetTag(opts) {
-    return loadResourceByLink(extend({}, opts, {
+    return loadResourceByLink(Object.assign({}, opts, {
       linkAttrs: {
         rel: "stylesheet",
         type: "text/css"
@@ -114,7 +116,7 @@ define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
   }
 
   function loadResourceByLinkRelPrefetchTag(opts) {
-    return loadResourceByLink(extend({}, opts, {
+    return loadResourceByLink(Object.assign({}, opts, {
       linkAttrs: {
         rel: "prefetch"
       }
@@ -122,7 +124,7 @@ define(["./promise-utils", "./extend"], function(promiseUtils, extend) {
   }
 
   function loadResourceByLinkRelPrefetchTagWithCrossoriginAttr(opts) {
-    return loadResourceByLink(extend({}, opts, {
+    return loadResourceByLink(Object.assign({}, opts, {
       linkAttrs: {
         rel: "prefetch",
         crossorigin: "anonymous"

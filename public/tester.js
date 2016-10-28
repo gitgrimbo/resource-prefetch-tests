@@ -1,13 +1,12 @@
 /* eslint-env browser, amd */
 define([
-  "./extend",
   "./prefetch",
   "./ajax-utils",
   "./promise-utils",
   "./url",
   "./tests",
   "./test-utils"
-], function(extend, prefetch, ajaxUtils, promiseUtils, url, testList, testUtils) {
+], function(prefetch, ajaxUtils, promiseUtils, url, testList, testUtils) {
   var resolveWithDelay = promiseUtils.resolveWithDelay;
 
   var poster = ajaxUtils.poster;
@@ -68,7 +67,7 @@ define([
         return result;
       }
       // replace err with serializable version
-      var cleaned = extend({}, result, {
+      var cleaned = Object.assign({}, result, {
         err: {
           name: err.name,
           message: err.message
@@ -154,7 +153,7 @@ define([
   function combineTests(resources, testFilter, config, port) {
     var baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
     return baseTests.map(function(test) {
-      return extend(test, {
+      return Object.assign(test, {
         // The prefetcher functions here should have been 'timeoutified' already.
         // See prefetch.js
         prefetcher: prefetch[test.prefetcherName]

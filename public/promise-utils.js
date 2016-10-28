@@ -1,9 +1,9 @@
 /* eslint-env browser, amd */
-define(["./extend"], function(extend) {
+define([], function() {
   function rejectWith(reject, value, attrs) {
     return function() {
       var e = (value instanceof Error) ? value : new Error(value);
-      extend(e, attrs);
+      Object.assign(e, attrs);
       reject(e);
     };
   }
