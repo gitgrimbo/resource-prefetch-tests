@@ -11,6 +11,7 @@ const ctxCacheControl = require("koa-ctx-cache-control");
 const koaResponseTime = require("koa-response-time");
 const ms = require("ms");
 const uaParser = require("ua-parser-js");
+const globby = require("globby");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
@@ -155,7 +156,7 @@ app.use(route.get("/result.html", function* (next) {
     throw new Error(`Could not load file ${file} from alias ${alias}`);
   }
   try {
-    const data = yield fs.readFile(path.join(dir, file + ".json"));
+    const data = yield fs.readFile(path.join(dir, file));
     const sessionFromDisk = JSON.parse(String(data));
     return (this.body = resultsPage(sessionFromDisk, "results/style.css"));
   } catch (err) {
@@ -177,13 +178,14 @@ app.use(route.get("/results.html", function* (next) {
 
   // Read the files from each alias directory.
   const aliases = Object.keys(resultsPathMap);
-  const readdirs = yield aliases.map((alias) => fs.readdir(resultsPathMap[alias]));
+  const readdirs = yield aliases.map((alias) => globby("**/*.json", {
+    cwd: resultsPathMap[alias]
+  }));
 
   this.body = aliases.map((alias, i) => {
     const files = readdirs[i];
     return files.map((f) => {
-      const parsed = path.parse(f);
-      const name = alias + "/" + parsed.name;
+      const name = alias + "/" + f;
       return `<li>${link(name, name)}</li>`;
     }).join("\n");
   }).join("\n");
