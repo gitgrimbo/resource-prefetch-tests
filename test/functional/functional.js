@@ -6,7 +6,7 @@ define([
 ], function(intern, registerSuite, tests) {
   function makeTestUrl(url, testName) {
     const char = (url.indexOf("?") > 1) ? "&" : "?";
-    return url + char + "grep=" + encodeURIComponent(testName);
+    return url + char + "test.name=" + encodeURIComponent(testName);
   }
 
   const suite = {

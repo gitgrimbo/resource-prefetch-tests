@@ -10,12 +10,36 @@ define(["./tester"], function(tester) {
     };
   }
 
-  function App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, grep) {
+  function createTestFilter(urlParams) {
+    var match = {};
+    for (var k in urlParams) {
+      var exec = /^test\.(.*)/.exec(k);
+      console.log(k, exec);
+      if (exec) {
+        match[exec[1]] = urlParams[k];
+      }
+    }
+    console.log(match);
+    return function(test) {
+      for (var k in match) {
+        // E.g. match[k] could be "true" (string) and test[k] could be true (boolean).
+        if (match[k] !== String(test[k])) {
+          console.log("FAIL", k, match[k], test[k]);
+          return false;
+        }
+        console.log("MATCH", k, match[k], test[k]);
+      }
+      return true;
+    };
+  }
+
+  function App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams) {
     this.resources = resources;
     this.prefetchContainer = prefetchContainer;
     this.resultsTableElement = resultsTableElement;
     this.resultsTextareaElement = resultsTextareaElement;
-    this.grep = grep;
+    this.urlParams = urlParams;
+    this.testFilter = createTestFilter(urlParams);
   }
 
   App.prototype.startTest = function() {
@@ -32,14 +56,10 @@ define(["./tester"], function(tester) {
       resultsWindow.resultsTable.onTestComplete(data);
     }
 
-    var grep = this.grep;
     tester({
       resources: this.resources,
       prefetchContainer: this.prefetchContainer,
-      testFilter: function(test) {
-        console.log(grep, test.name);
-        return grep ? (test.name.search(grep) > -1) : true;
-      },
+      testFilter: this.testFilter,
       listener: {
         onSessionStarted: log(),
         onSessionEnded: onSessionEnded.bind(this),
