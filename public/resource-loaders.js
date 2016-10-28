@@ -27,9 +27,15 @@ define([
       var img = new Image();
       img.addEventListener("load", resolveWith(resolve, tag, {
         src: src,
-        tag: tag
+        tag: tag,
+        crossorigin: opts.crossorigin
       }));
       img.addEventListener("error", rejectWithEvent(reject, tag, src));
+
+      if (opts.crossorigin) {
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+        img.crossOrigin = "anonymous";
+      }
 
       img.src = src;
     });
@@ -44,9 +50,15 @@ define([
       var img = document.createElement("img");
       img.addEventListener("load", resolveWith(resolve, tag, {
         src: src,
-        tag: tag
+        tag: tag,
+        crossorigin: opts.crossorigin
       }));
       img.addEventListener("error", rejectWithEvent(reject, tag, src));
+
+      if (opts.crossorigin) {
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+        img.setAttribute("crossorigin", "anonymous");
+      }
 
       img.src = src;
       container.appendChild(img);
@@ -62,7 +74,8 @@ define([
       var obj = document.createElement("object");
       obj.addEventListener("load", resolveWith(resolve, tag, {
         src: src,
-        tag: tag
+        tag: tag,
+        // <object> does not support "crossorigin" attr
       }));
       obj.addEventListener("error", rejectWithEvent(reject, tag, src));
 
@@ -80,9 +93,15 @@ define([
       var script = document.createElement("script");
       script.addEventListener("load", resolveWith(resolve, tag, {
         src: src,
-        tag: tag
+        tag: tag,
+        crossorigin: opts.crossorigin
       }));
       script.addEventListener("error", rejectWithEvent(reject, tag, src));
+
+      if (opts.crossorigin) {
+        // https://developer.mozilla.org/en/docs/Web/HTML/Element/script#attr-crossorigin
+        script.setAttribute("crossorigin", "anonymous");
+      }
 
       script.src = src;
       container.appendChild(script);
@@ -116,9 +135,15 @@ define([
       var link = document.createElement("link");
       link.addEventListener("load", resolveWith(resolve, tag, {
         src: src,
-        tag: tag
+        tag: tag,
+        crossorigin: opts.crossorigin
       }));
       link.addEventListener("error", rejectWithEvent(reject, tag, src));
+
+      if (opts.crossorigin) {
+        // https://developer.mozilla.org/en/docs/Web/HTML/Element/link#attr-crossorigin
+        link.setAttribute("crossorigin", "anonymous");
+      }
 
       for (var k in linkAttrs) {
         link.setAttribute(k, linkAttrs[k]);
@@ -149,9 +174,9 @@ define([
 
   function loadResourceByLinkRelPrefetchTagWithCrossoriginAttr(opts) {
     return loadResourceByLink(Object.assign({}, opts, {
+      crossorigin: true,
       linkAttrs: {
-        rel: "prefetch",
-        crossorigin: "anonymous"
+        rel: "prefetch"
       }
     }));
   }
