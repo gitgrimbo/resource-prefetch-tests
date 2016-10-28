@@ -10,6 +10,7 @@ const logger = require("koa-logger");
 const ctxCacheControl = require("koa-ctx-cache-control");
 const koaResponseTime = require("koa-response-time");
 const ms = require("ms");
+const uaParser = require("ua-parser-js");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
@@ -212,8 +213,14 @@ app.use(route.get("/session.html", function* (next) {
 app.use(route.get("/sessions.html", function* () {
   this.response.cacheControl(false);
 
+  const linkText = (id) => {
+    const session = sessionManager.getSession(id);
+    const ua = uaParser(session.userAgent);
+    return session.timestamp + "-" + session.sessionId + "-" + ua.browser.name + "-" + ua.browser.version;
+  };
+
   const sessionIds = sessionManager.getSessionIds();
-  const link = (id) => `<a href="session.html?sessionId=${id}">${id}</a>`;
+  const link = (id) => `<a href="session.html?sessionId=${id}">${linkText(id)}</a>`;
   this.body = sessionIds.map((id) => `<li>${link(id)}</li>`).join("\n");
 }));
 
