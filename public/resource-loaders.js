@@ -152,6 +152,41 @@ define([
     });
   }
 
+  function loadResourceByXDomainRequest(opts) {
+    var src = opts.src;
+    var tag = "loadResourceByXDomainRequest";
+
+    if (!window.XDomainRequest) {
+      return new Promise(function(resolve, reject) {
+        var err = new Error("XDomainRequest not supported");
+        err.tag = tag;
+        err.src = src;
+        reject(err);
+      });
+    }
+
+    return new Promise(function(resolve, reject) {
+      var xdr = new XDomainRequest();
+
+      xdr.open("get", src);
+
+      xdr.ontimeout = rejectWithEvent(reject, tag, src);
+      xdr.onerror = rejectWithEvent(reject, tag, src);
+      xdr.onload = resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      });
+
+      // https://developer.mozilla.org/en-US/docs/Web/API/XDomainRequest#Example
+      // Note: The xdr.send() call is wrapped in a timeout to prevent an
+      // issue with the interface where some requests are lost if multiple
+      // XDomainRequests are being sent at the same time.
+      setTimeout(function() {
+        xdr.send();
+      }, 0);
+    });
+  }
+
   function loadResourceByLink(opts) {
     var src = opts.src;
     var container = opts.container;
@@ -271,6 +306,7 @@ define([
     loadResourceByNewImage: loadResourceByNewImage,
     loadResourceByObjectTag: loadResourceByObjectTag,
     loadResourceByScriptTag: loadResourceByScriptTag,
+    loadResourceByXDomainRequest: loadResourceByXDomainRequest,
     loadResourceByXHR: loadResourceByXHR
   };
 });

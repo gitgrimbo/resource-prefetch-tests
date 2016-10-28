@@ -8,6 +8,9 @@ define([], function() {
       name: "XHR",
       prefetcherName: "loadResourceByXHR"
     }, {
+      name: "XDomainRequest",
+      prefetcherName: "loadResourceByXDomainRequest"
+    }, {
       name: "<object>",
       prefetcherName: "loadResourceByObjectTag"
     }, {

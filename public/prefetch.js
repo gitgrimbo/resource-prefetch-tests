@@ -28,6 +28,7 @@ define([
   var loadResourceByObjectTag = timeoutifyLoader("loadResourceByObjectTag");
   var loadResourceByScriptTag = timeoutifyLoader("loadResourceByScriptTag");
   var loadResourceByXHR = timeoutifyLoader("loadResourceByXHR");
+  var loadResourceByXDomainRequest = timeoutifyLoader("loadResourceByXDomainRequest");
   var loadResourceByLinkRelStylesheetTag = timeoutifyLoader("loadResourceByLinkRelStylesheetTag");
   var loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
   var loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
@@ -68,6 +69,7 @@ define([
   var loadResourcesByImgTag = loadResources(loadResourceByImgTag);
   var loadResourcesByScriptTag = loadResources(loadResourceByScriptTag);
   var loadResourcesByXHR = loadResources(loadResourceByXHR);
+  var loadResourcesByXDomainRequest = loadResources(loadResourceByXDomainRequest);
   var loadResourcesByLinkRelStylesheetTag = loadResources(loadResourceByLinkRelStylesheetTag);
   var loadResourcesByObjectTag = loadResources(loadResourceByObjectTag);
   var loadResourcesByLinkRelPrefetchTag = loadResources(loadResourceByLinkRelPrefetchTag);
@@ -95,6 +97,7 @@ define([
     loadResourceByObjectTag: loadResourceByObjectTag,
     loadResourceByScriptTag: loadResourceByScriptTag,
     loadResourceByXHR: loadResourceByXHR,
+    loadResourceByXDomainRequest: loadResourceByXDomainRequest,
     loadResourcesNormally: loadResourcesNormally,
     loadResourcesByImgTag: loadResourcesByImgTag,
     loadResourcesByLinkRelPrefetchTag: loadResourcesByLinkRelPrefetchTag,
@@ -103,6 +106,7 @@ define([
     loadResourcesByNewImage: loadResourcesByNewImage,
     loadResourcesByObjectTag: loadResourcesByObjectTag,
     loadResourcesByScriptTag: loadResourcesByScriptTag,
-    loadResourcesByXHR: loadResourcesByXHR
+    loadResourcesByXHR: loadResourcesByXHR,
+    loadResourcesByXDomainRequest: loadResourcesByXDomainRequest
   };
 });
