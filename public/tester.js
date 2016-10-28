@@ -160,8 +160,11 @@ define([
       });
     });
     baseTests = testUtils.createTestsPerResource(baseTests, resources);
-    var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, true);
-    var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, false);
+
+    var useCors = true;
+    var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, useCors);
+    var dontUseCors = false;
+    var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, dontUseCors);
 
     var allTests = baseTests.concat(xdWithCorsTests, xdWithoutCorsTests);
 
