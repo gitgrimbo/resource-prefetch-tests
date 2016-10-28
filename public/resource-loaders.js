@@ -130,7 +130,7 @@ define([
     var container = opts.container;
     var linkAttrs = opts.linkAttrs || {};
     return new Promise(function(resolve, reject) {
-      var tag = "loadResourceByLink";
+      var tag = opts.tag || "loadResourceByLink";
 
       var link = document.createElement("link");
       link.addEventListener("load", resolveWith(resolve, tag, {
@@ -157,6 +157,7 @@ define([
 
   function loadResourceByLinkRelStylesheetTag(opts) {
     return loadResourceByLink(Object.assign({}, opts, {
+      tag: "loadResourceByLinkRelStylesheetTag",
       linkAttrs: {
         rel: "stylesheet",
         type: "text/css"
@@ -166,6 +167,7 @@ define([
 
   function loadResourceByLinkRelPrefetchTag(opts) {
     return loadResourceByLink(Object.assign({}, opts, {
+      tag: "loadResourceByLinkRelPrefetchTag",
       linkAttrs: {
         rel: "prefetch"
       }
@@ -174,6 +176,7 @@ define([
 
   function loadResourceByLinkRelPrefetchTagWithCrossoriginAttr(opts) {
     return loadResourceByLink(Object.assign({}, opts, {
+      tag: "loadResourceByLinkRelPrefetchTagWithCrossoriginAttr",
       crossorigin: true,
       linkAttrs: {
         rel: "prefetch"
