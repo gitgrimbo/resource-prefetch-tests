@@ -152,27 +152,14 @@ define([
   }
 
   function combineTests(resources, testFilter, config, port) {
-    var baseTests = testList.map(function(test) {
+    var baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
+    return baseTests.map(function(test) {
       return extend(test, {
         // The prefetcher functions here should have been 'timeoutified' already.
         // See prefetch.js
         prefetcher: prefetch[test.prefetcherName]
       });
     });
-    baseTests = testUtils.createTestsPerResource(baseTests, resources);
-
-    var useCors = true;
-    var xdWithCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, useCors);
-    var dontUseCors = false;
-    var xdWithoutCorsTests = testUtils.createTestsForCrossDomain(baseTests, "http:", config.http2, port, dontUseCors);
-
-    var allTests = baseTests.concat(xdWithCorsTests, xdWithoutCorsTests);
-
-    if (testFilter) {
-      allTests = allTests.filter(testFilter);
-    }
-
-    return testUtils.sortTests(allTests);
   }
 
   function notifyListener(listener, type, data) {

@@ -24,6 +24,24 @@ define(["./extend"], function(extend) {
     });
   }
 
+  function combineTests(testList, resources, testFilter, xdDomain, port) {
+    var baseTests = testList.concat();
+    baseTests = createTestsPerResource(baseTests, resources);
+
+    var useCors = true;
+    var xdWithCorsTests = createTestsForCrossDomain(baseTests, "http:", xdDomain, port, useCors);
+    var dontUseCors = false;
+    var xdWithoutCorsTests = createTestsForCrossDomain(baseTests, "http:", xdDomain, port, dontUseCors);
+
+    var allTests = baseTests.concat(xdWithCorsTests, xdWithoutCorsTests);
+
+    if (testFilter) {
+      allTests = allTests.filter(testFilter);
+    }
+
+    return sortTests(allTests);
+  }
+
   /**
    * Sorts the tests by
    * - name
@@ -67,6 +85,7 @@ define(["./extend"], function(extend) {
   }
 
   return {
+    combineTests: combineTests,
     createTestsPerResource: createTestsPerResource,
     createTestsForCrossDomain: createTestsForCrossDomain,
     sortTests: sortTests
