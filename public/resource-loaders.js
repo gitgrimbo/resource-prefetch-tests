@@ -2,36 +2,35 @@
 define([
   "./promise-utils"
 ], function(promiseUtils) {
-  function rejectWithEvent(reject, msg, tag, src) {
+  function rejectWithEvent(reject, tag, src) {
     return function(event) {
       var attrs = {
         src: src,
         tag: tag,
         event: event
       };
-      // Pass msg=null to use this default message.
-      msg = (msg === null) ? tag + "[" + src + "]" : msg;
-      promiseUtils.rejectWith(reject, msg, attrs)();
+      promiseUtils.rejectWith(reject, tag, attrs)();
     };
   }
 
-  function resolveWith(resolve, msg, tag, src) {
-    var attrs = {
-      src: src,
-      tag: tag
-    };
-    // Pass msg=null to use this default message.
-    msg = (msg === null) ? tag + "[" + src + "]" : msg;
-    return promiseUtils.resolveWith(resolve, msg, attrs);
+  function resolveWith(resolve, msg, attrs) {
+    return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, {
+      msg: msg
+    }));
   }
 
   function loadResourceByNewImage(opts) {
     var src = opts.src;
     return new Promise(function(resolve, reject) {
-      var img = new Image();
       var tag = "loadResourceByNewImage";
-      img.addEventListener("load", resolveWith(resolve, null, tag, src));
-      img.addEventListener("error", rejectWithEvent(reject, null, tag, src));
+
+      var img = new Image();
+      img.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      img.addEventListener("error", rejectWithEvent(reject, tag, src));
+
       img.src = src;
     });
   }
@@ -40,10 +39,15 @@ define([
     var src = opts.src;
     var container = opts.container;
     return new Promise(function(resolve, reject) {
-      var img = document.createElement("img");
       var tag = "loadResourceByImgTag";
-      img.addEventListener("load", resolveWith(resolve, null, tag, src));
-      img.addEventListener("error", rejectWithEvent(reject, null, tag, src));
+
+      var img = document.createElement("img");
+      img.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      img.addEventListener("error", rejectWithEvent(reject, tag, src));
+
       img.src = src;
       container.appendChild(img);
     });
@@ -53,10 +57,15 @@ define([
     var src = opts.src;
     var container = opts.container;
     return new Promise(function(resolve, reject) {
-      var obj = document.createElement("object");
       var tag = "loadResourceByObjectTag";
-      obj.addEventListener("load", resolveWith(resolve, null, tag, src));
-      obj.addEventListener("error", rejectWithEvent(reject, null, tag, src));
+
+      var obj = document.createElement("object");
+      obj.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      obj.addEventListener("error", rejectWithEvent(reject, tag, src));
+
       obj.data = src;
       container.appendChild(obj);
     });
@@ -66,10 +75,15 @@ define([
     var src = opts.src;
     var container = opts.container;
     return new Promise(function(resolve, reject) {
-      var script = document.createElement("script");
       var tag = "loadResourceByScriptTag";
-      script.addEventListener("load", resolveWith(resolve, null, tag, src));
-      script.addEventListener("error", rejectWithEvent(reject, null, tag, src));
+
+      var script = document.createElement("script");
+      script.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      script.addEventListener("error", rejectWithEvent(reject, tag, src));
+
       script.src = src;
       container.appendChild(script);
     });
@@ -78,11 +92,15 @@ define([
   function loadResourceByXHR(opts) {
     var src = opts.src;
     return new Promise(function(resolve, reject) {
-      var xhr = new XMLHttpRequest();
       var tag = "loadResourceByXHR";
-      xhr.addEventListener("load", resolveWith(resolve, null, tag, src));
-      xhr.addEventListener("error", rejectWithEvent(reject, null, tag, src));
-      xhr.addEventListener("abort", rejectWithEvent(reject, null, tag, src));
+
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      xhr.addEventListener("error", rejectWithEvent(reject, tag, src));
+      xhr.addEventListener("abort", rejectWithEvent(reject, tag, src));
       xhr.open("GET", src);
       xhr.send();
     });
@@ -93,14 +111,20 @@ define([
     var container = opts.container;
     var linkAttrs = opts.linkAttrs || {};
     return new Promise(function(resolve, reject) {
-      var link = document.createElement("link");
       var tag = "loadResourceByLink";
-      link.addEventListener("load", resolveWith(resolve, null, tag, src));
-      link.addEventListener("error", rejectWithEvent(reject, null, tag, src));
-      link.setAttribute("href", src);
+
+      var link = document.createElement("link");
+      link.addEventListener("load", resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      }));
+      link.addEventListener("error", rejectWithEvent(reject, tag, src));
+
       for (var k in linkAttrs) {
         link.setAttribute(k, linkAttrs[k]);
       }
+      link.setAttribute("href", src);
+
       container = document.getElementsByTagName("head")[0];
       container.appendChild(link);
     });
@@ -145,6 +169,7 @@ define([
     ";
     return new Promise(function(resolve, reject) {
       var tag = "loadResourceByFontFaceCss";
+
       var style = document.createElement("style");
       style.innerHTML = css;
       container.appendChild(style);
@@ -168,7 +193,10 @@ define([
           if (newWidth !== oldWidth) {
             console.log(Date.now(), "resolve");
             clearInterval(timerId);
-            var resolver = resolveWith(resolve, null, tag, src);
+            var resolver = resolveWith(resolve, tag, {
+              src: src,
+              tag: tag
+            });
             resolver();
           }
         }
