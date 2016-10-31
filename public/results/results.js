@@ -23,13 +23,11 @@ define(["jquery", "./ClientResultsTable"], function($, ResultsTable) {
     };
     loadTemplates(templatePaths).then(function(templates) {
       var t = new ResultsTable({
+        container: container,
         tableTemplate: templates.tableTemplate,
         rowTemplate: templates.rowTemplate,
         headersRowTemplate: templates.headersRowTemplate,
         escapeHtml: ResultsTable.escapeHtml
-      });
-      t.appendTo(container, {
-        userAgent: window.navigator.userAgent
       });
       window.resultsTable = t;
     });

@@ -12,9 +12,11 @@ define(["jquery", "mustache", "./ResultsTable"], function($, Mustache, ResultsTa
     this.updateTable(row);
   }
 
-  function appendTo(container, view) {
-    this.container = $(container);
-    this.container.append(this.toHTML(view));
+  function onSessionStarted(session) {
+    this.container.append(this.toHTML({
+      date: new Date(session.timestamp).toISOString(),
+      userAgent: session.userAgent
+    }));
     ResultsTable.addEventListeners();
   }
 
@@ -33,9 +35,17 @@ define(["jquery", "mustache", "./ResultsTable"], function($, Mustache, ResultsTa
     };
   })();
 
-  ResultsTable.prototype.updateTable = updateTable;
-  ResultsTable.prototype.appendTo = appendTo;
-  ResultsTable.prototype.onTestComplete = onTestComplete;
+  function ClientResultsTable(opts) {
+    ResultsTable.apply(this, arguments);
+    this.container = $(opts.container);
+  }
 
-  return ResultsTable;
+  ClientResultsTable.prototype = Object.create(ResultsTable.prototype);
+  ClientResultsTable.prototype.constructor = ClientResultsTable;
+
+  ClientResultsTable.prototype.updateTable = updateTable;
+  ClientResultsTable.prototype.onSessionStarted = onSessionStarted;
+  ClientResultsTable.prototype.onTestComplete = onTestComplete;
+
+  return ClientResultsTable;
 });

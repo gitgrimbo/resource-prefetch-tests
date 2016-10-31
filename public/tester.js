@@ -227,11 +227,9 @@ define([
           userAgent: navigator.userAgent
         });
       })
-      .then(function(response) {
-        sessionId = response.sessionId;
-        notifyListener(options.listener, "SessionStarted", {
-          sessionId: sessionId
-        });
+      .then(function(session) {
+        sessionId = session.sessionId;
+        notifyListener(options.listener, "SessionStarted", session);
       })
       .then(function() {
         console.log("Running tests");

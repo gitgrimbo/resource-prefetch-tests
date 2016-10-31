@@ -1,15 +1,6 @@
 /* eslint-env browser, amd */
+/* eslint-disable no-console */
 define(["./tester"], function(tester) {
-  function log() {
-    return function(a, b, c) {
-      if (typeof console.log === "function") {
-        console.log.apply(console, arguments);
-      } else {
-        console.log(a, b, c);
-      }
-    };
-  }
-
   function createTestFilter(urlParams) {
     var match = {};
     for (var k in urlParams) {
@@ -53,6 +44,12 @@ define(["./tester"], function(tester) {
   }
 
   App.prototype.startTest = function() {
+    function onSessionStarted(session) {
+      console.log("onStartedStarted", session);
+      var resultsWindow = document.getElementById("results-frame").contentWindow;
+      resultsWindow.resultsTable.onSessionStarted(session);
+    }
+
     function onSessionEnded(session) {
       this.resultsTextareaElement.value = JSON.stringify(session, null, 1);
       console.log(session);
@@ -71,7 +68,7 @@ define(["./tester"], function(tester) {
       prefetchContainer: this.prefetchContainer,
       testFilter: this.testFilter,
       listener: {
-        onSessionStarted: log(),
+        onSessionStarted: onSessionStarted.bind(this),
         onSessionEnded: onSessionEnded.bind(this),
         onTestComplete: onTestComplete.bind(this)
       }
