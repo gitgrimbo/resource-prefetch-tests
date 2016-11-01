@@ -63,7 +63,7 @@ define([
 
       var crossoriginAttr = opts.crossorigin ? " crossorigin=anonymous" : "";
 
-      var img = "<img" + crossoriginAttr + " onload='" + onloadname + "()' onerror='" + onerrorname + "()' src='" + src + "'>";
+      var img = "<img" + crossoriginAttr + " onload='" + onloadname + "(event)' onerror='" + onerrorname + "(event)' src='" + src + "'>";
       container.innerHTML = img;
     });
   }
