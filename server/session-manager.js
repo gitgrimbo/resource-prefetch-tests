@@ -106,10 +106,9 @@ module.exports = class SessionManager {
   }
 
   testResourceRequest(sessionId, testId, resourceId, resourcePath, resourceUrl, requestHeaders) {
-    console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath, requestHeaders);
+    console.log("testResourceRequest", sessionId, testId, resourceId, resourcePath);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
-    console.log("testResourceRequest", "session", Boolean(session), "test", Boolean(test));
 
     const resource = this.ensureHasResource(test, resourceId, resourcePath);
 
@@ -122,7 +121,7 @@ module.exports = class SessionManager {
   }
 
   testResourceResponse(sessionId, testId, resourceId, resourcePath, statusCode, responseHeaders) {
-    console.log("testResourceResponse", sessionId, testId, resourceId, statusCode, responseHeaders);
+    console.log("testResourceResponse", sessionId, testId, resourceId, statusCode);
     const session = this.getSession(sessionId, true);
     const test = session.tests[testId];
 
