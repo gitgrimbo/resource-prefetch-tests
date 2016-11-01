@@ -5,10 +5,8 @@ define([
   "./resource-loaders"
 ], function($, promiseUtils, resourceLoaders) {
   var timeoutify = promiseUtils.timeoutify;
-  var countdownResolver = promiseUtils.countdownResolver;
 
   var container = document.getElementById("prefetch-container") || document.body;
-  var timeout = 5000;
 
   function setContainer(container_) {
     container = container_;
@@ -50,41 +48,6 @@ define([
     return null;
   }
 
-  function loadResources(loader) {
-    return function(srcs) {
-      return new Promise(function(resolve, reject) {
-        var c = countdownResolver(resolve, srcs.length);
-        srcs.forEach(function(src, i) {
-          loader({
-            src: src,
-            container: container
-          }, timeout)
-            .then(c.callback(i), c.errback(i));
-        });
-      });
-    };
-  }
-
-  var loadResourcesByNewImage = loadResources(loadResourceByNewImage);
-  var loadResourcesByImgTag = loadResources(loadResourceByImgTag);
-  var loadResourcesByScriptTag = loadResources(loadResourceByScriptTag);
-  var loadResourcesByXHR = loadResources(loadResourceByXHR);
-  var loadResourcesByXDomainRequest = loadResources(loadResourceByXDomainRequest);
-  var loadResourcesByLinkRelStylesheetTag = loadResources(loadResourceByLinkRelStylesheetTag);
-  var loadResourcesByObjectTag = loadResources(loadResourceByObjectTag);
-  var loadResourcesByLinkRelPrefetchTag = loadResources(loadResourceByLinkRelPrefetchTag);
-  var loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr = loadResources(loadResourceByLinkRelPrefetchTagWithCrossoriginAttr);
-
-  function loadResourcesNormally(resources) {
-    return new Promise(function(resolve, reject) {
-      var c = countdownResolver(resolve, resources.length);
-      resources.forEach(function(resource, i) {
-        loadResourceNormally(resource, timeout)
-          .then(c.callback(i), c.errback(i));
-      });
-    });
-  }
-
   return {
     setContainer: setContainer,
     clearContainer: clearContainer,
@@ -97,16 +60,6 @@ define([
     loadResourceByObjectTag: loadResourceByObjectTag,
     loadResourceByScriptTag: loadResourceByScriptTag,
     loadResourceByXHR: loadResourceByXHR,
-    loadResourceByXDomainRequest: loadResourceByXDomainRequest,
-    loadResourcesNormally: loadResourcesNormally,
-    loadResourcesByImgTag: loadResourcesByImgTag,
-    loadResourcesByLinkRelPrefetchTag: loadResourcesByLinkRelPrefetchTag,
-    loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr: loadResourcesByLinkRelPrefetchTagWithCrossoriginAttr,
-    loadResourcesByLinkRelStylesheetTag: loadResourcesByLinkRelStylesheetTag,
-    loadResourcesByNewImage: loadResourcesByNewImage,
-    loadResourcesByObjectTag: loadResourcesByObjectTag,
-    loadResourcesByScriptTag: loadResourcesByScriptTag,
-    loadResourcesByXHR: loadResourcesByXHR,
-    loadResourcesByXDomainRequest: loadResourcesByXDomainRequest
+    loadResourceByXDomainRequest: loadResourceByXDomainRequest
   };
 });
