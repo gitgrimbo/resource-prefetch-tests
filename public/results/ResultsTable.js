@@ -6,15 +6,15 @@ define(["jquery", "mustache"], function($, Mustache) {
       lines.push("Client timeout waiting for load/error event");
     } else if (err.event) {
       var event = err.event;
-      var msg = '"' + event.type + "' event fired.";
-      if (event.target && event.target.tagName) {
-        msg += " On tag " + event.target.tagName;
-      }
+      var msg = event.target + ":" + event.type + " fired.";
       lines.push(msg);
     } else if (err.name) {
       lines.push(err.name + ": " + err.message);
     } else {
       lines.push("onError: " + this.escapeHtml(err));
+    }
+    if (typeof err.duration === "number") {
+      lines.push("Duration: " + err.duration + "ms");
     }
     return lines;
   }
@@ -65,19 +65,26 @@ define(["jquery", "mustache"], function($, Mustache) {
       normalInfo.push("<code>" + pathWithoutParams + "</code>" + " was requested again");
     }
 
-    if (client && client.prefetch) {
-      if (client.prefetch.err) {
-        prefetchInfo = prefetchInfo.concat(this.clientErrorToLines(client.prefetch.err));
-      } else if (client.prefetch.data) {
-        prefetchInfo = prefetchInfo.concat('"load" event fired.');
+    function addClientInfo(info, context) {
+      if (context.err) {
+        this.clientErrorToLines(context.err).forEach(function(line) {
+          info.push(line);
+        });
+      } else if (context.data) {
+        if (context.data.event) {
+          info.push(context.data.event.target + ":" + context.data.event.type + " fired.");
+        }
+        if (typeof context.data.duration === "number") {
+          info.push("Duration: " + context.data.duration + "ms");
+        }
       }
     }
+
+    if (client && client.prefetch) {
+      addClientInfo.call(this, prefetchInfo, client.prefetch);
+    }
     if (client && client.normal) {
-      if (client.normal.err) {
-        normalInfo = normalInfo.concat(this.clientErrorToLines(client.normal.err));
-      } else if (client.normal.data) {
-        normalInfo = normalInfo.concat('"load" event fired.');
-      }
+      addClientInfo.call(this, normalInfo, client.normal);
     }
 
     return {

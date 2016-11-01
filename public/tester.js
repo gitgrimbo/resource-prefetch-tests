@@ -44,6 +44,7 @@ define([
     var normalResult;
 
     function handleRejectAsResolve(promise) {
+      var start = Date.now();
       return promise.then(function(data) {
         console.log(Date.now(), "handleRejectAsResolve.ok");
         return {
@@ -51,6 +52,9 @@ define([
         };
       }, function(err) {
         console.log(Date.now(), "handleRejectAsResolve.err");
+        if (typeof err.duration === "undefined") {
+          err.duration = Date.now() - start;
+        }
         return {
           err: err
         };
@@ -67,21 +71,15 @@ define([
         return result;
       }
       // replace err with serializable version
-      var cleaned = Object.assign({}, result, {
+      return Object.assign({}, result, {
         err: {
           name: err.name,
-          message: err.message
+          message: err.message,
+          // event should have been simplified (serialisable) by resource-loader
+          event: err.event,
+          duration: err.duration
         }
       });
-      if (err.event) {
-        cleaned.err.event = {
-          type: err.event.type
-        };
-        if (err.event.target) {
-          cleaned.err.event.target = err.event.target.tagName;
-        }
-      }
-      return cleaned;
     }
 
     console.log(testId, test.name, "Starting test");

@@ -2,21 +2,65 @@
 define([
   "./promise-utils"
 ], function(promiseUtils) {
+  /**
+   * Make a basic, shallow copy of the event; the copy can be serialised.
+   * @param {object} event The source event.
+   * @return {object} The copy.
+   */
+  function copyEvent(event) {
+    if (!event) {
+      return null;
+    }
+    var target = null;
+    if (event.target.tagName) {
+      target = event.target.tagName;
+    } else if (event.target instanceof XMLHttpRequest) {
+      target = "XMLHttpRequest";
+    } else {
+      target = typeof event.target;
+    }
+    return {
+      type: event.type,
+      timeStamp: event.timeStamp,
+      target: target
+    };
+  }
+
   function rejectWithEvent(reject, tag, src) {
+    var start = Date.now();
     return function(event) {
       var attrs = {
         src: src,
         tag: tag,
-        event: event
+        // make simple copy so we can pass some attributes between frames
+        // and also for serialisation to server
+        event: copyEvent(event),
+        duration: Date.now() - start
       };
       promiseUtils.rejectWith(reject, tag, attrs)();
     };
   }
 
   function resolveWith(resolve, msg, attrs) {
+    var start = Date.now();
     return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, {
-      msg: msg
+      msg: msg,
+      duration: Date.now() - start
     }));
+  }
+
+  function resolveWithEvent(resolve, msg, attrs) {
+    var start = Date.now();
+    return function(event) {
+      attrs = Object.assign({}, attrs, {
+        msg: msg,
+        // make simple copy so we can pass some attributes between frames
+        // and also for serialisation to server
+        event: copyEvent(event),
+        duration: Date.now() - start
+      });
+      promiseUtils.resolveWith(resolve, attrs)();
+    };
   }
 
   function loadResourceByNewImage(opts) {
@@ -25,7 +69,7 @@ define([
       var tag = "loadResourceByNewImage";
 
       var img = new Image();
-      img.addEventListener("load", resolveWith(resolve, tag, {
+      img.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         crossorigin: opts.crossorigin
@@ -48,7 +92,7 @@ define([
     return new Promise(function(resolve, reject) {
       var tag = "loadResourceByImgTag";
 
-      var onload = resolveWith(resolve, tag, {
+      var onload = resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         crossorigin: opts.crossorigin
@@ -75,7 +119,7 @@ define([
       var tag = "loadResourceByImgElement";
 
       var img = document.createElement("img");
-      img.addEventListener("load", resolveWith(resolve, tag, {
+      img.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         crossorigin: opts.crossorigin
@@ -99,7 +143,7 @@ define([
       var tag = "loadResourceByObjectTag";
 
       var obj = document.createElement("object");
-      obj.addEventListener("load", resolveWith(resolve, tag, {
+      obj.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         // <object> does not support "crossorigin" attr
@@ -118,7 +162,7 @@ define([
       var tag = "loadResourceByScriptTag";
 
       var script = document.createElement("script");
-      script.addEventListener("load", resolveWith(resolve, tag, {
+      script.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         crossorigin: opts.crossorigin
@@ -141,7 +185,7 @@ define([
       var tag = "loadResourceByXHR";
 
       var xhr = new XMLHttpRequest();
-      xhr.addEventListener("load", resolveWith(resolve, tag, {
+      xhr.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag
       }));
@@ -161,6 +205,7 @@ define([
         var err = new Error("XDomainRequest not supported");
         err.tag = tag;
         err.src = src;
+        err.duration = 0;
         reject(err);
       });
     }
@@ -172,7 +217,7 @@ define([
 
       xdr.ontimeout = rejectWithEvent(reject, tag, src);
       xdr.onerror = rejectWithEvent(reject, tag, src);
-      xdr.onload = resolveWith(resolve, tag, {
+      xdr.onload = resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag
       });
@@ -195,7 +240,7 @@ define([
       var tag = opts.tag || "loadResourceByLink";
 
       var link = document.createElement("link");
-      link.addEventListener("load", resolveWith(resolve, tag, {
+      link.addEventListener("load", resolveWithEvent(resolve, tag, {
         src: src,
         tag: tag,
         crossorigin: opts.crossorigin
@@ -260,6 +305,12 @@ define([
     return new Promise(function(resolve, reject) {
       var tag = "loadResourceByFontFaceCss";
 
+      // Create resolver outside timeout to capture correct duration
+      var resolver = resolveWith(resolve, tag, {
+        src: src,
+        tag: tag
+      });
+
       var style = document.createElement("style");
       style.innerHTML = css;
       container.appendChild(style);
@@ -283,10 +334,6 @@ define([
           if (newWidth !== oldWidth) {
             console.log(Date.now(), "resolve");
             clearInterval(timerId);
-            var resolver = resolveWith(resolve, tag, {
-              src: src,
-              tag: tag
-            });
             resolver();
           }
         }
