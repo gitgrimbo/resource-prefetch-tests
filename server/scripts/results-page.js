@@ -38,7 +38,7 @@ function sessionToView(session, resultsTable) {
     return resultsTable.testResultsToRowData(results);
   });
   return {
-    date: new Date(session.timestamp).toISOString(),
+    date: (typeof session.timestamp === "number") ? new Date(session.timestamp).toISOString() : "",
     userAgent: session.userAgent,
     rows: rows.filter(filterOutFalseys)
   };
