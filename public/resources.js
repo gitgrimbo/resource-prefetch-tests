@@ -4,7 +4,6 @@ define(["./Resource"], function(Resource) {
   return [
     r("/download-files/11B.css", "css"),
     r("/download-files/146kB.css", "css"),
-    r("/download-files/1516kB.jpg", "img"),
     r("/download-files/256kB.jpg", "img"),
     r("/download-files/30.8kB.js", "script"),
     r("/download-files/6.9kB.js", "script"),
