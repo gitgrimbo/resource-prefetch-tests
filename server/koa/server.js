@@ -91,6 +91,10 @@ app.use(serve("public", {
   maxage: ms("1 day")
 }));
 
+app.use(route.get(/\/results\/.*\.json/, serve(".", {
+  maxage: ms("1 day")
+})));
+
 // Add the mappings to serve vendor scripts.
 vendorScripts.linkVendorScripts(app);
 

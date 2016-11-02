@@ -3,5 +3,6 @@ module.exports = [
   ["/bluebird.js", "/bluebird/js/browser/bluebird.min.js"],
   ["/console-polyfill.js", "/console-polyfill/index.js"],
   ["/jquery.js", "/jquery/dist/jquery.min.js"],
+  ["/jsondiffpatch.js", "/jsondiffpatch/public/build/jsondiffpatch-full.min.js"],
   ["/mustache.js", "/mustache/mustache.min.js"]
 ];
