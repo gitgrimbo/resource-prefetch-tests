@@ -82,41 +82,59 @@ define([
       });
     }
 
+    function sendPrefetchRequest() {
+      console.log(testId, test.name, "Sending prefetch request");
+      return handleRejectAsResolve(test.prefetcher({
+        src: src,
+        container: prefetchContainer
+      }, test.prefetchTimeoutMs))
+        .then(function(prefetchResult_) {
+          prefetchResult = prefetchResult_;
+
+          console.log(testId, test.name, "Prefetch request complete", prefetchResult);
+        });
+    }
+
+    function sendNormalRequest() {
+      console.log(testId, test.name, "Sending normal request");
+      return handleRejectAsResolve(prefetch.loadResourceNormally({
+        src: src,
+        type: test.resource.type
+      }, test.loadResourceNormallyTimeoutMs))
+        .then(function(normalResult_) {
+          normalResult = normalResult_;
+
+          console.log(testId, test.name, "Normal request complete", normalResult);
+        });
+    }
+
     console.log(testId, test.name, "Starting test");
     var startTest = poster(url.addParams("/startTest", ids));
     return startTest({ test: test })
       .then(function() {
-        console.log(testId, test.name, "Starting prefetch");
-        return handleRejectAsResolve(test.prefetcher({
-          src: src,
-          container: prefetchContainer
-        }, test.prefetchTimeoutMs));
+        return sendPrefetchRequest();
       })
-      .then(function(prefetchResult_) {
-        prefetchResult = prefetchResult_;
-
-        console.log(testId, test.name, "Prefetch complete", prefetchResult);
-
+      .then(function() {
         return resolveWithDelay(100, "ignore-me");
       })
       .then(function() {
         var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
         return startNormalDownload();
       })
-      .then(function() {
-        console.log(testId, test.name, "Starting normal download");
+      .then(function(testFromServer) {
+        var server = testFromServer.resource.server;
+        if (!server || !server.prefetch || !server.prefetch.requested) {
+          // Prefetch request never made it to the server.
+          // Don't bother with the normal request.
+          console.log(testId, test.name, "Prefetch request never made it to the server. Skipping normal request.");
+          normalResult = {};
+          return Promise.resolve();
+        }
 
-        return handleRejectAsResolve(prefetch.loadResourceNormally({
-          src: src,
-          type: test.resource.type
-        }, test.loadResourceNormallyTimeoutMs));
+        // Otherwise, proceed with normal request.
+        return sendNormalRequest();
       })
-      .then(function(normalResult_) {
-        normalResult = normalResult_;
-
-        console.log(testId, test.name, "Normal download complete", normalResult);
-        console.log(testId, test.name, "Ending test");
-
+      .then(function() {
         var endTest = poster(url.addParams("/endTest", ids));
         return endTest({
           client: {
