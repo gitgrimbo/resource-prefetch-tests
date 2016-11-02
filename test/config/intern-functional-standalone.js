@@ -2,18 +2,13 @@
 define([
   "intern/dojo/has",
   "./intern-functional",
-  "./env",
-  //"intern/dojo/has!host-node?./server-manager"
+  "./env"
 ], function(has, config, env, ServerManager) {
   config.environments = [
-    env("chrome"),
-    env("firefox"),
-    env("internet explorer")
+    env.env("chrome"),
+    env.env("firefox"),
+    env.env("internet explorer")
   ];
-
-  if (has("host-node")) {
-    //new ServerManager().handleStartAndStop(config);
-  }
 
   return config;
 });
