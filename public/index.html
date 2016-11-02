@@ -36,38 +36,20 @@ window.ObjectAssign.polyfill();
 <script src="vendor/console-polyfill.js"></script>
 <script src="vendor/bluebird.js"></script>
 <script>
-// http://stackoverflow.com/a/2880929/319878
-var urlParams;
-function getUrlParams(query) {
-  var match,
-    pl = /\+/g,  // Regex for replacing addition symbol with a space
-    search = /([^&=]+)=?([^&]*)/g,
-    decode = function(s) { return decodeURIComponent(s.replace(pl, " ")); };
-
-  var urlParams = {};
-  while (match = search.exec(query))
-    urlParams[decode(match[1])] = decode(match[2]);
-  return urlParams;
-}
-(window.onpopstate = function() {
-  var query = window.location.search.substring(1);
-  urlParams = getUrlParams(query);
-})();
-
 // App
 require = {
   paths: {
     jquery: "vendor/jquery",
     mustache: "vendor/mustache"
   },
-  deps: ["./App", "./resources"],
-  callback: function(App, resources) {
+  deps: ["./url", "./App", "./resources"],
+  callback: function(url, App, resources) {
     var prefetchContainer = $("#prefetch-container")[0];
     var frame = $("#results-frame")[0];
     var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
     var resultsTextareaElement = $("#results")[0];
     var app = new App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams);
-    if (urlParams.autostart === "true") {
+    if (url.getUrlParams().autostart === "true") {
       app.startTest();
     }
     $("#start-tests").click(function() {
