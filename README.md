@@ -89,7 +89,23 @@ to add the CORS HTTP response headers.
 
 ## Known browser behaviour
 
-TODO
+IE11
+
+- `<link rel="prefetch">`. IE11 supports up to ten (10) prefetch requests. Additional requests are ignored.
+  [Prerender and prefetch support](https://msdn.microsoft.com/en-us/library/dn265039(v=vs.85).aspx).
+
+IE9
+
+- XHR differences can be seen based on IE security zones.  E.g. out-of-the-box
+  IE9 may have "Access data sources across domains" disabled, but this setting
+  may be enabled in Sauce Labs. This can be the difference between the XHR
+  prefetch results passing or failing. See
+  https://www.webdavsystem.com/ajax/programming/cross_origin_requests.
+
+Edge
+
+- `<link rel="prefetch">`. Microsoft Edge supports up to ten (10) prefetch requests. Additional requests are ignored.
+  [Prerender and prefetch support](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/performance/prerender-and-prefetch-support/):
 
 # TODO
 
