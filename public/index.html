@@ -28,34 +28,8 @@
 
 </div>
 
-<!-- For IE9, etc -->
-<script src="vendor/es6-object-assign.js"></script>
-<script>
-window.ObjectAssign.polyfill();
-</script>
+<script src="vendor/babel-polyfill.js"></script>
 <script src="vendor/console-polyfill.js"></script>
 <script src="vendor/bluebird.js"></script>
-<script>
-// App
-require = {
-  paths: {
-    jquery: "vendor/jquery",
-    mustache: "vendor/mustache"
-  },
-  deps: ["./url", "./App", "./resources"],
-  callback: function(url, App, resources) {
-    var prefetchContainer = $("#prefetch-container")[0];
-    var frame = $("#results-frame")[0];
-    var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
-    var resultsTextareaElement = $("#results")[0];
-    var app = new App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams);
-    if (url.getUrlParams().autostart === "true") {
-      app.startTest();
-    }
-    $("#start-tests").click(function() {
-      app.startTest();
-    });
-  }
-};
-</script>
-<script src="vendor/require.js"></script>
+<script src="vendor/jquery.js"></script>
+<script src="dist.js"></script>

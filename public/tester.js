@@ -1,283 +1,253 @@
-/* eslint-env browser, amd */
-define([
-  "./prefetch",
-  "./ajax-utils",
-  "./promise-utils",
-  "./url",
-  "./tests",
-  "./test-utils"
-], function(prefetch, ajaxUtils, promiseUtils, url, testList, testUtils) {
-  var resolveWithDelay = promiseUtils.resolveWithDelay;
+/* eslint-disable no-console */
+import prefetch from "./prefetch";
+import ajaxUtils from "./ajax-utils";
+import promiseUtils from "./promise-utils";
+import url from "./url";
+import testList from "./tests";
+import testUtils from "./test-utils";
 
-  var poster = ajaxUtils.poster;
+var resolveWithDelay = promiseUtils.resolveWithDelay;
 
-  function addTestParams(src, resourceId, sessionId, testId, timestamp, useCors) {
-    var addParams = url.addParams;
-    useCors = (useCors === true);
-    return addParams(src, {
-      sessionId: sessionId,
-      testId: testId,
-      resourceId: resourceId,
-      timestamp: timestamp,
-      useCors: useCors
+var poster = ajaxUtils.poster;
+
+function addTestParams(src, resourceId, sessionId, testId, timestamp, useCors) {
+  var addParams = url.addParams;
+  useCors = (useCors === true);
+  return addParams(src, {
+    sessionId: sessionId,
+    testId: testId,
+    resourceId: resourceId,
+    timestamp: timestamp,
+    useCors: useCors
+  });
+}
+
+async function runTest(test, sessionId, testId, prefetchContainer) {
+  console.log(test);
+  prefetch.clearContainer();
+
+  var timestamp = Date.now();
+  var src = test.resource.src;
+
+  if (test.protocol && test.hostname) {
+    src = test.protocol + "//" + test.hostname + (test.port ? ":" + test.port : "") + src;
+  }
+  src = addTestParams(src, test.resourceId, sessionId, testId, timestamp, test.useCors);
+
+  var ids = {
+    sessionId: sessionId,
+    testId: testId
+  };
+
+  async function handleRejectAsResolve(promise) {
+    var start = Date.now();
+    try {
+      var data = await promise;
+      console.log(Date.now(), "handleRejectAsResolve.ok");
+      return {
+        data: data
+      };
+    } catch (err) {
+      console.log(Date.now(), "handleRejectAsResolve.err");
+      if (typeof err.duration === "undefined") {
+        err.duration = Date.now() - start;
+      }
+      return {
+        err: err
+      };
+    }
+  }
+
+  /**
+   * If result has an "err" property, replace this property with a
+   * simplified version so that result can be serialised to the server.
+   */
+  function cleanClientResultForPosting(result) {
+    var err = result.err;
+    if (!err) {
+      return result;
+    }
+    // replace err with serializable version
+    return Object.assign({}, result, {
+      err: {
+        name: err.name,
+        message: err.message,
+        // event should have been simplified (serialisable) by resource-loader
+        event: err.event,
+        duration: err.duration
+      }
     });
   }
 
-  function runTest(test, sessionId, testId, prefetchContainer) {
-    console.log(test);
-    prefetch.clearContainer();
+  async function sendPrefetchRequest() {
+    console.log(testId, test.name, "Sending prefetch request");
+    var prefetchResult = await handleRejectAsResolve(test.prefetcher({
+      src: src,
+      container: prefetchContainer
+    }, test.prefetchTimeoutMs));
+    console.log(testId, test.name, "Prefetch request complete", prefetchResult);
+    return prefetchResult;
+  }
 
-    var timestamp = Date.now();
-    var src = test.resource.src;
+  async function sendNormalRequest() {
+    console.log(testId, test.name, "Sending normal request");
+    var normalResult = await handleRejectAsResolve(prefetch.loadResourceNormally({
+      src: src,
+      type: test.resource.type
+    }, test.loadResourceNormallyTimeoutMs));
+    console.log(testId, test.name, "Normal request complete", normalResult);
+    return normalResult;
+  }
 
-    if (test.protocol && test.hostname) {
-      src = test.protocol + "//" + test.hostname + (test.port ? ":" + test.port : "") + src;
-    }
-    src = addTestParams(src, test.resourceId, sessionId, testId, timestamp, test.useCors);
-
-    var ids = {
-      sessionId: sessionId,
-      testId: testId
-    };
-
-    var prefetchResult;
-    var normalResult;
-
-    function handleRejectAsResolve(promise) {
-      var start = Date.now();
-      return promise.then(function(data) {
-        console.log(Date.now(), "handleRejectAsResolve.ok");
-        return {
-          data: data
-        };
-      }, function(err) {
-        console.log(Date.now(), "handleRejectAsResolve.err");
-        if (typeof err.duration === "undefined") {
-          err.duration = Date.now() - start;
-        }
-        return {
-          err: err
-        };
-      });
-    }
-
-    /**
-     * If result has an "err" property, replace this property with a
-     * simplified version so that result can be serialised to the server.
-     */
-    function cleanClientResultForPosting(result) {
-      var err = result.err;
-      if (!err) {
-        return result;
-      }
-      // replace err with serializable version
-      return Object.assign({}, result, {
-        err: {
-          name: err.name,
-          message: err.message,
-          // event should have been simplified (serialisable) by resource-loader
-          event: err.event,
-          duration: err.duration
-        }
-      });
-    }
-
-    function sendPrefetchRequest() {
-      console.log(testId, test.name, "Sending prefetch request");
-      return handleRejectAsResolve(test.prefetcher({
-        src: src,
-        container: prefetchContainer
-      }, test.prefetchTimeoutMs))
-        .then(function(prefetchResult_) {
-          prefetchResult = prefetchResult_;
-
-          console.log(testId, test.name, "Prefetch request complete", prefetchResult);
-        });
-    }
-
-    function sendNormalRequest() {
-      console.log(testId, test.name, "Sending normal request");
-      return handleRejectAsResolve(prefetch.loadResourceNormally({
-        src: src,
-        type: test.resource.type
-      }, test.loadResourceNormallyTimeoutMs))
-        .then(function(normalResult_) {
-          normalResult = normalResult_;
-
-          console.log(testId, test.name, "Normal request complete", normalResult);
-        });
-    }
-
+  try {
     console.log(testId, test.name, "Starting test");
     var startTest = poster(url.addParams("/startTest", ids));
-    return startTest({ test: test })
-      .then(function() {
-        return sendPrefetchRequest();
-      })
-      .then(function() {
-        return resolveWithDelay(100, "ignore-me");
-      })
-      .then(function() {
-        var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
-        return startNormalDownload();
-      })
-      .then(function(testFromServer) {
-        var server = testFromServer.resource.server;
-        if (!server || !server.prefetch || !server.prefetch.requested) {
-          // Prefetch request never made it to the server.
-          // Don't bother with the normal request.
-          console.log(testId, test.name, "Prefetch request never made it to the server. Skipping normal request.");
-          normalResult = {};
-          return Promise.resolve();
-        }
+    await startTest({ test: test });
+    var prefetchResult = await sendPrefetchRequest();
+    await resolveWithDelay(100, "ignore-me");
 
-        // Otherwise, proceed with normal request.
-        return sendNormalRequest();
-      })
-      .then(function() {
-        var endTest = poster(url.addParams("/endTest", ids));
-        return endTest({
-          client: {
-            prefetch: cleanClientResultForPosting(prefetchResult),
-            normal: cleanClientResultForPosting(normalResult)
-          }
-        });
-      })
-      .then(function(serverResult) {
-        console.log(testId, test.name, "Test ended", serverResult);
-        prefetch.clearContainer();
-        var clientResult = {
-          resource: {
-            src: src,
-            resourceId: test.resourceId,
-            prefetchRequest: prefetchResult,
-            normalRequest: normalResult
-          }
-        };
-        return {
-          testId: testId,
-          test: test,
-          serverResult: serverResult,
-          clientResult: clientResult
-        };
-      })
-      .catch(function(err) {
-        console.log(testId, test.name, "catch", err);
-      });
-  }
+    var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
+    const testFromServer = await startNormalDownload();
 
-  function combineTests(resources, testFilter, config, port) {
-    var baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
-    return baseTests.map(function(test) {
-      return Object.assign(test, {
-        // The prefetcher functions here should have been 'timeoutified' already.
-        // See prefetch.js
-        prefetcher: prefetch[test.prefetcherName]
-      });
+    // default
+    var normalResult = {};
+    var server = testFromServer.resource.server;
+    if (!server || !server.prefetch || !server.prefetch.requested) {
+      // Prefetch request never made it to the server.
+      // Don't bother with the normal request.
+      console.log(testId, test.name, "Prefetch request never made it to the server. Skipping normal request.");
+    } else {
+      // Otherwise, proceed with normal request.
+      normalResult = await sendNormalRequest();
+    }
+
+    var endTest = poster(url.addParams("/endTest", ids));
+    const serverResult = await endTest({
+      client: {
+        prefetch: cleanClientResultForPosting(prefetchResult),
+        normal: cleanClientResultForPosting(normalResult)
+      }
     });
+
+    console.log(testId, test.name, "Test ended", serverResult);
+    prefetch.clearContainer();
+    var clientResult = {
+      resource: {
+        src: src,
+        resourceId: test.resourceId,
+        prefetchRequest: prefetchResult,
+        normalRequest: normalResult
+      }
+    };
+    return {
+      testId: testId,
+      test: test,
+      serverResult: serverResult,
+      clientResult: clientResult
+    };
+  } catch (err) {
+    console.log(testId, test.name, "catch", err);
+  }
+}
+
+function combineTests(resources, testFilter, config, port) {
+  var baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
+  return baseTests.map(function(test) {
+    return Object.assign(test, {
+      // The prefetcher functions here should have been 'timeoutified' already.
+      // See prefetch.js
+      prefetcher: prefetch[test.prefetcherName]
+    });
+  });
+}
+
+function notifyListener(listener, type, data) {
+  if (!listener) {
+    return;
+  }
+  var f = listener["on" + type];
+  if (!f) {
+    return;
+  }
+  f(data);
+}
+
+function runTests(tests, sessionId, prefetchContainer, listener, i, results) {
+  i = i || 0;
+  results = results || [];
+
+  console.log("runTests", i);
+
+  if (i >= tests.length) {
+    return Promise.resolve(results);
   }
 
-  function notifyListener(listener, type, data) {
-    if (!listener) {
-      return;
-    }
-    var f = listener["on" + type];
-    if (!f) {
-      return;
-    }
-    f(data);
+  var test = tests[i];
+  console.log(test);
+
+  function callback(result) {
+    notifyListener(listener, "TestComplete", {
+      i: i,
+      numTests: tests.length,
+      test: test,
+      result: result
+    });
+    console.log("runTests", "test " + i + " complete", result);
+    results.push(result);
+    return runTests(tests, sessionId, prefetchContainer, listener, i + 1, results);
   }
 
-  function runTests(tests, sessionId, prefetchContainer, listener, i, results) {
-    i = i || 0;
-    results = results || [];
-
-    console.log("runTests", i);
-
-    if (i >= tests.length) {
-      return Promise.resolve(results);
-    }
-
-    var test = tests[i];
-    console.log(test);
-
-    function callback(result) {
-      notifyListener(listener, "TestComplete", {
-        i: i,
-        numTests: tests.length,
-        test: test,
-        result: result
-      });
-      console.log("runTests", "test " + i + " complete", result);
-      results.push(result);
-      return runTests(tests, sessionId, prefetchContainer, listener, i + 1, results);
-    }
-
-    function errback(err) {
-      return callback(err);
-    }
-
-    return runTest(test, sessionId, i, prefetchContainer)
-      .then(callback, errback);
+  function errback(err) {
+    return callback(err);
   }
 
-  function test(options) {
-    options = options || {};
+  return runTest(test, sessionId, i, prefetchContainer)
+    .then(callback, errback);
+}
 
-    prefetch.setContainer(options.prefetchContainer);
+async function test(options) {
+  options = options || {};
 
-    var config;
-    var sessionId;
-    var results;
-    var port = window.location.port;
+  prefetch.setContainer(options.prefetchContainer);
 
-    var getConfig = poster("/config");
-    return getConfig()
-      .then(function(config_) {
-        config = config_;
-      })
-      .then(function() {
-        console.log("Starting session");
-        var startSession = poster("/startSession");
-        return startSession({
-          userAgent: navigator.userAgent
-        });
-      })
-      .then(function(session) {
-        sessionId = session.sessionId;
-        notifyListener(options.listener, "SessionStarted", session);
-      })
-      .then(function() {
-        console.log("Running tests");
-        var allTests = combineTests(options.resources, options.testFilter, config, port);
-        allTests.forEach(function(test) {
-          test.prefetchTimeoutMs = 3.5 * 1000;
-          test.loadResourceNormallyTimeoutMs = 3.5 * 1000;
-        });
-        //allTests = allTests.slice(0, 1);
-        console.log(allTests);
-        return runTests(allTests, sessionId, options.prefetchContainer, options.listener);
-      })
-      .then(function(results_) {
-        results = results_;
-        console.log(results);
-      })
-      .then(function() {
-        console.log("Ending session");
-        var endSession = poster(url.addParams("/endSession", {
-          sessionId: sessionId
-        }));
-        return endSession();
-      })
-      .then(function(session) {
-        notifyListener(options.listener, "SessionEnded", {
-          sessionId: sessionId,
-          session: session
-        });
-        console.log("Returning results");
-        return session;
-      });
-  }
+  var port = window.location.port;
 
-  return test;
-});
+  var getConfig = poster("/config");
+  var config = await getConfig();
+  console.log("config", config);
+
+  console.log("Starting session");
+  var startSession = poster("/startSession");
+  var session = await startSession({
+    userAgent: navigator.userAgent
+  });
+
+  var sessionId = session.sessionId;
+  notifyListener(options.listener, "SessionStarted", session);
+
+  console.log("Running tests");
+  var allTests = combineTests(options.resources, options.testFilter, config, port);
+  allTests.forEach(function(test) {
+    test.prefetchTimeoutMs = 3.5 * 1000;
+    test.loadResourceNormallyTimeoutMs = 3.5 * 1000;
+  });
+  //allTests = allTests.slice(0, 1);
+  console.log(allTests);
+  var results = await runTests(allTests, sessionId, options.prefetchContainer, options.listener);
+  console.log(results);
+
+  console.log("Ending session");
+  var endSession = poster(url.addParams("/endSession", {
+    sessionId: sessionId
+  }));
+  session = await endSession();
+
+  notifyListener(options.listener, "SessionEnded", {
+    sessionId: sessionId,
+    session: session
+  });
+  console.log("Returning results");
+  return session;
+}
+
+export default test;
