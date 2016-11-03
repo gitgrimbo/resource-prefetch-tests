@@ -4,7 +4,7 @@
   "description": "A set of tests for various resource prefetch techniques",
   "main": "server.js",
   "scripts": {
-    "build": "browserify -r ./public/entry:ResourcePrefetchTests --exclude mustache -d -o public/dist.js",
+    "build": "browserify -r ./public/entry:ResourcePrefetchTests -d -o public/dist.js",
     "watch": "npm-watch",
     "deploy-gh-pages": "node server/scripts/deploy-gh-pages.js",
     "lint": "eslint public server",
