@@ -35,16 +35,18 @@ function rejectWithEvent(reject, tag, src) {
       event: copyEvent(event),
       duration: Date.now() - start
     };
-    promiseUtils.rejectWith(reject, tag, attrs)();
+    return promiseUtils.rejectWith(reject, tag, attrs)();
   };
 }
 
 function resolveWith(resolve, msg, attrs) {
   var start = Date.now();
-  return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, {
-    msg: msg,
-    duration: Date.now() - start
-  }));
+  return function() {
+    return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, {
+      msg: msg,
+      duration: Date.now() - start
+    }))();
+  };
 }
 
 function resolveWithEvent(resolve, msg, attrs) {
@@ -57,7 +59,7 @@ function resolveWithEvent(resolve, msg, attrs) {
       event: copyEvent(event),
       duration: Date.now() - start
     });
-    promiseUtils.resolveWith(resolve, attrs)();
+    return promiseUtils.resolveWith(resolve, attrs)();
   };
 }
 
