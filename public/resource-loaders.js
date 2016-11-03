@@ -1,4 +1,4 @@
-import promiseUtils from "./promise-utils";
+const promiseUtils = require( "./promise-utils");
 
 /**
  * Make a basic, shallow copy of the event; the copy can be serialised.
@@ -345,7 +345,7 @@ function loadResourceByFontFaceCss(opts) {
   });
 }
 
-export default {
+module.exports = {
   loadResourceByFontFaceCss: loadResourceByFontFaceCss,
   loadResourceByImgElement: loadResourceByImgElement,
   loadResourceByImgTag: loadResourceByImgTag,

@@ -20,4 +20,4 @@ var tests = [
   }
 ];
 
-export default tests;
+module.exports = tests;

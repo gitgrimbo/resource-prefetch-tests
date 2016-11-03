@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
-import prefetch from "./prefetch";
-import ajaxUtils from "./ajax-utils";
-import promiseUtils from "./promise-utils";
-import url from "./url";
-import testList from "./tests";
-import testUtils from "./test-utils";
+const prefetch = require("./prefetch");
+const ajaxUtils = require("./ajax-utils");
+const promiseUtils = require("./promise-utils");
+const url = require("./url");
+const testList = require("./tests");
+const testUtils = require("./test-utils");
 
 var resolveWithDelay = promiseUtils.resolveWithDelay;
 
@@ -250,4 +250,4 @@ async function test(options) {
   return session;
 }
 
-export default test;
+module.exports = test;

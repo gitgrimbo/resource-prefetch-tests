@@ -82,7 +82,7 @@ function sortTests(tests) {
   return tests;
 }
 
-export default {
+module.exports = {
   combineTests: combineTests,
   createTestsPerResource: createTestsPerResource,
   createTestsForCrossDomain: createTestsForCrossDomain,

@@ -1,6 +1,6 @@
-import url from "./url";
-import App from "./App";
-import resources from "./resources";
+const url = require("./url");
+const App = require("./App");
+const resources = require("./resources");
 
 const prefetchContainer = $("#prefetch-container")[0];
 var frame = $("#results-frame")[0];

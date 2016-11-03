@@ -40,7 +40,7 @@ function getUrlParams(query) {
   window.urlParams = getUrlParams();
 })();
 
-export default {
+module.exports = {
   toQueryString,
   addParams,
   getUrlParams

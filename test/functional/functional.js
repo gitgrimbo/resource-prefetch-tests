@@ -4,9 +4,9 @@ define([
   "intern!object",
   "intern/dojo/node!url",
   "intern/dojo/node!../../server/test-config",
-  "../../public/resources",
-  "../../public/tests",
-  "../../public/test-utils"
+  "intern/dojo/node!../../public/resources",
+  "intern/dojo/node!../../public/tests",
+  "intern/dojo/node!../../public/test-utils"
 ], function(intern, registerSuite, url, testConfig, resources, tests, testUtils) {
   function makeTestUrl(url, testName, useCors, crossDomain) {
     const char = (url.indexOf("?") > 1) ? "&" : "?";

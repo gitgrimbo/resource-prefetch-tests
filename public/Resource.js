@@ -7,4 +7,4 @@ Resource.from = function(src, type) {
   return new Resource(src, type);
 };
 
-export default Resource;
+module.exports = Resource;

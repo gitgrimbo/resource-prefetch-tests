@@ -1,7 +1,7 @@
-import Resource from "./Resource";
+const Resource = require("./Resource");
 
 var r = Resource.from;
-export default [
+module.exports = [
   r("/download-files/11B.css", "css"),
   r("/download-files/146kB.css", "css"),
   r("/download-files/256kB.jpg", "img"),

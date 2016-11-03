@@ -36,7 +36,7 @@ function ajaxer(method) {
 var getter = ajaxer("GET");
 var poster = ajaxer("POST");
 
-export default {
+module.exports = {
   ajaxer: ajaxer,
   getter: getter,
   poster: poster

@@ -1,5 +1,5 @@
-import promiseUtils from "./promise-utils";
-import resourceLoaders from "./resource-loaders";
+const promiseUtils = require("./promise-utils");
+const resourceLoaders = require("./resource-loaders");
 
 var timeoutify = promiseUtils.timeoutify;
 
@@ -45,7 +45,7 @@ function loadResourceNormally(resource, timeout) {
   return null;
 }
 
-export default {
+module.exports = {
   setContainer,
   clearContainer,
   loadResourceNormally,

@@ -1,6 +1,7 @@
 /* eslint-env browser, amd */
 /* eslint-disable no-console */
-import tester from "./tester";
+const tester = require("./tester");
+const promiseUtils = require("./promise-utils");
 
 function createTestFilter(urlParams) {
   var match = {};
@@ -76,4 +77,4 @@ App.prototype.startTest = function() {
   });
 };
 
-export default App;
+module.exports = App;
