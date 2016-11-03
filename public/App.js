@@ -45,11 +45,10 @@ function App(resources, prefetchContainer, resultsTableElement, resultsTextareaE
   this.testFilter = createTestFilter(urlParams);
 }
 
-App.prototype.startTest = function() {
+App.prototype._startTest = function(resultsTable) {
   function onSessionStarted(session) {
     console.log("onStartedStarted", session);
-    var resultsWindow = document.getElementById("results-frame").contentWindow;
-    resultsWindow.resultsTable.onSessionStarted(session);
+    resultsTable.onSessionStarted(session);
   }
 
   function onSessionEnded(session) {
@@ -61,8 +60,7 @@ App.prototype.startTest = function() {
 
   function onTestComplete(data) {
     console.log("onTestComplete", data);
-    var resultsWindow = document.getElementById("results-frame").contentWindow;
-    resultsWindow.resultsTable.onTestComplete(data);
+    resultsTable.onTestComplete(data);
   }
 
   tester({
@@ -75,6 +73,18 @@ App.prototype.startTest = function() {
       onTestComplete: onTestComplete.bind(this)
     }
   });
+};
+
+App.prototype.startTest = function() {
+  function getResultsTable() {
+    const frame = document.getElementById("results-frame");
+    return (frame && frame.contentWindow && frame.contentWindow.resultsTable);
+  }
+  return promiseUtils.poll(getResultsTable, 100, 1000)
+    .then(this._startTest.bind(this))
+    .catch(() => {
+      alert("results table could not be located");
+    });
 };
 
 module.exports = App;

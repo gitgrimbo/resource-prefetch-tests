@@ -54,10 +54,39 @@ function countdownResolver(resolve, count) {
   };
 }
 
-export default {
+function poll(predicate, delay, timeout) {
+  if (typeof delay !== "number" || delay < 0) {
+    delay = 100;
+  }
+  if (typeof timeout !== "number" || timeout < 0) {
+    timeout = 1000;
+  }
+  function _poll() {
+    const value = predicate();
+    if (typeof value !== "undefined") {
+      return Promise.resolve(value);
+    }
+
+    const elapsed = Date.now() - start;
+    if (elapsed > timeout) {
+      return Promise.reject(Object.assign(new Error("timeout"), {
+        delay,
+        timeout,
+        duration: elapsed
+      }));
+    }
+
+    return Promise.delay(delay).then(_poll);
+  }
+  const start = Date.now();
+  return _poll();
+}
+
+module.exports = {
   rejectWith: rejectWith,
   resolveWith: resolveWith,
   resolveWithDelay: resolveWithDelay,
   timeoutify: timeoutify,
-  countdownResolver: countdownResolver
+  countdownResolver: countdownResolver,
+  poll: poll
 };
