@@ -4,7 +4,7 @@
   "description": "A set of tests for various resource prefetch techniques",
   "main": "server.js",
   "scripts": {
-    "build": "browserify public/index.js -d -o public/dist.js -t babelify",
+    "build": "browserify -r ./public/entry:ResourcePrefetchTests --exclude mustache -d -o public/dist.js",
     "watch": "npm-watch",
     "deploy-gh-pages": "node server/scripts/deploy-gh-pages.js",
     "lint": "eslint public server",
@@ -22,6 +22,16 @@
       "ignore": "public/dist.js",
       "quiet": true
     }
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "mustache": "global:Mustache"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "babelify"
+    ]
   },
   "author": "Paul Grime <gitgrimbo@gmail.com> (https://github.com/gitgrimbo)",
   "license": "MIT",
@@ -53,7 +63,6 @@
     "ms": "^0.7.2",
     "mustache": "^2.2.1",
     "node-uuid": "^1.4.7",
-    "requirejs": "^2.3.2",
     "response-time": "^2.3.1",
     "stream-throttle": "^0.1.3",
     "ua-parser-js": "^0.7.10"
@@ -63,6 +72,7 @@
     "babel-plugin-transform-async-to-generator": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
+    "browserify-shim": "^3.8.12",
     "eslint": "^3.9.1",
     "eslint-config-google": "^0.7.0",
     "intern": "^3.3.2",

@@ -6,14 +6,12 @@
 
 <div id="content"></div>
 
+<script src="../vendor/babel-polyfill.js"></script>
+<script src="../vendor/console-polyfill.js"></script>
 <script src="../vendor/bluebird.js"></script>
+<script src="../vendor/jquery.js"></script>
+<script src="../vendor/mustache.js"></script>
+<script src="../dist.js"></script>
 <script>
-require = {
-  paths: {
-    jquery: "../vendor/jquery",
-    mustache: "../vendor/mustache"
-  },
-  deps: ["./results"]
-};
+require("ResourcePrefetchTests").ResultsPage.bootstrap();
 </script>
-<script src="../vendor/require.js"></script>

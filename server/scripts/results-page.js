@@ -1,15 +1,7 @@
 const fs = require("fs");
-const requirejs = require("requirejs");
+const ResultsTable = require("../../public/results/ResultsTable");
 
 const dirname = __dirname;
-
-// http://requirejs.org/docs/node.html#nodeModules
-requirejs.config({
-  baseUrl: __dirname,
-  nodeRequire: require
-});
-
-const ResultsTable = requirejs("../../public/results/ResultsTable");
 
 function filterOutFalseys(it) {
   return Boolean(it);

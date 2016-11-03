@@ -1,7 +1,8 @@
-/* eslint-env browser, amd */
 /* eslint-disable no-console */
 const tester = require("./tester");
 const promiseUtils = require("./promise-utils");
+const url = require("./url");
+const resources = require("./resources");
 
 function createTestFilter(urlParams) {
   var match = {};
@@ -36,7 +37,7 @@ function createTestFilter(urlParams) {
   };
 }
 
-function App(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams) {
+function MainPage(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams) {
   this.resources = resources;
   this.prefetchContainer = prefetchContainer;
   this.resultsTableElement = resultsTableElement;
@@ -45,7 +46,7 @@ function App(resources, prefetchContainer, resultsTableElement, resultsTextareaE
   this.testFilter = createTestFilter(urlParams);
 }
 
-App.prototype._startTest = function(resultsTable) {
+MainPage.prototype._startTest = function(resultsTable) {
   function onSessionStarted(session) {
     console.log("onStartedStarted", session);
     resultsTable.onSessionStarted(session);
@@ -75,7 +76,7 @@ App.prototype._startTest = function(resultsTable) {
   });
 };
 
-App.prototype.startTest = function() {
+MainPage.prototype.startTest = function() {
   function getResultsTable() {
     const frame = document.getElementById("results-frame");
     return (frame && frame.contentWindow && frame.contentWindow.resultsTable);
@@ -87,4 +88,19 @@ App.prototype.startTest = function() {
     });
 };
 
-module.exports = App;
+MainPage.bootstrap = function() {
+  const prefetchContainer = $("#prefetch-container")[0];
+  var frame = $("#results-frame")[0];
+  var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
+  var resultsTextareaElement = $("#results")[0];
+  const urlParams = url.getUrlParams();
+  var app = new MainPage(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams);
+  if (urlParams.autostart === "true") {
+    app.startTest();
+  }
+  $("#start-tests").click(function() {
+    app.startTest();
+  });
+};
+
+module.exports = MainPage;
