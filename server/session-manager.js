@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const fs = require("fs");
 const path = require("path");
 const mkdirp = require("mkdirp");
@@ -54,6 +55,9 @@ module.exports = class SessionManager {
   }
 
   saveSession(sessionId, sessionSaveDir, cb) {
+    if (!cb) {
+      throw new Error("saveSession must have a callback");
+    }
     const session = this.sessions[sessionId];
     const filepath = path.join(sessionSaveDir, this.makeSessionFilename(session) + ".json");
     mkdirp(sessionSaveDir, function(err) {

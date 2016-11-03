@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const fs = require("co-fs");
 const path = require("path");
 const koa = require("koa");
@@ -126,7 +127,9 @@ app.use(route.post("/endSession", function* (next) {
   const { sessionId } = this.query;
   const session = sessionManager.endSession(sessionId);
   this.body = session;
-  sessionManager.saveSession(sessionId, sessionSaveDir);
+  sessionManager.saveSession(sessionId, sessionSaveDir, (err) => {
+    if (err) console.error("saveSession", err);
+  });
 }));
 
 app.use(route.post("/getSessions", function* (next) {
