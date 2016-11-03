@@ -41,8 +41,8 @@ function rejectWithEvent(reject, tag, src) {
 
 function resolveWith(resolve, msg, attrs) {
   var start = Date.now();
-  return function() {
-    return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, {
+  return function(extraAttrs) {
+    return promiseUtils.resolveWith(resolve, Object.assign({}, attrs, extraAttrs, {
       msg: msg,
       duration: Date.now() - start
     }))();
@@ -332,9 +332,12 @@ function loadResourceByFontFaceCss(opts) {
         if (count-- <= 0) clearInterval(timerId);
         var newWidth = el.offsetWidth;
         if (newWidth !== oldWidth) {
-          console.log(Date.now(), "resolve");
           clearInterval(timerId);
-          resolver();
+          resolver({
+            count,
+            newWidth,
+            oldWidth
+          });
         }
       }
       timerId = setInterval(measure, interval);
