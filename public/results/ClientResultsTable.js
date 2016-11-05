@@ -15,7 +15,9 @@ function onTestComplete(data) {
 function onSessionStarted(session) {
   this.container.append(this.toHTML({
     date: new Date(session.timestamp).toISOString(),
-    userAgent: session.userAgent
+    userAgent: session.userAgent,
+    // hack so template can iterate over one item
+    prefetchNormalPairs: [,]
   }));
   ResultsTable.addEventListeners();
 }

@@ -116,17 +116,7 @@ class ResultsTable {
       addClientInfo.call(this, normalInfo, client.normal);
     }
 
-    return {
-      row: data.i + 1,
-      numTests: data.numTests,
-      name: test.name,
-      src: pathWithoutParams,
-      crossDomain: test.crossDomain ? "xd" : "",
-      // test.useCors just means the browser requested CORS.
-      useCors: test.useCors ? "cors" : "",
-      pass: pass ? "P" : "F",
-      cssClass: pass ? "pass" : "fail",
-
+    var prefetchNormalPairs = [{
       prefetchInfo: prefetchInfo.join("<br>"),
       prefetchDuration: prefetchDuration,
       prefetchRequested: serverPrefetch.requested ? "Y" : "N",
@@ -144,6 +134,19 @@ class ResultsTable {
       normalResponseHeaders: headersList(serverNormal && serverNormal.responseHeaders),
       // Did the server actuall reply with CORS header(s)?
       normalResponseCors: (serverNormal && serverNormal.cors) ? "cors" : ""
+    }];
+
+    return {
+      row: data.i + 1,
+      numTests: data.numTests,
+      name: test.name,
+      src: pathWithoutParams,
+      crossDomain: test.crossDomain ? "xd" : "",
+      // test.useCors just means the browser requested CORS.
+      useCors: test.useCors ? "cors" : "",
+      pass: pass ? "P" : "F",
+      cssClass: pass ? "pass" : "fail",
+      prefetchNormalPairs: prefetchNormalPairs
     };
   }
 

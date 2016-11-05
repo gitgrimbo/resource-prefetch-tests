@@ -5,8 +5,10 @@
   <thead>
     <tr>
       <th colspan=6></th>
+      {{#prefetchNormalPairs}}
       <th class=prefetch colspan=5>Prefetch</th>
       <th class=normal colspan=5>Normal</th>
+      {{/prefetchNormalPairs}}
     </tr>
     <tr>
       <th>i</th>
@@ -15,6 +17,7 @@
       <th>xd</th>
       <th>try<br>cors</th>
       <th>src</th>
+      {{#prefetchNormalPairs}}
       <th class=prefetch>info</th>
       <th class=prefetch>req<br>hit<br>server</th>
       <th class=prefetch>cors<br>reply</th>
@@ -25,6 +28,7 @@
       <th class=normal>cors<br>reply</th>
       <th class=normal>resp<br>status</th>
       <th class=normal>dur<br>(ms)</th>
+      {{/prefetchNormalPairs}}
     </tr>
   </thead>
   <tbody>
