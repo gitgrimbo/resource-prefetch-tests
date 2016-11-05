@@ -124,6 +124,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
     var endTest = poster(url.addParams("/endTest", ids));
     const serverResult = await endTest({
       client: {
+        src: src,
         prefetch: cleanClientResultForPosting(prefetchResult),
         normal: cleanClientResultForPosting(normalResult)
       }
@@ -131,19 +132,15 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 
     console.log(testId, test.name, "Test ended", serverResult);
     prefetch.clearContainer();
-    var clientResult = {
-      resource: {
-        src: src,
-        resourceId: test.resourceId,
-        prefetchRequest: prefetchResult,
-        normalRequest: normalResult
-      }
+    var rawClientResult = {
+      prefetch: prefetchResult,
+      normal: normalResult
     };
     return {
       testId: testId,
       test: test,
       serverResult: serverResult,
-      clientResult: clientResult
+      rawClientResult: rawClientResult
     };
   } catch (err) {
     console.log(testId, test.name, "catch", err);
