@@ -3,37 +3,8 @@ const ResultsTable = require("../../public/results/ResultsTable");
 
 const dirname = __dirname;
 
-function filterOutFalseys(it) {
-  return Boolean(it);
-}
-
 function readTemplate(templateName) {
   return String(fs.readFileSync(dirname + "/../../public/results/" + templateName + ".mst.html"));
-}
-
-function sessionToView(session, resultsTable) {
-  const testIds = Object.keys(session.tests);
-  const rows = testIds.map((k, i) => {
-    const test = session.tests[k];
-    if (test.state !== "ended") {
-      return null;
-    }
-    const results = {
-      i: i,
-      numTests: testIds.length,
-      test: test,
-      result: {
-        serverResult: test,
-        clientResult: {}
-      }
-    };
-    return resultsTable.testResultsToRowData(results);
-  });
-  return {
-    date: (typeof session.timestamp === "number") ? new Date(session.timestamp).toISOString() : "",
-    userAgent: session.userAgent,
-    rows: rows.filter(filterOutFalseys)
-  };
 }
 
 const opts = {
@@ -47,7 +18,7 @@ const opts = {
 
 module.exports = function(session, stylesUrl) {
   const t = new ResultsTable(opts);
-  const view = sessionToView(session, t);
+  const view = t.sessionToView(session);
 
   stylesUrl = stylesUrl || "results/style.css";
 

@@ -29,11 +29,11 @@ table.results > tbody > tr > td {
     vertical-align: top;
 }
 
-table.results > tbody > tr.pass {
+table.results > tbody > tr > td.pass {
     background: rgba(0, 255, 0, 0.08);
 }
 
-table.results > tbody > tr.fail {
+table.results > tbody > tr > td.fail {
     background: rgba(255, 0, 0, 0.08);
 }
 
