@@ -22,9 +22,11 @@ var loadResourceByNewImage = timeoutifyLoader("loadResourceByNewImage");
 var loadResourceByImgTag = timeoutifyLoader("loadResourceByImgTag");
 var loadResourceByObjectTag = timeoutifyLoader("loadResourceByObjectTag");
 var loadResourceByScriptTag = timeoutifyLoader("loadResourceByScriptTag");
+var loadResourceByScriptTagWithBogusType = timeoutifyLoader("loadResourceByScriptTagWithBogusType");
 var loadResourceByXHR = timeoutifyLoader("loadResourceByXHR");
 var loadResourceByXDomainRequest = timeoutifyLoader("loadResourceByXDomainRequest");
 var loadResourceByLinkRelStylesheetTag = timeoutifyLoader("loadResourceByLinkRelStylesheetTag");
+var loadResourceByLinkRelStylesheetTagWithBogusMedia = timeoutifyLoader("loadResourceByLinkRelStylesheetTagWithBogusMedia");
 var loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
 var loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
 
@@ -53,9 +55,11 @@ module.exports = {
   loadResourceByLinkRelPrefetchTag,
   loadResourceByLinkRelPrefetchTagWithCrossoriginAttr,
   loadResourceByLinkRelStylesheetTag,
+  loadResourceByLinkRelStylesheetTagWithBogusMedia,
   loadResourceByNewImage,
   loadResourceByObjectTag,
   loadResourceByScriptTag,
+  loadResourceByScriptTagWithBogusType,
   loadResourceByXHR,
   loadResourceByXDomainRequest
 };

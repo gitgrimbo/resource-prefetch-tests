@@ -159,9 +159,12 @@ function loadResourceByScriptTag(opts) {
   var src = opts.src;
   var container = opts.container;
   return new Promise(function(resolve, reject) {
-    var tag = "loadResourceByScriptTag";
+    var tag = opts.tag || "loadResourceByScriptTag";
 
     var script = document.createElement("script");
+    if (opts.type) {
+      script.setAttribute("type", opts.type);
+    }
     script.addEventListener("load", resolveWithEvent(resolve, tag, {
       src: src,
       tag: tag,
@@ -177,6 +180,13 @@ function loadResourceByScriptTag(opts) {
     script.src = src;
     container.appendChild(script);
   });
+}
+
+function loadResourceByScriptTagWithBogusType(opts) {
+  return loadResourceByScriptTag(Object.assign({}, opts, {
+    tag: "loadResourceByScriptTagWithBogusType",
+    type: "bogus"
+  }));
 }
 
 function loadResourceByXHR(opts) {
@@ -272,6 +282,17 @@ function loadResourceByLinkRelStylesheetTag(opts) {
   }));
 }
 
+function loadResourceByLinkRelStylesheetTagWithBogusMedia(opts) {
+  return loadResourceByLink(Object.assign({}, opts, {
+    tag: "loadResourceByLinkRelStylesheetTagWithBogusMedia",
+    linkAttrs: {
+      rel: "stylesheet",
+      type: "text/css",
+      media: "(min-width: 40000px)"
+    }
+  }));
+}
+
 function loadResourceByLinkRelPrefetchTag(opts) {
   return loadResourceByLink(Object.assign({}, opts, {
     tag: "loadResourceByLinkRelPrefetchTag",
@@ -353,9 +374,11 @@ module.exports = {
   loadResourceByLinkRelPrefetchTag: loadResourceByLinkRelPrefetchTag,
   loadResourceByLinkRelPrefetchTagWithCrossoriginAttr: loadResourceByLinkRelPrefetchTagWithCrossoriginAttr,
   loadResourceByLinkRelStylesheetTag: loadResourceByLinkRelStylesheetTag,
+  loadResourceByLinkRelStylesheetTagWithBogusMedia: loadResourceByLinkRelStylesheetTagWithBogusMedia,
   loadResourceByNewImage: loadResourceByNewImage,
   loadResourceByObjectTag: loadResourceByObjectTag,
   loadResourceByScriptTag: loadResourceByScriptTag,
+  loadResourceByScriptTagWithBogusType: loadResourceByScriptTagWithBogusType,
   loadResourceByXDomainRequest: loadResourceByXDomainRequest,
   loadResourceByXHR: loadResourceByXHR
 };

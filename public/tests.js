@@ -17,6 +17,9 @@ var tests = [
   }, {
     name: "<link rel=prefetch crossorigin>",
     prefetcherName: "loadResourceByLinkRelPrefetchTagWithCrossoriginAttr"
+  }, {
+    name: "<link rel=stylesheet media='(min-width: 40000px)'>",
+    prefetcherName: "loadResourceByLinkRelStylesheetTagWithBogusMedia"
   }
 ];
 
