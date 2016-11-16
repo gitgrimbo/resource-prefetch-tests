@@ -41,6 +41,7 @@
     "bluebird": "^3.4.6",
     "co-fs": "^1.2.0",
     "console-polyfill": "^0.2.3",
+    "ejs": "^2.5.2",
     "globby": "^6.0.0",
     "jquery": "^3.1.1",
     "jsondiffpatch": "^0.2.4",

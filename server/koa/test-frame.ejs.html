@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+
+<script>
+if (typeof console === "undefined") {
+  document.write("<script src=vendor/console-polyfill.js></scr" + "ipt>");
+}
+</script>
+<script src="vendor/babel-polyfill.js"></script>
+<script src="vendor/bluebird.js"></script>
+<script src="vendor/jquery.js"></script>
+<script src="dist.js"></script>
+<script>
+require("ResourcePrefetchTests").TestFramePage.runInHead(window);
+</script>
+
+<% view.forEach((view) => {
+  if (view && view.placeInTag === "head") {
+    %><%- view.html() %><%
+  }
+});
+%>
+
+<style>
+.standard-font {
+  font-family: Arial;
+  font-size: 30pt;
+}
+</style>
+
+</head>
+
+<body>
+
+This is the test frame. <%= Object.keys(view).length === 0 ? "No view" : "" %>
+
+<span id="standard-font-span" class="standard-font">wwwwwwwwww</span>
+
+<% view.forEach((view) => {
+  if (view && view.placeInTag === "body") {
+    %><%- view.html() %><%
+  }
+});
+%>
+</body>
+
+</html>

@@ -30,7 +30,43 @@ var loadResourceByLinkRelStylesheetTagWithBogusMedia = timeoutifyLoader("loadRes
 var loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
 var loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
 
-function loadResourceNormally(resource, timeout) {
+function loadResourceIntoIframe(resource, timeout) {
+  function getType(resourceType) {
+    if (resourceType === "img") {
+      return "imgTag";
+    } else if (resourceType === "script") {
+      return "scriptTag";
+    } else if (resourceType === "css") {
+      return "cssLink";
+    } else if (resourceType === "font") {
+      return "woffStyle";
+    }
+    return null;
+  }
+  const iframe = document.getElementById("test-frame");
+  const type = getType(resource.type);
+  const resourceSrc = encodeURIComponent(resource.src);
+  const iframeSrc = `/test-frame.html?src=${resourceSrc}&type=${type}`;
+  console.log("iframeSrc", iframeSrc);
+  return new Promise((resolve, reject) => {
+    iframe.onload = function() {
+      iframe.onload = null;
+      window.onmessage = function(e) {
+        const data = JSON.parse(e.data);
+        console.log("parent", "onmessage", e, data);
+        if (data.resolved) {
+          reject(data.resolved);
+        } else {
+          reject(data.rejected);
+        }
+      };
+      iframe.contentWindow.postMessage("from-parent", "*");
+    };
+    iframe.src = iframeSrc;
+  });
+}
+
+function loadResourceIntoContainer(resource, timeout) {
   var opts = {
     src: resource.src,
     container: container
@@ -46,6 +82,8 @@ function loadResourceNormally(resource, timeout) {
   }
   return null;
 }
+
+const loadResourceNormally = loadResourceIntoIframe;
 
 module.exports = {
   setContainer,

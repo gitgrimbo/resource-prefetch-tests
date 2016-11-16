@@ -1,4 +1,4 @@
-const promiseUtils = require( "./promise-utils");
+const promiseUtils = require("./promise-utils");
 
 /**
  * Make a basic, shallow copy of the event; the copy can be serialised.
@@ -315,14 +315,13 @@ function loadResourceByLinkRelPrefetchTagWithCrossoriginAttr(opts) {
 function loadResourceByFontFaceCss(opts) {
   var src = opts.src;
   var container = opts.container;
-  var css = "\
-    @font-face {\
-      font-family: 'Pacifico';\
-      font-style: normal;\
-      font-weight: 400;\
-      src: local('Pacifico Regular'), local('Pacifico-Regular'), url('" + src + "') format('woff');\
-    }\
-    ";
+  var css = `
+    @font-face {
+      font-family: 'Pacifico';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Pacifico Regular'), local('Pacifico-Regular'), url('${src}') format('woff');
+    }`;
   return new Promise(function(resolve, reject) {
     var tag = "loadResourceByFontFaceCss";
 
@@ -380,5 +379,7 @@ module.exports = {
   loadResourceByScriptTag: loadResourceByScriptTag,
   loadResourceByScriptTagWithBogusType: loadResourceByScriptTagWithBogusType,
   loadResourceByXDomainRequest: loadResourceByXDomainRequest,
-  loadResourceByXHR: loadResourceByXHR
+  loadResourceByXHR: loadResourceByXHR,
+  resolveWithEvent,
+  rejectWithEvent,
 };

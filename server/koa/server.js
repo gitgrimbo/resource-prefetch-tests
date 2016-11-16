@@ -16,6 +16,7 @@ const globby = require("globby");
 
 const throttler = require("./my-koa-throttle");
 const vendorScripts = require("./vendor-scripts");
+const testFrame = require("./test-frame");
 
 const SessionManager = require("../session-manager");
 const testConfig = require("../test-config");
@@ -231,6 +232,12 @@ app.use(route.get("/sessions.html", function* () {
   const sessionIds = sessionManager.getSessionIds();
   const link = (id) => `<a href="session.html?sessionId=${id}">${linkText(id)}</a>`;
   this.body = sessionIds.map((id) => `<li>${link(id)}</li>`).join("\n");
+}));
+
+
+// Output list of sessions from memory
+app.use(route.get("/test-frame.html", function* () {
+  this.body = testFrame.fromQuery(this.query);
 }));
 
 

@@ -1,0 +1,43 @@
+<!doctype html>
+
+<head>
+
+<script>
+if (typeof console === "undefined") {
+  document.write("<script src=vendor/console-polyfill.js></scr" + "ipt>");
+}
+</script>
+<script src="vendor/jquery.js"></script>
+
+</head>
+
+<body>
+
+<ul id="tests">
+<li><a href="./test-frame.html?type=cssLink&src=./download-files/11B.css">11B.css</a>
+<li><a href="./test-frame.html?type=imgTag&src=./download-files/64kB.jpg">64kB.jpg</a>
+<li><a href="./test-frame.html?type=scriptTag&src=./download-files/8B.js">8B.js</a>
+<li><a href="./test-frame.html?type=woffStyle&src=./download-files/pacifico.woff">pacifico.woff</a>
+</ul>
+
+<iframe id="test-frame" style="width:99%;height:20%" src="">
+</iframe>
+
+<script>
+window.onmessage = function(e) {
+  console.log("parent", "onmessage", e);
+};
+
+$("#tests").on("click", "a", function(e) {
+  e.preventDefault();
+  var href = e.target.href;
+  var iframe = $("#test-frame")[0];
+  iframe.onload = function() {
+    iframe.contentWindow.postMessage("hello", "*");
+  }
+  iframe.src = href;
+  return false;
+});
+</script>
+
+</body>
