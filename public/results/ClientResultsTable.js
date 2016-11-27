@@ -10,7 +10,7 @@ ResultsTable.findTemplate = function(template, templateSelector) {
 
 // browser impl of escape function
 ResultsTable.escapeHtml = (function() {
-  var div = $("<div></div>");
+  const div = $("<div></div>");
   return function(html) {
     return div.text(html).html();
   };
@@ -23,8 +23,8 @@ class ClientResultsTable extends ResultsTable {
   }
 
   updateTable(row) {
-    var table = $(this.container).find("table");
-    var tbody = $(table).find("tbody")[0];
+    const table = $(this.container).find("table");
+    const tbody = $(table).find("tbody")[0];
     $(tbody).append(Mustache.render(this.rowTemplate, row));
     $(tbody).append(Mustache.render(this.headersRowTemplate, row));
   }

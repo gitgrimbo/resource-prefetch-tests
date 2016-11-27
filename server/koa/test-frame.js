@@ -30,72 +30,123 @@ function tagHtml(name, attrs, selfClose, content) {
   ].join("");
 }
 
+/* eslint-disable */
+function resourceOnLoad(e) {
+  log("resourceOnLoad", e);
+  const msg = "?";
+  const attrs = {};
+  resourceLoaders.resolveWithEvent(resolve, msg, attrs)(e);
+}
+
+function resourceOnError(e) {
+  log("resourceOnError", e);
+  const tag = "?";
+  const src = "?";
+  resourceLoaders.rejectWithEvent(reject, tag, src)(e);
+}
+/* eslint-enable */
+
+const reloadTemplate = true;
 const template = loadTemplate();
 
-function makeTemplateData(tag) {
+function makeTemplateData(htmlContent) {
   return {
-    tag,
-    placeInTag: tag.placeInTag,
+    htmlContent,
+    placeInTag: htmlContent.placeInTag,
     html: function() {
-      let attrs = Object.assign({}, tag.attrs);
-      if (tag.onload) {
+      let attrs = Object.assign({}, htmlContent.attrs);
+      if (htmlContent.onload) {
         attrs.onerror = "resourceOnError(event)";
       }
-      if (tag.onerror) {
+      if (htmlContent.onerror) {
         attrs.onload = "resourceOnLoad(event)";
       }
-      return tagHtml(tag.name, attrs, tag.selfClose, tag.content);
+      return tagHtml(htmlContent.name, attrs, htmlContent.selfClose, htmlContent.content);
     },
   };
 }
 
-function render(tagOrTags) {
-  const tags = tagOrTags ? (Array.isArray(tagOrTags) ? tagOrTags : [tagOrTags]) : null;
-  const view = tags ? tags.map(makeTemplateData) : [];
-  return ejs.render(/*template*/loadTemplate(), { view }, {
-    debug: true
+function render(tag) {
+  const htmlContent = (Array.isArray(tag.htmlContent) ? tag.htmlContent : [tag.htmlContent]);
+  const view = {
+    resolveData: {
+      msg: tag.metadata.name,
+      attrs: tag.metadata.attrs,
+    },
+    rejectData: {
+      tag: tag.metadata.name,
+      src: tag.metadata.src,
+    },
+    htmlContent: htmlContent ? htmlContent.map(makeTemplateData) : [],
+  };
+  return ejs.render(reloadTemplate ? loadTemplate() : template, { view }, {
+    debug: true,
   });
 }
 
 function cssLink(src) {
+  const attrs = {
+    type: "text/css",
+    rel: "stylesheet",
+    href: src,
+  };
   return {
-    placeInTag: "head",
-    name: "link",
-    attrs: {
-      type: "text/css",
-      rel: "stylesheet",
-      href: src,
+    metadata: {
+      name: "style",
+      attrs,
+      src,
     },
-    selfClose: true,
-    onload: true,
-    onerror: true,
+    htmlContent: {
+      placeInTag: "head",
+      name: "link",
+      attrs,
+      selfClose: true,
+      onload: true,
+      onerror: true,
+    }
   };
 }
 
 function imgTag(src) {
+  const attrs = {
+    src: src,
+  };
   return {
-    placeInTag: "body",
-    name: "img",
-    attrs: {
-      src: src,
+    metadata: {
+      name: "img",
+      attrs,
+      src,
     },
-    selfClose: true,
-    onload: true,
-    onerror: true,
+    htmlContent: {
+      placeInTag: "body",
+      name: "img",
+      attrs,
+      selfClose: true,
+      onload: true,
+      onerror: true,
+    }
   };
 }
 
 function scriptTag(src) {
+  const attrs = {
+    type: "text/javascript",
+    src: src,
+  };
   return {
-    placeInTag: "head",
-    name: "script",
-    attrs: {
-      type: "text/javascript",
-      src: src,
+    metadata: {
+      name: "script",
+      attrs,
+      src,
     },
-    selfClose: false,
-    onload: true,
-    onerror: true,
+    htmlContent: {
+      placeInTag: "head",
+      name: "script",
+      attrs,
+      selfClose: false,
+      onload: true,
+      onerror: true,
+    }
   };
 }
 
@@ -111,21 +162,29 @@ function woffStyle(src) {
       font-family: 'Pacifico';
       font-size: 30pt;
     }`;
-  return [{
-    placeInTag: "head",
-    name: "style",
-    selfClose: false,
-    content: css,
-  }, {
-    placeInTag: "body",
-    name: "span",
-    attrs: {
-      id: "woff-span",
-      class: "standard-font",
+  const attrs = {
+    id: "woff-span",
+    class: "standard-font",
+  };
+  return {
+    metadata: {
+      name: "style",
+      attrs,
+      src,
     },
-    selfClose: false,
-    content: "wwwwwwwwww",
-  }];
+    htmlContent: [{
+      placeInTag: "head",
+      name: "style",
+      selfClose: false,
+      content: css,
+    }, {
+      placeInTag: "body",
+      name: "span",
+      attrs,
+      selfClose: false,
+      content: "wwwwwwwwww",
+    }]
+  };
 }
 
 const mappings = {

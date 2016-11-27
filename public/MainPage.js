@@ -5,9 +5,9 @@ const url = require("./url");
 const resources = require("./resources");
 
 function createTestFilter(urlParams) {
-  var match = {};
-  for (var k in urlParams) {
-    var exec = /^test\.(.*)/.exec(k);
+  const match = {};
+  for (const k in urlParams) {
+    const exec = /^test\.(.*)/.exec(k);
     console.log(k, exec);
     if (exec) {
       match[exec[1]] = urlParams[k];
@@ -15,9 +15,9 @@ function createTestFilter(urlParams) {
   }
   console.log(match);
   return function(test) {
-    for (var k in match) {
-      var val = match[k];
-      var not = false;
+    for (const k in match) {
+      let val = match[k];
+      let not = false;
       if (val.charAt(0) === "!") {
         not = true;
         val = val.substring(1);
@@ -76,25 +76,26 @@ MainPage.prototype._startTest = function(resultsTable) {
   });
 };
 
-MainPage.prototype.startTest = function() {
+MainPage.prototype.startTest = async function() {
   function getResultsTable() {
     const frame = document.getElementById("results-frame");
     return (frame && frame.contentWindow && frame.contentWindow.resultsTable);
   }
-  return promiseUtils.poll(getResultsTable, 100, 1000)
-    .then(this._startTest.bind(this))
-    .catch(() => {
-      alert("results table could not be located");
-    });
+  try {
+    const resultsTable = await promiseUtils.poll(getResultsTable, 100, 1000);
+    this._startTest(resultsTable);
+  } catch(err) {
+    alert("results table could not be located");
+  }
 };
 
 MainPage.bootstrap = function() {
   const prefetchContainer = $("#prefetch-container")[0];
-  var frame = $("#results-frame")[0];
-  var resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
-  var resultsTextareaElement = $("#results")[0];
+  const frame = $("#results-frame")[0];
+  const resultsTableElement = $("#results-table", frame.contentWindow.document)[0];
+  const resultsTextareaElement = $("#results")[0];
   const urlParams = url.getUrlParams();
-  var app = new MainPage(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams);
+  const app = new MainPage(resources, prefetchContainer, resultsTableElement, resultsTextareaElement, urlParams);
   if (urlParams.autostart === "true") {
     app.startTest();
   }

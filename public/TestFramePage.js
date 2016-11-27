@@ -1,57 +1,57 @@
+/* eslint-disable no-console */
 const resourceLoaders = require("./resource-loaders");
 
-function runInHead(window) {
-  var resolve;
-  var reject;
-  var promise = new Promise(function(res, rej) {
+function runInHead(window, resolveData, rejectData) {
+  let resolve;
+  let reject;
+  const promise = new Promise(function(res, rej) {
     resolve = res;
     reject = rej;
   }).timeout(3.5 * 1000);
 
-  function log() {
-    var args = [].slice.call(arguments);
+  function log(...args) {
     args = ["test-frame"].concat(args);
     if (console.log.apply) {
-      console.log.apply(console, args);
+      console.log(...args);
     } else {
       console.log(args.join(","));
     }
   }
 
   window.resourceOnLoad = function(e) {
-    log("resourceOnLoad", e);
-    const msg = "?";
-    const attrs = {};
-    resourceLoaders.resolveWithEvent(resolve, msg, attrs)(e);
+    log("resourceOnLoad", resolveData.msg, resolveData.attrs);
+    resourceLoaders.resolveWithEvent(resolve, resolveData.msg, resolveData.attrs)(e);
   };
 
   window.resourceOnError = function(e) {
-    log("resourceOnError", e);
-    const tag = "?";
-    const src = "?";
-    resourceLoaders.rejectWithEvent(reject, tag, src)(e);
+    log("resourceOnError", rejectData.tag, rejectData.src);
+    resourceLoaders.rejectWithEvent(reject, rejectData.tag, rejectData.src)(e);
   };
 
-  window.onmessage = function(e) {
-    log("onmessage", e);
-    promise
-      .then(function(value) {
-        var message = JSON.stringify({ resolved: value });
-        e.source.postMessage(message, e.origin);
-      })
-      .catch(function(err) {
-        log("err", err);
-        var message = JSON.stringify({ rejected: err });
-        e.source.postMessage(message, e.origin);
-      });
+  window.onmessage = async function(e) {
+    log("onmessage", e, e.source.window.location.href, window.location.href);
+    if (e.source === window) {
+      // IE9 (at least) needs this check.
+      return;
+    }
+    try {
+      const value = await promise;
+      const message = JSON.stringify({ resolved: value });
+      e.source.postMessage(message, e.origin);
+    } catch (err) {
+      log("err", err);
+      const message = JSON.stringify({ rejected: err });
+      e.source.postMessage(message, e.origin);
+    }
   };
 
-  var interval = setInterval((function() {
-    var woffSpan;
-    var woffWidth;
-    var fontStandardSpan;
-    var fontStandardWidth;
-    var start;
+  // Debug code to check the width of the elements affected by the loaded fonts.
+  const interval = setInterval((function() {
+    let woffSpan;
+    let woffWidth;
+    let fontStandardSpan;
+    let fontStandardWidth;
+    let start;
     return function() {
       if (!woffSpan) {
         woffSpan = document.querySelector("#woff-span");
@@ -63,8 +63,8 @@ function runInHead(window) {
       if (!start) {
         start = Date.now();
       }
-      var ww = woffSpan.offsetWidth;
-      var fsw = fontStandardSpan.offsetWidth;
+      const ww = woffSpan.offsetWidth;
+      const fsw = fontStandardSpan.offsetWidth;
       log("woffWidth", ww, woffWidth);
       log("fontStandardWidth", fsw, fontStandardWidth);
       woffWidth = ww;

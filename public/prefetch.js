@@ -1,9 +1,9 @@
 const promiseUtils = require("./promise-utils");
 const resourceLoaders = require("./resource-loaders");
 
-var timeoutify = promiseUtils.timeoutify;
+const timeoutify = promiseUtils.timeoutify;
 
-var container = document.getElementById("prefetch-container") || document.body;
+let container = document.getElementById("prefetch-container") || document.body;
 
 function setContainer(container_) {
   container = container_;
@@ -17,20 +17,20 @@ function timeoutifyLoader(loaderName) {
   return timeoutify(resourceLoaders[loaderName], loaderName);
 }
 
-var loadResourceByFontFaceCss = timeoutifyLoader("loadResourceByFontFaceCss");
-var loadResourceByNewImage = timeoutifyLoader("loadResourceByNewImage");
-var loadResourceByImgTag = timeoutifyLoader("loadResourceByImgTag");
-var loadResourceByObjectTag = timeoutifyLoader("loadResourceByObjectTag");
-var loadResourceByScriptTag = timeoutifyLoader("loadResourceByScriptTag");
-var loadResourceByScriptTagWithBogusType = timeoutifyLoader("loadResourceByScriptTagWithBogusType");
-var loadResourceByXHR = timeoutifyLoader("loadResourceByXHR");
-var loadResourceByXDomainRequest = timeoutifyLoader("loadResourceByXDomainRequest");
-var loadResourceByLinkRelStylesheetTag = timeoutifyLoader("loadResourceByLinkRelStylesheetTag");
-var loadResourceByLinkRelStylesheetTagWithBogusMedia = timeoutifyLoader("loadResourceByLinkRelStylesheetTagWithBogusMedia");
-var loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
-var loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
+const loadResourceByFontFaceCss = timeoutifyLoader("loadResourceByFontFaceCss");
+const loadResourceByNewImage = timeoutifyLoader("loadResourceByNewImage");
+const loadResourceByImgTag = timeoutifyLoader("loadResourceByImgTag");
+const loadResourceByObjectTag = timeoutifyLoader("loadResourceByObjectTag");
+const loadResourceByScriptTag = timeoutifyLoader("loadResourceByScriptTag");
+const loadResourceByScriptTagWithBogusType = timeoutifyLoader("loadResourceByScriptTagWithBogusType");
+const loadResourceByXHR = timeoutifyLoader("loadResourceByXHR");
+const loadResourceByXDomainRequest = timeoutifyLoader("loadResourceByXDomainRequest");
+const loadResourceByLinkRelStylesheetTag = timeoutifyLoader("loadResourceByLinkRelStylesheetTag");
+const loadResourceByLinkRelStylesheetTagWithBogusMedia = timeoutifyLoader("loadResourceByLinkRelStylesheetTagWithBogusMedia");
+const loadResourceByLinkRelPrefetchTag = timeoutifyLoader("loadResourceByLinkRelPrefetchTag");
+const loadResourceByLinkRelPrefetchTagWithCrossoriginAttr = timeoutifyLoader("loadResourceByLinkRelPrefetchTagWithCrossoriginAttr");
 
-function loadResourceIntoIframe(resource, timeout) {
+function loadResourceIntoIFRAME(resource, timeout) {
   function getType(resourceType) {
     if (resourceType === "img") {
       return "imgTag";
@@ -67,7 +67,7 @@ function loadResourceIntoIframe(resource, timeout) {
 }
 
 function loadResourceIntoContainer(resource, timeout) {
-  var opts = {
+  const opts = {
     src: resource.src,
     container: container
   };
@@ -83,7 +83,7 @@ function loadResourceIntoContainer(resource, timeout) {
   return null;
 }
 
-const loadResourceNormally = loadResourceIntoIframe;
+const loadResourceNormally = loadResourceIntoIFRAME;
 
 module.exports = {
   setContainer,

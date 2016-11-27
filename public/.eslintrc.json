@@ -3,6 +3,9 @@
     "browser": true,
     "es6": true
   },
+  "globals": {
+    "$": false
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "modules": true

@@ -1,4 +1,4 @@
-var tests = [
+const tests = [
   {
     name: "new Image()",
     prefetcherName: "loadResourceByNewImage"
@@ -20,7 +20,7 @@ var tests = [
   }, {
     name: "<link rel=stylesheet media='(min-width: 40000px)'>",
     prefetcherName: "loadResourceByLinkRelStylesheetTagWithBogusMedia"
-  }
+  },
 ];
 
 module.exports = tests;

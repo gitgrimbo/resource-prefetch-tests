@@ -6,12 +6,12 @@ const url = require("./url");
 const testList = require("./tests");
 const testUtils = require("./test-utils");
 
-var resolveWithDelay = promiseUtils.resolveWithDelay;
+const resolveWithDelay = promiseUtils.resolveWithDelay;
 
-var poster = ajaxUtils.poster;
+const poster = ajaxUtils.poster;
 
 function addTestParams(src, resourceId, sessionId, testId, timestamp, useCors) {
-  var addParams = url.addParams;
+  const addParams = url.addParams;
   useCors = (useCors === true);
   return addParams(src, {
     sessionId: sessionId,
@@ -26,23 +26,23 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
   console.log(test);
   prefetch.clearContainer();
 
-  var timestamp = Date.now();
-  var src = test.resource.src;
+  const timestamp = Date.now();
+  let src = test.resource.src;
 
   if (test.protocol && test.hostname) {
     src = test.protocol + "//" + test.hostname + (test.port ? ":" + test.port : "") + src;
   }
   src = addTestParams(src, test.resourceId, sessionId, testId, timestamp, test.useCors);
 
-  var ids = {
+  const ids = {
     sessionId: sessionId,
     testId: testId
   };
 
   async function handleRejectAsResolve(promise) {
-    var start = Date.now();
+    const start = Date.now();
     try {
-      var data = await promise;
+      const data = await promise;
       console.log(Date.now(), "handleRejectAsResolve.ok");
       return {
         data: data
@@ -63,7 +63,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
    * simplified version so that result can be serialised to the server.
    */
   function cleanClientResultForPosting(result) {
-    var err = result.err;
+    const err = result.err;
     if (!err) {
       return result;
     }
@@ -81,7 +81,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 
   async function sendPrefetchRequest() {
     console.log(testId, test.name, "Sending prefetch request");
-    var prefetchResult = await handleRejectAsResolve(test.prefetcher({
+    const prefetchResult = await handleRejectAsResolve(test.prefetcher({
       src: src,
       container: prefetchContainer
     }, test.prefetchTimeoutMs));
@@ -91,7 +91,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 
   async function sendNormalRequest() {
     console.log(testId, test.name, "Sending normal request");
-    var normalResult = await handleRejectAsResolve(prefetch.loadResourceNormally({
+    const normalResult = await handleRejectAsResolve(prefetch.loadResourceNormally({
       src: src,
       type: test.resource.type
     }, test.loadResourceNormallyTimeoutMs));
@@ -101,17 +101,17 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 
   try {
     console.log(testId, test.name, "Starting test");
-    var startTest = poster(url.addParams("/startTest", ids));
+    const startTest = poster(url.addParams("/startTest", ids));
     await startTest({ test: test });
-    var prefetchResult = await sendPrefetchRequest();
+    const prefetchResult = await sendPrefetchRequest();
     await resolveWithDelay(100, "ignore-me");
 
-    var startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
+    const startNormalDownload = poster(url.addParams("/startNormalDownload", ids));
     const testFromServer = await startNormalDownload();
 
     // default
-    var normalResult = {};
-    var server = testFromServer.resource.server;
+    let normalResult = {};
+    const server = testFromServer.resource.server;
     if (!server || !server.prefetch || !server.prefetch.requested) {
       // Prefetch request never made it to the server.
       // Don't bother with the normal request.
@@ -121,7 +121,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
       normalResult = await sendNormalRequest();
     }
 
-    var endTest = poster(url.addParams("/endTest", ids));
+    const endTest = poster(url.addParams("/endTest", ids));
     const serverResult = await endTest({
       client: {
         src: src,
@@ -132,7 +132,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 
     console.log(testId, test.name, "Test ended", serverResult);
     prefetch.clearContainer();
-    var rawClientResult = {
+    const rawClientResult = {
       prefetch: prefetchResult,
       normal: normalResult
     };
@@ -148,7 +148,7 @@ async function runTest(test, sessionId, testId, prefetchContainer) {
 }
 
 function combineTests(resources, testFilter, config, port) {
-  var baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
+  const baseTests = testUtils.combineTests(testList, resources, testFilter, config.http2, port);
   return baseTests.map(function(test) {
     return Object.assign(test, {
       // The prefetcher functions here should have been 'timeoutified' already.
@@ -162,7 +162,7 @@ function notifyListener(listener, type, data) {
   if (!listener) {
     return;
   }
-  var f = listener["on" + type];
+  const f = listener["on" + type];
   if (!f) {
     return;
   }
@@ -179,7 +179,7 @@ function runTests(tests, sessionId, prefetchContainer, listener, i, results) {
     return Promise.resolve(results);
   }
 
-  var test = tests[i];
+  const test = tests[i];
   console.log(test);
 
   function callback(result) {
@@ -207,34 +207,34 @@ async function test(options) {
 
   prefetch.setContainer(options.prefetchContainer);
 
-  var port = window.location.port;
+  const port = window.location.port;
 
-  var getConfig = poster("/config");
-  var config = await getConfig();
+  const getConfig = poster("/config");
+  const config = await getConfig();
   console.log("config", config);
 
   console.log("Starting session");
-  var startSession = poster("/startSession");
-  var session = await startSession({
+  const startSession = poster("/startSession");
+  let session = await startSession({
     userAgent: navigator.userAgent
   });
 
-  var sessionId = session.sessionId;
+  const sessionId = session.sessionId;
   notifyListener(options.listener, "SessionStarted", session);
 
   console.log("Running tests");
-  var allTests = combineTests(options.resources, options.testFilter, config, port);
+  const allTests = combineTests(options.resources, options.testFilter, config, port);
   allTests.forEach(function(test) {
     test.prefetchTimeoutMs = 3.5 * 1000;
     test.loadResourceNormallyTimeoutMs = 3.5 * 1000;
   });
   //allTests = allTests.slice(0, 1);
   console.log(allTests);
-  var results = await runTests(allTests, sessionId, options.prefetchContainer, options.listener);
+  const results = await runTests(allTests, sessionId, options.prefetchContainer, options.listener);
   console.log(results);
 
   console.log("Ending session");
-  var endSession = poster(url.addParams("/endSession", {
+  const endSession = poster(url.addParams("/endSession", {
     sessionId: sessionId
   }));
   session = await endSession();

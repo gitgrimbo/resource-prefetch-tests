@@ -13,12 +13,14 @@ if (typeof console === "undefined") {
 <script src="vendor/jquery.js"></script>
 <script src="dist.js"></script>
 <script>
-require("ResourcePrefetchTests").TestFramePage.runInHead(window);
+var resolveData = <%- JSON.stringify(view.resolveData) %>;
+var rejectData = <%- JSON.stringify(view.rejectData) %>;
+require("ResourcePrefetchTests").TestFramePage.runInHead(window, resolveData, rejectData);
 </script>
 
-<% view.forEach((view) => {
-  if (view && view.placeInTag === "head") {
-    %><%- view.html() %><%
+<% view.htmlContent.forEach((htmlContent) => {
+  if (htmlContent.placeInTag === "head") {
+    %><%- htmlContent.html() %><%
   }
 });
 %>
@@ -34,13 +36,13 @@ require("ResourcePrefetchTests").TestFramePage.runInHead(window);
 
 <body>
 
-This is the test frame. <%= Object.keys(view).length === 0 ? "No view" : "" %>
+This frame is used to load resources 'normally', i.e. not using a prefetch technique. <%= Object.keys(view).length === 0 ? "No view" : "" %>
 
 <span id="standard-font-span" class="standard-font">wwwwwwwwww</span>
 
-<% view.forEach((view) => {
-  if (view && view.placeInTag === "body") {
-    %><%- view.html() %><%
+<% view.htmlContent.forEach((htmlContent) => {
+  if (htmlContent.placeInTag === "body") {
+    %><%- htmlContent.html() %><%
   }
 });
 %>
